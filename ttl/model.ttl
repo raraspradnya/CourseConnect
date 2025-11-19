@@ -1,0 +1,33 @@
+ex:CS_Dept   rdf:type  ex:Department ;
+             schema:name "Computer Science" .
+ex:INFO_Dept rdf:type  ex:Department ;
+             schema:name "Information" .
+
+
+ex:CS101  rdf:type          ex:Course ;
+          schema:name       "Introduction to Programming" ;
+          schema:courseCode "CS 101" ;
+          ex:offeredBy      ex:CS_Dept . # This is an out-of-department course in INFO dept
+
+ex:INFO290 rdf:type         ex:Course ;
+           schema:name      "Special Topics in Information" ;
+           schema:courseCode "INFO 290" ;
+           ex:offeredBy     ex:INFO_Dept .
+
+
+ex:Student_123  rdf:type         ex:Student, schema:Person ;
+                schema:name      "Alex Smith" ;
+                ex:Program       ex:INFO_Major ;
+                ex:hasTaken      ex:CS101 ;
+                ex:hasTaken      ex:INFO290 .
+
+ex:Student_456  rdf:type         ex:Student, schema:Person ;
+                schema:name      "Bob Anderson" ;
+                ex:Program       ex:CS_Major ;
+                ex:hasTaken      ex:CS101 ;
+                ex:hasTaken      ex:INFO290 . # also took the same two classes
+
+ex:Student_789  rdf:type         ex:Student, schema:Person ;
+                schema:name      "Pat Johnson" ;
+                ex:Program       ex:CS_Major ;
+                ex:hasTaken      ex:CS101 . 

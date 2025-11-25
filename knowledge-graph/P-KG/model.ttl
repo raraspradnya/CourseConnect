@@ -1,0 +1,205 @@
+@prefix ex: <http://example.org/schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+### Core Entities ###
+ex:Student           	 rdf:type owl:Class .
+ex:Course            	 rdf:type owl:Class .
+ex:Program          	 rdf:type owl:Class .
+ex:University       	 rdf:type owl:Class .
+ex:Degree             	 rdf:type owl:Class .
+ex:CourseEnrollment      rdf:type owl:Class .
+
+### Work and Goals ###
+ex:WorkExperience        rdf:type owl:Class .
+ex:Goal                  rdf:type owl:Class .
+ex:Constraint          	 rdf:type owl:Class .   # Time constraints, schedule limits, etc.
+ex:Preference         	 rdf:type owl:Class .   # E.g., "low workload", "project-heavy"
+
+### Knowledge and Skills ###
+ex:Skill                rdf:type owl:Class .
+ex:Topic                rdf:type owl:Class .   # Academic concepts
+ex:Tool                 rdf:type owl:Class .
+ex:Interest             rdf:type owl:Class .
+
+### Student Artifacts ###
+ex:Project              rdf:type owl:Class .
+ex:Assignment           rdf:type owl:Class .
+ex:Essay                rdf:type owl:Class .
+ex:Paper                rdf:type owl:Class .
+ex:Artifact             rdf:type owl:Class .   # Generic uploaded files
+
+### Credentials ###
+ex:Certification        rdf:type owl:Class .
+ex:Award                rdf:type owl:Class .
+
+### Document Provenance ###
+ex:Document             rdf:type owl:Class .   # Uploaded transcripts, PDFs, etc.
+
+
+# Object Properties
+
+# 2.1 Student Identity & Background
+
+ex:currentProgram       rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:Program .
+
+ex:hasDegree            rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:Degree .
+
+ex:previouslyAttended   rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:University .
+
+ex:hasWorkExperience    rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:WorkExperience .
+
+# 2.2 Courses, Assignments, Projects
+
+ex:hasTakenCourse       rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:CourseEnrollment .
+
+ex:completedProject     rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:Project .
+
+ex:completedAssignment  rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:Assignment .
+
+ex:projectForCourse     rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Project ;
+                        rdfs:range  ex:Course .
+
+ex:assignmentForCourse  rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Assignment ;
+                        rdfs:range  ex:Course .
+
+# 2.3 Skills, Topics, Tools, Interests
+
+ex:hasSkill             rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:Skill .
+
+ex:hasInterest          rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:Interest .
+
+ex:usesSkill            rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Project, ex:Assignment ;
+                        rdfs:range  ex:Skill .
+
+ex:coversTopic          rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Assignment, ex:Project ;
+                        rdfs:range  ex:Topic .
+
+ex:usesTool             rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Assignment, ex:Project ;
+                        rdfs:range  ex:Tool .
+
+# 2.4 Goals, Preferences, Constraints
+
+ex:hasGoal              rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:Goal .
+
+ex:hasPreference        rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:Preference .
+
+ex:hasConstraint        rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:Constraint .
+
+# 2.5 Credentials
+
+ex:hasCertification     rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:Certification .
+
+ex:hasAward             rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Student ;
+                        rdfs:range  ex:Award .
+
+# 2.6 Document Provenance
+
+ex:foundInDocument      rdf:type owl:ObjectProperty ;
+                        rdfs:domain owl:Thing ;
+                        rdfs:range  ex:Document .
+
+ex:referencesArtifact   rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Project ;
+                        rdfs:range  ex:Artifact .
+
+# 3. DATATYPE PROPERTIES
+
+# 3.1 Core Metadata
+
+schema:name             rdf:type owl:DatatypeProperty .
+schema:description      rdf:type owl:DatatypeProperty .
+schema:url              rdf:type owl:DatatypeProperty .
+
+# 3.2 Course Enrollment 
+
+ex:gradeReceived        rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:string .
+
+ex:numericGrade         rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:float .
+
+ex:creditsEarned        rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:int .
+
+ex:dateTaken            rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:date .
+
+ex:termTaken            rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:string .
+
+# 3.3 Skills, Interests, Tools
+
+ex:experienceLevel      rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:string .   # beginner, intermediate, advanced
+
+ex:interestLevel        rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:int .      # Likert scale
+
+# 3.4 Degrees and Work Experience
+
+ex:dateGraduated        rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:date .
+
+ex:startDate            rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:date .
+
+ex:endDate              rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:date .
+
+ex:positionTitle        rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:string .
+
+# 3.5 Preferences & Constraints
+
+ex:preferenceValue      rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:string .
+
+ex:constraintDetail     rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:string .
+
+# 3.6 Document Metadata
+
+ex:uploadedAt           rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:dateTime .
+
+ex:fileType             rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:string .
+
+ex:fileName             rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:string .

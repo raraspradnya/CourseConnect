@@ -1,0 +1,153 @@
+@prefix :       <http://info290/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex:     <http://example.org/> .
+
+# Course
+ex:INFO251  rdf:type                schema:Course ;
+            schema:name             "Applied Machine Learning" ;
+            schema:courseCode       "INFO 251" ;
+            schema:numberOfCredits  "4"^^xsd:integer ;
+            ex:hasTopics            :MachineLearning, :Python ;
+            ex:offeredBy            ex:INFO_Dept ;
+            ex:hasPrerequisite      ex:INFO206B, ex:INFO271B ;
+            ex:offeringTerm         "Spring" ;
+            schema:instructure      "Joshua Blumenstock" ;
+            ex:maxEnrollment        "50"^^xsd:integer ;
+            ex:currentEnrollment    "48"^^xsd:integer ;
+            ex:requiresApproval     false ;
+            ex:meetsAt [
+                rdf:type ex:TimeBlock ;
+                schema:dayOfWeek "Tuesday", "Thursday" ;
+                ex:startTime "09:30:00"^^xsd:time ;
+                ex:endTime "11:00:00"^^xsd:time ;
+                ex:location "210 South Hall"
+            ] .
+
+ex:INFO206B rdf:type                schema:Course ;
+            schema:name             "Introduction to Data Structures and Analytics" ;
+            schema:courseCode       "INFO 206B" ;
+            schema:numberOfCredits  "2"^^xsd:integer ;
+            ex:hasTopics            :DataStructures, :DataAnalytics, :DataScience, :Python ;
+            ex:offeredBy            ex:INFO_Dept ;
+            ex:hasPrerequisite      ex:INFO206A ;
+            ex:offeringTerm         "Fall" ;
+            schema:instructure      "Hany Farid" ;
+            ex:maxEnrollment        "50"^^xsd:integer ;
+            ex:currentEnrollment    "48"^^xsd:integer ;
+            ex:requiresApproval     false ;
+            ex:meetsAt [
+                rdf:type ex:TimeBlock ;
+                schema:dayOfWeek "Monday", "Wednesday" ;
+                ex:startTime "14:00:00"^^xsd:time ;
+                ex:endTime "16:00:00"^^xsd:time ;
+                ex:location "Weill 101"
+            ] .
+                       
+
+ex:INFO206A rdf:type                schema:Course ;
+            schema:name             "Introduction to Programming and Computation" ;
+            schema:courseCode       "INFO 206A" ;
+            schema:numberOfCredits  "2"^^xsd:integer ;
+            ex:hasTopics            :BasicProgramming, :Python ;
+            ex:offeredBy            ex:INFO_Dept ;
+            ex:hasPrerequisite      ex:INFO206A ;
+            ex:offeringTerm         "Fall" ;
+            schema:instructure      "Hany Farid" ;
+            ex:maxEnrollment        "50"^^xsd:integer ;
+            ex:currentEnrollment    "48"^^xsd:integer ;
+            ex:requiresApproval     false ;
+            ex:meetsAt [
+                rdf:type ex:TimeBlock ;
+                schema:dayOfWeek "Monday", "Wednesday" ;
+                ex:startTime "14:00:00"^^xsd:time ;
+                ex:endTime "16:00:00"^^xsd:time ;
+                ex:location "Weill 101"
+            ] .           
+
+ex:INFO271B rdf:type                schema:Course ;
+            schema:name             "Quantitative Research Methods for Information Systems and Management" ;
+            schema:courseCode       "INFO 271B" ;
+            schema:numberOfCredits  "3"^^xsd:integer ;
+            ex:hasTopics            :QuantitativeResearch, :SurveyDesign, :DataAnalytics, :ExperimentalDesign ;
+            ex:offeredBy            ex:INFO_Dept ;
+            ex:hasPrerequisite      ex:INFO271B ;
+            ex:offeringTerm         "Fall" ;
+            schema:instructure      "Coye Chesire" ;
+            ex:maxEnrollment        "50"^^xsd:integer ;
+            ex:currentEnrollment    "48"^^xsd:integer ;
+            ex:requiresApproval     false ;
+            ex:meetsAt [
+                rdf:type ex:TimeBlock ;
+                schema:dayOfWeek "Monday", "Wednesday" ;
+                ex:startTime "12:30:00"^^xsd:time ;
+                ex:endTime "14:00:00"^^xsd:time ;
+                ex:location "202 South Hall"
+            ] . 
+
+
+ex:CS280A   rdf:type                schema:Course ;
+            schema:name             "Intro to Computer Vision and Computational Photography" ;
+            schema:courseCode       "CS 280A" ;
+            schema:numberOfCredits  "4"^^xsd:integer ;
+            ex:hasTopics            :ImageProcessing, :ComputerVision ;
+            ex:offeredBy            ex:EECS_Dept ;
+            ex:hasPrerequisite      ex:CS61B ;
+            ex:offeringTerm         "Both" ;
+            schema:instructure      "Alexei Efros", "Angjoo Kanazawa" ;
+            ex:maxEnrollment        "50"^^xsd:integer ;
+            ex:currentEnrollment    "48"^^xsd:integer ;
+            ex:requiresApproval     false ;
+            ex:meetsAt [
+                rdf:type ex:TimeBlock ;
+                schema:dayOfWeek "Tuesday", "Thursday" ;
+                ex:startTime "12:30:00"^^xsd:time ;
+                ex:endTime "14:00:00"^^xsd:time ;
+                ex:location "Haas Faculty Wing F295"
+            ] . 
+           
+
+# Program
+ex:MIMS         rdf:type                    ex:Program ;
+                schema:name                 "Master of Information Management and Systems (MIMS)" ;
+                ex:duration                 "2 years" ;
+                schema:numberOfCredits      "48"^^xsd:integer ;
+                ex:offeredBy                ex:INFO_Dept ;
+                ex:hasCoreRequirement       ex:Req_CoreMIMS ;
+                ex:hasElectiveRequirement   ex:Req_ElectiveTech, ex:ElectiveSSP, ex:Req_ElectiveOutside .
+
+ex:MEngEECS     rdf:type        ex:Program ;
+                schema:name     "Master of Engineering (M.Eng.) in EECS" ;
+                ex:duration     "1 year" ;
+                schema:numberOfCredits "33"^^xsd:integer ;
+                ex:offeredBy    ex:EECS_Dept .    
+
+# Requirement
+ex:Req_CoreMIMS     rdf:type          ex:Requirement ;
+                    schema:name       "MIMS Core Courses Requirement" ;
+                    ex:minCredits     "11"^^xsd:integer ;
+                    ex:satisfiedBy    ex:INFO202, ex:INFO203, ex:INFO205, ex:INFO206A, ex:INFO206B .
+
+# Department
+ex:INFO_Dept    rdf:type  ex:Department ;
+                schema:name "School of Information" .
+
+ex:EECS_Dept    rdf:type  ex:Department ;
+                schema:name "Department of Electrical Engineering & Computer Sciences " .
+
+# Topic
+ex:MachineLearning a ex:Topic .
+ex:Python a ex:Topic .
+ex:DataStructures a ex:Topic .
+ex:DataScience a ex:Topic .
+ex:DataAnalytics a ex:Topic .
+ex:BasicProgramming a ex:Topic .
+ex:QuantitativeResearch a ex:Topic .
+ex:SurveyDesign a ex:Topic .
+ex:ExperimentalDesign a ex:Topic .
+ex:ImageProcessing a ex:Topic .
+ex:ComputerVision a ex:Topic .
+ex:HumanComputerInteraction a ex:Topic .
+ex:ArtificialIntelligence a ex:Topic .

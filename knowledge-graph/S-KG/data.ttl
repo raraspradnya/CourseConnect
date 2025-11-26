@@ -10,7 +10,7 @@ ex:INFO251  rdf:type                schema:Course ;
             schema:name             "Applied Machine Learning" ;
             schema:courseCode       "INFO 251" ;
             schema:numberOfCredits  "4"^^xsd:integer ;
-            ex:hasTopics            :MachineLearning, :Python ;
+            ex:hasTopics            ex:MachineLearning, ex:Python ;
             ex:offeredBy            ex:INFO_Dept ;
             ex:hasPrerequisite      ex:INFO206B, ex:INFO271B ;
             ex:offeringTerm         "Spring" ;

@@ -49,7 +49,12 @@ def json_to_rdf(json_data, ner_model, skills_db, base_uri="http://example.org/")
             elif (key == "title"):
                 g.add((course, predicate, Literal(value, datatype=XSD.string)))
             elif (key == "units"):
-                g.add((course, predicate, Literal(value, datatype=XSD.integer)))
+                if isinstance(value, list):
+                    for unit in value:
+                        g.add((course, predicate, Literal(int(unit), datatype=XSD.integer)))
+                else:
+                    g.add((course, predicate, Literal(int(value), datatype=XSD.integer)))
+
             elif (key == "description"):
                 try:
                     extracted_skills = extract_skills_from_description(value, ner_model, skills_db)

@@ -9,7 +9,7 @@ ex:INFO103 a schema:Course ;
         "Surveying"^^xsd:string ;
     schema:courseCode "INFO 103"^^xsd:string ;
     schema:name "History of Information"^^xsd:string ;
-    schema:numberOfCredits 4.0 .
+    schema:numberOfCredits 4 .
 
 ex:INFO114 a schema:Course ;
     ex:hasTopics "Computer Booking Systems"^^xsd:string,
@@ -19,7 +19,7 @@ ex:INFO114 a schema:Course ;
         "Term Life Insurance"^^xsd:string ;
     schema:courseCode "INFO 114"^^xsd:string ;
     schema:name "User Experience Research"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO134 a schema:Course ;
     ex:hasTopics "Applied Economics"^^xsd:string,
@@ -36,7 +36,7 @@ ex:INFO134 a schema:Course ;
         "Public Policies"^^xsd:string ;
     schema:courseCode "INFO 134"^^xsd:string ;
     schema:name "Information Technology Economics, Strategy, and Policy"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO153A a schema:Course ;
     ex:hasTopics "Cascading Style Sheets (CSS)"^^xsd:string,
@@ -54,7 +54,7 @@ ex:INFO153A a schema:Course ;
         "Web Applications"^^xsd:string ;
     schema:courseCode "INFO 153A"^^xsd:string ;
     schema:name "Front-End Web Architecture"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO153B a schema:Course ;
     ex:hasTopics "Amazon Data Pipeline"^^xsd:string,
@@ -76,7 +76,7 @@ ex:INFO153B a schema:Course ;
         "Web Technologies Certificates"^^xsd:string ;
     schema:courseCode "INFO 153B"^^xsd:string ;
     schema:name "Back-End Web Architecture"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO159 a schema:Course ;
     ex:hasTopics "Algorithms"^^xsd:string,
@@ -95,7 +95,7 @@ ex:INFO159 a schema:Course ;
         "Social Sciences"^^xsd:string ;
     schema:courseCode "INFO 159"^^xsd:string ;
     schema:name "Natural Language Processing"^^xsd:string ;
-    schema:numberOfCredits 4.0 .
+    schema:numberOfCredits 4 .
 
 ex:INFO188 a schema:Course ;
     ex:hasTopics "Accountability"^^xsd:string,
@@ -114,7 +114,7 @@ ex:INFO188 a schema:Course ;
         "Student Development"^^xsd:string ;
     schema:courseCode "INFO 188"^^xsd:string ;
     schema:name "Behind the Data: Humans and Values"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO190 a schema:Course ;
     ex:hasTopics "Big Data"^^xsd:string,
@@ -125,7 +125,7 @@ ex:INFO190 a schema:Course ;
         "Statistics"^^xsd:string ;
     schema:courseCode "INFO 190"^^xsd:string ;
     schema:name "Calling Bullshit: The Art of Skepticism in a Data Driven World"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO201 a schema:Course ;
     ex:hasTopics "Big Data"^^xsd:string,
@@ -139,7 +139,7 @@ ex:INFO201 a schema:Course ;
         "Teaching"^^xsd:string ;
     schema:courseCode "INFO 201"^^xsd:string ;
     schema:name "Research Design and Applications for Data and Analysis"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO202 a schema:Course ;
     ex:hasTopics "Conceptual Model"^^xsd:string,
@@ -151,7 +151,7 @@ ex:INFO202 a schema:Course ;
         "Vocabulary"^^xsd:string ;
     schema:courseCode "INFO 202"^^xsd:string ;
     schema:name "Information Organization and Retrieval"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO203 a schema:Course ;
     ex:hasTopics "Automation"^^xsd:string,
@@ -160,7 +160,7 @@ ex:INFO203 a schema:Course ;
         "Socialization"^^xsd:string ;
     schema:courseCode "INFO 203"^^xsd:string ;
     schema:name "Social Issues of Information"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO205 a schema:Course ;
     ex:hasTopics "Clinical Research Ethics"^^xsd:string,
@@ -172,7 +172,7 @@ ex:INFO205 a schema:Course ;
         "Social Media"^^xsd:string ;
     schema:courseCode "INFO 205"^^xsd:string ;
     schema:name "Information Law and Policy"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO206A a schema:Course ;
     ex:hasTopics "Computer Programming"^^xsd:string,
@@ -190,30 +190,31 @@ ex:INFO206A a schema:Course ;
         "Writing"^^xsd:string ;
     schema:courseCode "INFO 206A"^^xsd:string ;
     schema:name "Introduction to Programming and Computation"^^xsd:string ;
-    schema:numberOfCredits 2.0 .
+    schema:numberOfCredits 2 .
 
 ex:INFO206B a schema:Course ;
-    ex:hasTopics "Data Science"^^xsd:string,
-        "Data Structure Alignment"^^xsd:string,
+    ex:hasTopics "Array Data Structures"^^xsd:string,
+        "Data Science"^^xsd:string,
         "Data Structures"^^xsd:string,
-        "Good Agricultural Practices"^^xsd:string,
+        "Exploratory Data Analysis"^^xsd:string,
+        "Good Manufacturing Practices"^^xsd:string,
         "Python (Programming Language)"^^xsd:string,
-        "Quantitative Data Analysis"^^xsd:string,
         "Writing"^^xsd:string ;
     schema:courseCode "INFO 206B"^^xsd:string ;
     schema:name "Introduction to Data Structures and Analytics"^^xsd:string ;
-    schema:numberOfCredits 2.0 .
+    schema:numberOfCredits 2 .
 
 ex:INFO213 a schema:Course ;
     ex:hasTopics "Communications"^^xsd:string,
         "Design Technology"^^xsd:string,
         "Human-Computer Interaction"^^xsd:string,
         "Product Lifecycle Management"^^xsd:string,
+        "Student Development Theory"^^xsd:string,
         "User Experience"^^xsd:string,
         "User-Centered Design"^^xsd:string ;
     schema:courseCode "INFO 213"^^xsd:string ;
     schema:name "Introduction to User Experience Design"^^xsd:string ;
-    schema:numberOfCredits 4.0 .
+    schema:numberOfCredits 4 .
 
 ex:INFO214 a schema:Course ;
     ex:hasTopics "Agility"^^xsd:string,
@@ -229,11 +230,11 @@ ex:INFO214 a schema:Course ;
         "User Experience"^^xsd:string ;
     schema:courseCode "INFO 214"^^xsd:string ;
     schema:name "User Experience Research"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO215 a schema:Course ;
-    ex:hasTopics "Advance Design System"^^xsd:string,
-        "E (Programming Language)"^^xsd:string,
+    ex:hasTopics "E (Programming Language)"^^xsd:string,
+        "Electrical System Design"^^xsd:string,
         "Engineering Design Process"^^xsd:string,
         "Industrial Design"^^xsd:string,
         "Industry Practices"^^xsd:string,
@@ -244,7 +245,7 @@ ex:INFO215 a schema:Course ;
         "Prototyping"^^xsd:string ;
     schema:courseCode "INFO 215"^^xsd:string ;
     schema:name "Product Design Studio"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO217A a schema:Course ;
     ex:hasTopics "Collaboration"^^xsd:string,
@@ -256,7 +257,7 @@ ex:INFO217A a schema:Course ;
         "Social Computing"^^xsd:string ;
     schema:courseCode "INFO 217A"^^xsd:string ;
     schema:name "Human-Computer Interaction (HCI) Research"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO218 a schema:Course ;
     ex:hasTopics "Abstractions"^^xsd:string,
@@ -271,7 +272,7 @@ ex:INFO218 a schema:Course ;
         "Social Sciences"^^xsd:string ;
     schema:courseCode "INFO 218"^^xsd:string ;
     schema:name "Concepts of Information"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO225 a schema:Course ;
     ex:hasTopics "Drawing"^^xsd:string,
@@ -285,7 +286,7 @@ ex:INFO225 a schema:Course ;
         "Team Management"^^xsd:string ;
     schema:courseCode "INFO 225"^^xsd:string ;
     schema:name "Foundations of Leadership and Influence in Tech"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO230 a schema:Course ;
     ex:hasTopics "Analytics"^^xsd:string,
@@ -301,7 +302,7 @@ ex:INFO230 a schema:Course ;
         "Social Sciences"^^xsd:string ;
     schema:courseCode "INFO 230"^^xsd:string ;
     schema:name "Cultural Analytics: Theories and Methods"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO231 a schema:Course ;
     ex:hasTopics "Algorithms"^^xsd:string,
@@ -317,7 +318,7 @@ ex:INFO231 a schema:Course ;
         "Surveys"^^xsd:string ;
     schema:courseCode "INFO 231"^^xsd:string ;
     schema:name "Decisions and Algorithms"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO232 a schema:Course ;
     ex:hasTopics "Economics"^^xsd:string,
@@ -326,7 +327,7 @@ ex:INFO232 a schema:Course ;
         "Testability"^^xsd:string ;
     schema:courseCode "INFO 232"^^xsd:string ;
     schema:name "Applied Behavioral Economics"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO233 a schema:Course ;
     ex:hasTopics "Augmented Reality"^^xsd:string,
@@ -346,7 +347,7 @@ ex:INFO233 a schema:Course ;
         "Wearables"^^xsd:string ;
     schema:courseCode "INFO 233"^^xsd:string ;
     schema:name "Social Psychology and Information Technology"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO234 a schema:Course ;
     ex:hasTopics "Applied Economics"^^xsd:string,
@@ -364,7 +365,7 @@ ex:INFO234 a schema:Course ;
         "Public Policies"^^xsd:string ;
     schema:courseCode "INFO 234"^^xsd:string ;
     schema:name "Information Technology Economics, Strategy, and Policy"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO239 a schema:Course ;
     ex:hasTopics "Accountability"^^xsd:string,
@@ -375,10 +376,10 @@ ex:INFO239 a schema:Course ;
         "Primary Source Information"^^xsd:string,
         "Source Codes"^^xsd:string,
         "Technical Solution Design"^^xsd:string,
-        "Transparency (Human-Computer Interaction)"^^xsd:string ;
+        "Transparency (Projection)"^^xsd:string ;
     schema:courseCode "INFO 239"^^xsd:string ;
     schema:name "Technology and Delegation"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO241 a schema:Course ;
     ex:hasTopics "Creative Thinking"^^xsd:string,
@@ -388,7 +389,7 @@ ex:INFO241 a schema:Course ;
         "Research"^^xsd:string ;
     schema:courseCode "INFO 241"^^xsd:string ;
     schema:name "Experiments and Causal Inference"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO247 a schema:Course ;
     ex:hasTopics "Adoptions"^^xsd:string,
@@ -400,7 +401,8 @@ ex:INFO247 a schema:Course ;
         "Visualization"^^xsd:string ;
     schema:courseCode "INFO 247"^^xsd:string ;
     schema:name "Information Visualization and Presentation"^^xsd:string ;
-    schema:numberOfCredits [3.0, 4.0] .
+    schema:numberOfCredits 3,
+        4 .
 
 ex:INFO251 a schema:Course ;
     ex:hasTopics "Algorithms"^^xsd:string,
@@ -412,7 +414,7 @@ ex:INFO251 a schema:Course ;
         "Supervision"^^xsd:string ;
     schema:courseCode "INFO 251"^^xsd:string ;
     schema:name "Applied Machine Learning"^^xsd:string ;
-    schema:numberOfCredits 4.0 .
+    schema:numberOfCredits 4 .
 
 ex:INFO253A a schema:Course ;
     ex:hasTopics "Cascading Style Sheets (CSS)"^^xsd:string,
@@ -430,7 +432,7 @@ ex:INFO253A a schema:Course ;
         "Web Applications"^^xsd:string ;
     schema:courseCode "INFO 253A"^^xsd:string ;
     schema:name "Front-End Web Architecture"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO253B a schema:Course ;
     ex:hasTopics "Amazon Data Pipeline"^^xsd:string,
@@ -451,7 +453,7 @@ ex:INFO253B a schema:Course ;
         "Web Technologies Certificates"^^xsd:string ;
     schema:courseCode "INFO 253B"^^xsd:string ;
     schema:name "Back-End Web Architecture"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO255 a schema:Course ;
     ex:hasTopics "Accredited Systems Engineer"^^xsd:string,
@@ -462,7 +464,7 @@ ex:INFO255 a schema:Course ;
         "Systems Engineering"^^xsd:string ;
     schema:courseCode "INFO 255"^^xsd:string ;
     schema:name "Privacy Engineering"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO256 a schema:Course ;
     ex:hasTopics "Algorithms"^^xsd:string,
@@ -483,14 +485,14 @@ ex:INFO256 a schema:Course ;
         "Text Processing"^^xsd:string ;
     schema:courseCode "INFO 256"^^xsd:string ;
     schema:name "Applied Natural Language Processing"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO258 a schema:Course ;
-    ex:hasTopics "Clinical Data Management"^^xsd:string,
-        "Collaboration"^^xsd:string,
+    ex:hasTopics "Collaboration"^^xsd:string,
+        "Corporate Data Management"^^xsd:string,
         "Data Analysis"^^xsd:string,
         "Data Management"^^xsd:string,
-        "Life Cycle Engineering"^^xsd:string,
+        "Life Cycle Logistics"^^xsd:string,
         "Machine Learning"^^xsd:string,
         "Machine Learning Methods"^^xsd:string,
         "Operationalization"^^xsd:string,
@@ -501,7 +503,7 @@ ex:INFO258 a schema:Course ;
         "Visualization"^^xsd:string ;
     schema:courseCode "INFO 258"^^xsd:string ;
     schema:name "Data Engineering"^^xsd:string ;
-    schema:numberOfCredits 4.0 .
+    schema:numberOfCredits 4 .
 
 ex:INFO259 a schema:Course ;
     ex:hasTopics "Algorithms"^^xsd:string,
@@ -520,7 +522,7 @@ ex:INFO259 a schema:Course ;
         "Social Sciences"^^xsd:string ;
     schema:courseCode "INFO 259"^^xsd:string ;
     schema:name "Natural Language Processing"^^xsd:string ;
-    schema:numberOfCredits 4.0 .
+    schema:numberOfCredits 4 .
 
 ex:INFO271B a schema:Course ;
     ex:hasTopics "Causal Inference"^^xsd:string,
@@ -535,7 +537,7 @@ ex:INFO271B a schema:Course ;
         "Survey Data Analysis"^^xsd:string ;
     schema:courseCode "INFO 271B"^^xsd:string ;
     schema:name "Quantitative Research Methods for Information Systems and Management"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO272 a schema:Course ;
     ex:hasTopics "Focus Group"^^xsd:string,
@@ -547,7 +549,7 @@ ex:INFO272 a schema:Course ;
         "Qualitative Research"^^xsd:string ;
     schema:courseCode "INFO 272"^^xsd:string ;
     schema:name "Qualitative Research Methods for Information Systems and Management"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO283 a schema:Course ;
     ex:hasTopics "Computer Engineering"^^xsd:string,
@@ -561,7 +563,7 @@ ex:INFO283 a schema:Course ;
         "Sociology"^^xsd:string ;
     schema:courseCode "INFO 283"^^xsd:string ;
     schema:name "Information and Communications Technology for Development"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO287 a schema:Course ;
     ex:hasTopics "Business Model"^^xsd:string,
@@ -569,14 +571,14 @@ ex:INFO287 a schema:Course ;
         "Food Product Development"^^xsd:string,
         "Iterative Design"^^xsd:string,
         "New Ventures"^^xsd:string,
-        "Prototype (Manufacturing)"^^xsd:string,
+        "Prototype (Computer Science)"^^xsd:string,
         "Refining"^^xsd:string,
         "Socialization"^^xsd:string,
         "Sustainable Business"^^xsd:string,
         "Validations"^^xsd:string ;
     schema:courseCode "INFO 287"^^xsd:string ;
     schema:name "Entrepreneurship: New Venture Discovery"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO288 a schema:Course ;
     ex:hasTopics "Dataset"^^xsd:string,
@@ -595,7 +597,7 @@ ex:INFO288 a schema:Course ;
         "Student Development Theory"^^xsd:string ;
     schema:courseCode "INFO 288"^^xsd:string ;
     schema:name "Big Data and Development"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
 ex:INFO289 a schema:Course ;
     ex:hasTopics "Cybersecurity Compliance"^^xsd:string,
@@ -605,6 +607,441 @@ ex:INFO289 a schema:Course ;
         "Vulnerability"^^xsd:string ;
     schema:courseCode "INFO 289"^^xsd:string ;
     schema:name "Public Interest Cybersecurity: The Cybersecurity Clinic Practicum"^^xsd:string ;
-    schema:numberOfCredits 3.0 .
+    schema:numberOfCredits 3 .
 
-ex:INFO290
+ex:INFO290 a schema:Course ;
+    ex:hasTopics "AD Model Builder (ADMB)"^^xsd:string,
+        "Accountability"^^xsd:string,
+        "Acting"^^xsd:string,
+        "Active Learning"^^xsd:string,
+        "Adaptability"^^xsd:string,
+        "Advocacy"^^xsd:string,
+        "Analytical Skills"^^xsd:string,
+        "Anxiety Disorder"^^xsd:string,
+        "Appeals"^^xsd:string,
+        "Application Development"^^xsd:string,
+        "Application Programming Interface (API)"^^xsd:string,
+        "Applied Psychology"^^xsd:string,
+        "Articulation"^^xsd:string,
+        "Artificial Intelligence"^^xsd:string,
+        "B (Programming Language)"^^xsd:string,
+        "Behavioral Science"^^xsd:string,
+        "Big Data"^^xsd:string,
+        "Biodiversity"^^xsd:string,
+        "Blockchain"^^xsd:string,
+        "Branding"^^xsd:string,
+        "Bridges"^^xsd:string,
+        "Business Education"^^xsd:string,
+        "Capitalism"^^xsd:string,
+        "Centering"^^xsd:string,
+        "Civic Engagement"^^xsd:string,
+        "Claims Processing"^^xsd:string,
+        "Climate Change Adaptation"^^xsd:string,
+        "Climate Change Mitigation"^^xsd:string,
+        "Clinical Study Design"^^xsd:string,
+        "Collaboration"^^xsd:string,
+        "Communications"^^xsd:string,
+        "Construction"^^xsd:string,
+        "Consulting"^^xsd:string,
+        "Coordinating"^^xsd:string,
+        "Cross-Functional Collaboration"^^xsd:string,
+        "Cross-Functional Coordination"^^xsd:string,
+        "Cybersecurity Compliance"^^xsd:string,
+        "Data Engineering"^^xsd:string,
+        "Data Processing"^^xsd:string,
+        "Data Science"^^xsd:string,
+        "Data Visualization"^^xsd:string,
+        "Dataset"^^xsd:string,
+        "Debating"^^xsd:string,
+        "Decision Making"^^xsd:string,
+        "Design Methods"^^xsd:string,
+        "Design Review"^^xsd:string,
+        "Design Studio"^^xsd:string,
+        "Design Tool"^^xsd:string,
+        "Digital Integration"^^xsd:string,
+        "Digital Marketing"^^xsd:string,
+        "Digital Technology"^^xsd:string,
+        "Digital Transformation"^^xsd:string,
+        "Discussion Groups"^^xsd:string,
+        "Dissection"^^xsd:string,
+        "Domain-Specific Language"^^xsd:string,
+        "E (Programming Language)"^^xsd:string,
+        "E-Commerce"^^xsd:string,
+        "Early Head Start (Education Program)"^^xsd:string,
+        "Economics"^^xsd:string,
+        "Economy"^^xsd:string,
+        "Embedding"^^xsd:string,
+        "Enforcement"^^xsd:string,
+        "Engineering Design Process"^^xsd:string,
+        "Ethnography"^^xsd:string,
+        "Evolution-Data Optimized"^^xsd:string,
+        "Figma (Design Software)"^^xsd:string,
+        "Forging"^^xsd:string,
+        "FourGen Computer-Aided Software Engineering (CASE) Tools"^^xsd:string,
+        "GNU Build Systems"^^xsd:string,
+        "Gamification"^^xsd:string,
+        "Good Manufacturing Practices"^^xsd:string,
+        "Governance"^^xsd:string,
+        "Graphing"^^xsd:string,
+        "Group Work"^^xsd:string,
+        "Human Musculoskeletal Systems"^^xsd:string,
+        "Human Rights Issues"^^xsd:string,
+        "Human-Computer Interaction"^^xsd:string,
+        "Informatics"^^xsd:string,
+        "Information Design"^^xsd:string,
+        "Information Economics"^^xsd:string,
+        "Information Processing"^^xsd:string,
+        "Information Sciences"^^xsd:string,
+        "Information Structure"^^xsd:string,
+        "Information Technology"^^xsd:string,
+        "Innovation"^^xsd:string,
+        "Inquiry"^^xsd:string,
+        "Instructing"^^xsd:string,
+        "Integrated Product Team"^^xsd:string,
+        "Integration"^^xsd:string,
+        "Intelligence Gathering"^^xsd:string,
+        "Interaction Design"^^xsd:string,
+        "Interactivity"^^xsd:string,
+        "Interconnection"^^xsd:string,
+        "International Economic Law"^^xsd:string,
+        "Investigation"^^xsd:string,
+        "Knowledge Graph"^^xsd:string,
+        "Landscaping"^^xsd:string,
+        "Language Model"^^xsd:string,
+        "Leadership"^^xsd:string,
+        "Lecturing"^^xsd:string,
+        "Look And Feel"^^xsd:string,
+        "Machine Learning"^^xsd:string,
+        "Management"^^xsd:string,
+        "Mapping"^^xsd:string,
+        "Microsoft Delve"^^xsd:string,
+        "Microsoft Power Platform"^^xsd:string,
+        "Mitigation"^^xsd:string,
+        "Native American Literature"^^xsd:string,
+        "Needs Assessment"^^xsd:string,
+        "New Product Development"^^xsd:string,
+        "Open Source Intelligence"^^xsd:string,
+        "Open Source Technology"^^xsd:string,
+        "Operations"^^xsd:string,
+        "Organizational Skills"^^xsd:string,
+        "Parameter"^^xsd:string,
+        "Patentable Subject Matter"^^xsd:string,
+        "Paving"^^xsd:string,
+        "Physiology"^^xsd:string,
+        "Policy Development"^^xsd:string,
+        "Political Philosophy"^^xsd:string,
+        "Political Sciences"^^xsd:string,
+        "Power-System Automation"^^xsd:string,
+        "Prediction"^^xsd:string,
+        "Presentations"^^xsd:string,
+        "Product Data Management"^^xsd:string,
+        "Product Design"^^xsd:string,
+        "Product Management"^^xsd:string,
+        "Product Requirements"^^xsd:string,
+        "Professional Practice Evaluation"^^xsd:string,
+        "Professionalism"^^xsd:string,
+        "Programming (Music)"^^xsd:string,
+        "Project Portfolio Management"^^xsd:string,
+        "Project Proposals"^^xsd:string,
+        "Prototype (Computer Science)"^^xsd:string,
+        "Prototyping"^^xsd:string,
+        "Psychology"^^xsd:string,
+        "Public Interest Design"^^xsd:string,
+        "Public International Laws"^^xsd:string,
+        "Public Policies"^^xsd:string,
+        "Python (Programming Language)"^^xsd:string,
+        "Reasoning Systems"^^xsd:string,
+        "Refining"^^xsd:string,
+        "Rehabilitation"^^xsd:string,
+        "Reinforcement Learning"^^xsd:string,
+        "Remote Sensing"^^xsd:string,
+        "Research"^^xsd:string,
+        "Research Papers"^^xsd:string,
+        "Scenario Planning"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string,
+        "Semantic Web"^^xsd:string,
+        "Simulations"^^xsd:string,
+        "Social Justice"^^xsd:string,
+        "Social Media"^^xsd:string,
+        "Social Sciences"^^xsd:string,
+        "Social Theories"^^xsd:string,
+        "Socialization"^^xsd:string,
+        "Space Allocation Problem"^^xsd:string,
+        "Statistical Coupling Analysis"^^xsd:string,
+        "Statistics"^^xsd:string,
+        "Storytelling"^^xsd:string,
+        "Strategic Thinking"^^xsd:string,
+        "Student Development"^^xsd:string,
+        "Student Information Systems"^^xsd:string,
+        "Student Marketing"^^xsd:string,
+        "Sustainability"^^xsd:string,
+        "Systems Theories"^^xsd:string,
+        "Systems Thinking"^^xsd:string,
+        "Teaching"^^xsd:string,
+        "Technical Communication"^^xsd:string,
+        "Threading Building Blocks"^^xsd:string,
+        "Toolkits"^^xsd:string,
+        "Translations"^^xsd:string,
+        "Transparency (Human-Computer Interaction)"^^xsd:string,
+        "Truthful"^^xsd:string,
+        "User Experience"^^xsd:string,
+        "User-Centered Design"^^xsd:string,
+        "Video Game Design"^^xsd:string,
+        "Visual Effects"^^xsd:string,
+        "Visualization"^^xsd:string,
+        "Workflows"^^xsd:string,
+        "Writing"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Applied Generative AI and Large Language Models"^^xsd:string,
+        "Behavioral Science and Public Policy"^^xsd:string,
+        "Building Data Products for Public Impact"^^xsd:string,
+        "Calling Bullshit: The Art of Skepticism in a Data Driven World"^^xsd:string,
+        "Climate, People, and Informatics"^^xsd:string,
+        "Cultural Analytics"^^xsd:string,
+        "Designing Future Systems"^^xsd:string,
+        "Fundamentals of Generative AI"^^xsd:string,
+        "Future of Cybersecurity Working Group"^^xsd:string,
+        "Global Rights Innovation Lab Advanced Clinic"^^xsd:string,
+        "Global Rights Innovation Lab Clinic"^^xsd:string,
+        "Global Rights Innovation Lab Clinic Seminar"^^xsd:string,
+        "Human-Centered AI"^^xsd:string,
+        "Interaction Design"^^xsd:string,
+        "Knowledge Representation for Intelligent Applications"^^xsd:string,
+        "Markets and Information: Ethics, Theory and Applications"^^xsd:string,
+        "Playful Design & Gamification"^^xsd:string,
+        "Political Visions, Design, and Governance"^^xsd:string,
+        "Presentation, Pitch, and Consulting Skills"^^xsd:string,
+        "Product, Design, and Leadership Workshop"^^xsd:string,
+        "Public Interest Technology Clinic"^^xsd:string,
+        "Storytelling for Your UX Portfolio"^^xsd:string,
+        "Tech Policy Practicum"^^xsd:string,
+        "UX for AI"^^xsd:string ;
+    schema:numberOfCredits 1,
+        2,
+        3,
+        4 .
+
+ex:INFO290M a schema:Course ;
+    ex:hasTopics "Agile Product Management"^^xsd:string,
+        "Collaboration"^^xsd:string,
+        "Decision Making"^^xsd:string,
+        "Drawing"^^xsd:string,
+        "Experimentation"^^xsd:string,
+        "Good Manufacturing Practices"^^xsd:string,
+        "Industry Practices"^^xsd:string,
+        "Integrated Product Team"^^xsd:string,
+        "Investments"^^xsd:string,
+        "Lean Product Development"^^xsd:string,
+        "Lecturing"^^xsd:string,
+        "Problem Solving"^^xsd:string,
+        "Product Management"^^xsd:string,
+        "Research Design"^^xsd:string,
+        "Sales"^^xsd:string,
+        "Student Development Theory"^^xsd:string,
+        "Team Management"^^xsd:string,
+        "User Research"^^xsd:string ;
+    schema:courseCode "INFO 290M"^^xsd:string ;
+    schema:name "Leading Empowered Product Teams"^^xsd:string,
+        "Lean/Agile Product Management"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290S a schema:Course ;
+    ex:hasTopics "Academic Writing"^^xsd:string,
+        "Acceptance and Commitment Therapy (ACT)"^^xsd:string,
+        "Advertisement"^^xsd:string,
+        "Algorithms"^^xsd:string,
+        "Analytics"^^xsd:string,
+        "Artificial Intelligence"^^xsd:string,
+        "Business Model"^^xsd:string,
+        "Collections"^^xsd:string,
+        "Communications"^^xsd:string,
+        "Conceptualization"^^xsd:string,
+        "Corporate Laws"^^xsd:string,
+        "Data Collection"^^xsd:string,
+        "Data Encoding"^^xsd:string,
+        "Debating"^^xsd:string,
+        "Digital Advertising"^^xsd:string,
+        "Digital Data Systems"^^xsd:string,
+        "Drawing"^^xsd:string,
+        "Economics"^^xsd:string,
+        "Encodings"^^xsd:string,
+        "Encryption"^^xsd:string,
+        "European Union Laws"^^xsd:string,
+        "FourGen Computer-Aided Software Engineering (CASE) Tools"^^xsd:string,
+        "Framing (HTML)"^^xsd:string,
+        "Governance"^^xsd:string,
+        "Information Infrastructure"^^xsd:string,
+        "Information Security Management"^^xsd:string,
+        "Infrastructure"^^xsd:string,
+        "Innovation"^^xsd:string,
+        "Interactivity"^^xsd:string,
+        "International Relations"^^xsd:string,
+        "Internet Security"^^xsd:string,
+        "Legibility"^^xsd:string,
+        "Machine Learning"^^xsd:string,
+        "Missile Technology Control Regime (Arms Control)"^^xsd:string,
+        "Persistence"^^xsd:string,
+        "Polarization"^^xsd:string,
+        "Privacy Impact Assessments"^^xsd:string,
+        "Professionalism"^^xsd:string,
+        "Public Policies"^^xsd:string,
+        "Quantification"^^xsd:string,
+        "Robotics"^^xsd:string,
+        "Scale (Map)"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string,
+        "Social Media"^^xsd:string,
+        "Socialization"^^xsd:string,
+        "Surveys"^^xsd:string,
+        "Trajectory"^^xsd:string ;
+    schema:courseCode "INFO 290S"^^xsd:string ;
+    schema:name "Data, Power, and Infrastructure"^^xsd:string,
+        "Introduction to Politics of Information"^^xsd:string,
+        "Seminar in the Politics of Information"^^xsd:string,
+        "War? Politics, Security, and Emerging Technologies"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290T a schema:Course ;
+    ex:hasTopics "Agility"^^xsd:string,
+        "Biological Systems"^^xsd:string,
+        "Biology"^^xsd:string,
+        "C# (Programming Language)"^^xsd:string,
+        "Centering"^^xsd:string,
+        "Certified EKG/ECG Technician"^^xsd:string,
+        "Clinical Research Ethics"^^xsd:string,
+        "Clinical Study Design"^^xsd:string,
+        "Communications"^^xsd:string,
+        "Computer Vision"^^xsd:string,
+        "Contextual Image Classification"^^xsd:string,
+        "Continuous Delivery"^^xsd:string,
+        "Continuous Integration"^^xsd:string,
+        "Control Limits"^^xsd:string,
+        "Data Analysis"^^xsd:string,
+        "Data Engineering"^^xsd:string,
+        "Data Science"^^xsd:string,
+        "Deep Learning"^^xsd:string,
+        "Digital Cameras"^^xsd:string,
+        "E (Programming Language)"^^xsd:string,
+        "Electronic Design Automation (EDA) Software"^^xsd:string,
+        "Engineering Design Process"^^xsd:string,
+        "Eyes"^^xsd:string,
+        "Health Data Management"^^xsd:string,
+        "Image Processing"^^xsd:string,
+        "Imaging"^^xsd:string,
+        "Industry Standard Architecture"^^xsd:string,
+        "Installation"^^xsd:string,
+        "IntelliJ IDEA"^^xsd:string,
+        "Interrogations"^^xsd:string,
+        "Java (Programming Language)"^^xsd:string,
+        "Mental Health Court"^^xsd:string,
+        "Needs Assessment"^^xsd:string,
+        "Object-Oriented Programming (OOP)"^^xsd:string,
+        "Pair Programming"^^xsd:string,
+        "Physiology"^^xsd:string,
+        "Programming (Music)"^^xsd:string,
+        "Research"^^xsd:string,
+        "Research Papers"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string,
+        "Socialization"^^xsd:string,
+        "Software Development"^^xsd:string,
+        "Stewardship"^^xsd:string,
+        "Student Information Systems"^^xsd:string,
+        "Surveys"^^xsd:string,
+        "Teaching"^^xsd:string,
+        "Technical Communication"^^xsd:string,
+        "Test-Driven Development (TDD)"^^xsd:string,
+        "User Generated Content"^^xsd:string,
+        "User-Centered Design"^^xsd:string,
+        "Visualization"^^xsd:string,
+        "Writing"^^xsd:string ;
+    schema:courseCode "INFO 290T"^^xsd:string ;
+    schema:name "Agile Engineering Practices"^^xsd:string,
+        "Biosensory Computing"^^xsd:string,
+        "Computer Vision"^^xsd:string,
+        "Human-Centered AI"^^xsd:string,
+        "Human-Centered Data Management"^^xsd:string ;
+    schema:numberOfCredits 2,
+        3 .
+
+ex:INFO294 a schema:Course ;
+    ex:hasTopics "Article (Publishing)"^^xsd:string,
+        "Research"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string,
+        "Socialization"^^xsd:string,
+        "pH Meters"^^xsd:string ;
+    schema:courseCode "INFO 294"^^xsd:string ;
+    schema:name "Doctoral Research and Theory Workshop"^^xsd:string ;
+    schema:numberOfCredits 2 .
+
+ex:INFO295 a schema:Course ;
+    ex:hasTopics "Scholastic READ 180"^^xsd:string,
+        "pH Meters"^^xsd:string ;
+    schema:courseCode "INFO 295"^^xsd:string ;
+    schema:name "Doctoral Colloquium"^^xsd:string ;
+    schema:numberOfCredits 1 .
+
+ex:INFO296A a schema:Course ;
+    ex:hasTopics "Game Design"^^xsd:string,
+        "Information Economics"^^xsd:string,
+        "Information Management"^^xsd:string,
+        "Information Sciences"^^xsd:string,
+        "Interface Design"^^xsd:string,
+        "Language Model"^^xsd:string,
+        "Mechanics"^^xsd:string,
+        "Proposal Development"^^xsd:string,
+        "Research"^^xsd:string,
+        "Social Media"^^xsd:string,
+        "Social Psychology"^^xsd:string,
+        "Socialization"^^xsd:string,
+        "Storytelling"^^xsd:string,
+        "Surveys"^^xsd:string,
+        "Teaching"^^xsd:string,
+        "User Interface"^^xsd:string,
+        "User Interface Design"^^xsd:string,
+        "Virtual Reality"^^xsd:string ;
+    schema:courseCode "INFO 296A"^^xsd:string ;
+    schema:name "Information Access Seminar"^^xsd:string,
+        "Ludology: Critical Study of Games, Game Design, and Culture"^^xsd:string,
+        "Misinformation in the Era of ChatGPT"^^xsd:string ;
+    schema:numberOfCredits 2,
+        3 .
+
+ex:INFO375 a schema:Course ;
+    ex:hasTopics "Information Management"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string,
+        "Supervision"^^xsd:string,
+        "Teaching"^^xsd:string ;
+    schema:courseCode "INFO 375"^^xsd:string ;
+    schema:name "Teaching Assistance Practicum"^^xsd:string ;
+    schema:numberOfCredits 2 .
+
+ex:INFOC262 a schema:Course ;
+    ex:hasTopics "Experimentation"^^xsd:string,
+        "Framework Design"^^xsd:string,
+        "Human-Computer Interaction"^^xsd:string,
+        "Interactivity"^^xsd:string,
+        "Lecturing"^^xsd:string,
+        "New Media"^^xsd:string,
+        "Physical Computing"^^xsd:string,
+        "Prototyping"^^xsd:string,
+        "User Interface"^^xsd:string,
+        "Writing"^^xsd:string ;
+    schema:courseCode "INFO C262"^^xsd:string ;
+    schema:name "Theory and Practice of Tangible User Interfaces"^^xsd:string ;
+    schema:numberOfCredits 4 .
+
+ex:INFOC265 a schema:Course ;
+    ex:hasTopics "Aesthetics"^^xsd:string,
+        "Color Layout Descriptor"^^xsd:string,
+        "E (Programming Language)"^^xsd:string,
+        "Iconography"^^xsd:string,
+        "Learning Experience Design"^^xsd:string,
+        "Lecturing"^^xsd:string,
+        "Mobile Devices"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string,
+        "Typography"^^xsd:string,
+        "User Interface"^^xsd:string,
+        "Visual Design"^^xsd:string ;
+    schema:courseCode "INFO C265"^^xsd:string ;
+    schema:name "Interface Aesthetics"^^xsd:string ;
+    schema:numberOfCredits 3 .
+

@@ -7,8 +7,8 @@ ex:INFO103 a schema:Course ;
         "Number Systems"^^xsd:string,
         "Social Media"^^xsd:string,
         "Surveying"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO103_Spring2023,
+        ex:INFO103_Spring2024 ;
     schema:courseCode "INFO 103"^^xsd:string ;
     schema:name "History of Information"^^xsd:string ;
     schema:numberOfCredits 4 .
@@ -19,10 +19,10 @@ ex:INFO114 a schema:Course ;
         "Lecturing"^^xsd:string,
         "Prototyping"^^xsd:string,
         "Term Life Insurance"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO114_Spring2023,
+        ex:INFO114_Spring2024,
+        ex:INFO114_Spring2025,
+        ex:INFO114_Spring2026 ;
     schema:courseCode "INFO 114"^^xsd:string ;
     schema:name "User Experience Research"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -40,7 +40,7 @@ ex:INFO134 a schema:Course ;
         "Information Organization"^^xsd:string,
         "Information Technology"^^xsd:string,
         "Public Policies"^^xsd:string ;
-    ex:semester "2024 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO134_Spring2024 ;
     schema:courseCode "INFO 134"^^xsd:string ;
     schema:name "Information Technology Economics, Strategy, and Policy"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -59,9 +59,9 @@ ex:INFO153A a schema:Course ;
         "Tablets"^^xsd:string,
         "User Interface"^^xsd:string,
         "Web Applications"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO153A_Fall2023,
+        ex:INFO153A_Fall2024,
+        ex:INFO153A_Fall2025 ;
     schema:courseCode "INFO 153A"^^xsd:string ;
     schema:name "Front-End Web Architecture"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -84,10 +84,10 @@ ex:INFO153B a schema:Course ;
         "Surveys"^^xsd:string,
         "Web Applications"^^xsd:string,
         "Web Technologies Certificates"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO153B_Spring2023,
+        ex:INFO153B_Spring2024,
+        ex:INFO153B_Spring2025,
+        ex:INFO153B_Spring2026 ;
     schema:courseCode "INFO 153B"^^xsd:string ;
     schema:name "Back-End Web Architecture"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -107,10 +107,10 @@ ex:INFO159 a schema:Course ;
         "Part-of-Speech Tagging"^^xsd:string,
         "Social Computing"^^xsd:string,
         "Social Sciences"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO159_Spring2023,
+        ex:INFO159_Spring2024,
+        ex:INFO159_Spring2025,
+        ex:INFO159_Spring2026 ;
     schema:courseCode "INFO 159"^^xsd:string ;
     schema:name "Natural Language Processing"^^xsd:string ;
     schema:numberOfCredits 4 .
@@ -130,7 +130,7 @@ ex:INFO188 a schema:Course ;
         "Socialization"^^xsd:string,
         "Storages"^^xsd:string,
         "Student Development"^^xsd:string ;
-    ex:semester "2024 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO188_Fall2024 ;
     schema:courseCode "INFO 188"^^xsd:string ;
     schema:name "Behind the Data: Humans and Values"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -142,7 +142,7 @@ ex:INFO190 a schema:Course ;
         "Dissection"^^xsd:string,
         "Social Media"^^xsd:string,
         "Statistics"^^xsd:string ;
-    ex:semester "2024 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO190_Spring2024 ;
     schema:courseCode "INFO 190"^^xsd:string ;
     schema:name "Calling Bullshit: The Art of Skepticism in a Data Driven World"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -157,13 +157,13 @@ ex:INFO201 a schema:Course ;
         "Scholastic READ 180"^^xsd:string,
         "Strategic Decision-Making"^^xsd:string,
         "Teaching"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2023 Spring"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Fall"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO201_Fall2023,
+        ex:INFO201_Fall2024,
+        ex:INFO201_Fall2025,
+        ex:INFO201_Spring2023,
+        ex:INFO201_Spring2024,
+        ex:INFO201_Spring2025,
+        ex:INFO201_Spring2026 ;
     schema:courseCode "INFO 201"^^xsd:string ;
     schema:name "Research Design and Applications for Data and Analysis"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -176,9 +176,9 @@ ex:INFO202 a schema:Course ;
         "Metadata"^^xsd:string,
         "Semantics"^^xsd:string,
         "Vocabulary"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO202_Fall2023,
+        ex:INFO202_Fall2024,
+        ex:INFO202_Fall2025 ;
     schema:courseCode "INFO 202"^^xsd:string ;
     schema:name "Information Organization and Retrieval"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -188,10 +188,10 @@ ex:INFO203 a schema:Course ;
         "Information Technology"^^xsd:string,
         "Interactivity"^^xsd:string,
         "Socialization"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO203_Spring2023,
+        ex:INFO203_Spring2024,
+        ex:INFO203_Spring2025,
+        ex:INFO203_Spring2026 ;
     schema:courseCode "INFO 203"^^xsd:string ;
     schema:name "Social Issues of Information"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -202,13 +202,12 @@ ex:INFO205 a schema:Course ;
         "Copyright Laws"^^xsd:string,
         "Cybersecurity Compliance"^^xsd:string,
         "Data Server Interface"^^xsd:string,
-        "Data Warehouse Architectures"^^xsd:string,
         "Information And Communications Technology"^^xsd:string,
         "Social Media"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO205_Spring2023,
+        ex:INFO205_Spring2024,
+        ex:INFO205_Spring2025,
+        ex:INFO205_Spring2026 ;
     schema:courseCode "INFO 205"^^xsd:string ;
     schema:name "Information Law and Policy"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -227,9 +226,9 @@ ex:INFO206A a schema:Course ;
         "Simulations"^^xsd:string,
         "Text Processing"^^xsd:string,
         "Writing"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO206A_Fall2023,
+        ex:INFO206A_Fall2024,
+        ex:INFO206A_Fall2025 ;
     schema:courseCode "INFO 206A"^^xsd:string ;
     schema:name "Introduction to Programming and Computation"^^xsd:string ;
     schema:numberOfCredits 2 .
@@ -238,13 +237,13 @@ ex:INFO206B a schema:Course ;
     ex:hasTopics "Array Data Structures"^^xsd:string,
         "Data Science"^^xsd:string,
         "Data Structures"^^xsd:string,
-        "Exploratory Data Analysis"^^xsd:string,
-        "Good Manufacturing Practices"^^xsd:string,
+        "Financial Data Analysis"^^xsd:string,
+        "Good Laboratory Practice (GLP)"^^xsd:string,
         "Python (Programming Language)"^^xsd:string,
         "Writing"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO206B_Fall2023,
+        ex:INFO206B_Fall2024,
+        ex:INFO206B_Fall2025 ;
     schema:courseCode "INFO 206B"^^xsd:string ;
     schema:name "Introduction to Data Structures and Analytics"^^xsd:string ;
     schema:numberOfCredits 2 .
@@ -257,9 +256,9 @@ ex:INFO213 a schema:Course ;
         "Student Development Theory"^^xsd:string,
         "User Experience"^^xsd:string,
         "User-Centered Design"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO213_Fall2023,
+        ex:INFO213_Fall2024,
+        ex:INFO213_Fall2025 ;
     schema:courseCode "INFO 213"^^xsd:string ;
     schema:name "Introduction to User Experience Design"^^xsd:string ;
     schema:numberOfCredits 4 .
@@ -276,10 +275,10 @@ ex:INFO214 a schema:Course ;
         "Translations"^^xsd:string,
         "Usability"^^xsd:string,
         "User Experience"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO214_Spring2023,
+        ex:INFO214_Spring2024,
+        ex:INFO214_Spring2025,
+        ex:INFO214_Spring2026 ;
     schema:courseCode "INFO 214"^^xsd:string ;
     schema:name "User Experience Research"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -295,8 +294,8 @@ ex:INFO215 a schema:Course ;
         "Productivity Software"^^xsd:string,
         "Project-Based Solutions"^^xsd:string,
         "Prototyping"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO215_Fall2023,
+        ex:INFO215_Fall2024 ;
     schema:courseCode "INFO 215"^^xsd:string ;
     schema:name "Product Design Studio"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -309,7 +308,7 @@ ex:INFO217A a schema:Course ;
         "Research Papers"^^xsd:string,
         "Scholastic READ 180"^^xsd:string,
         "Social Computing"^^xsd:string ;
-    ex:semester "2024 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO217A_Spring2024 ;
     schema:courseCode "INFO 217A"^^xsd:string ;
     schema:name "Human-Computer Interaction (HCI) Research"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -322,11 +321,11 @@ ex:INFO218 a schema:Course ;
         "Economics"^^xsd:string,
         "Information Theory"^^xsd:string,
         "Intellectual Property"^^xsd:string,
-        "Label Information Base"^^xsd:string,
         "Lecturing"^^xsd:string,
+        "Management Information Base"^^xsd:string,
         "Social Sciences"^^xsd:string ;
-    ex:semester "2024 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO218_Spring2024,
+        ex:INFO218_Spring2026 ;
     schema:courseCode "INFO 218"^^xsd:string ;
     schema:name "Concepts of Information"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -341,10 +340,10 @@ ex:INFO225 a schema:Course ;
         "Social Psychology"^^xsd:string,
         "Socialization"^^xsd:string,
         "Team Management"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO225_Fall2023,
+        ex:INFO225_Fall2024,
+        ex:INFO225_Fall2025,
+        ex:INFO225_Spring2026 ;
     schema:courseCode "INFO 225"^^xsd:string ;
     schema:name "Foundations of Leadership and Influence in Tech"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -361,7 +360,7 @@ ex:INFO230 a schema:Course ;
         "Scale (Map)"^^xsd:string,
         "Scholastic READ 180"^^xsd:string,
         "Social Sciences"^^xsd:string ;
-    ex:semester "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO230_Spring2026 ;
     schema:courseCode "INFO 230"^^xsd:string ;
     schema:name "Cultural Analytics: Theories and Methods"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -378,7 +377,7 @@ ex:INFO231 a schema:Course ;
         "Social Psychology"^^xsd:string,
         "Statistics"^^xsd:string,
         "Surveys"^^xsd:string ;
-    ex:semester "2024 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO231_Fall2024 ;
     schema:courseCode "INFO 231"^^xsd:string ;
     schema:name "Decisions and Algorithms"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -388,7 +387,7 @@ ex:INFO232 a schema:Course ;
         "Perspective (Graphical)"^^xsd:string,
         "Smart Systems"^^xsd:string,
         "Testability"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO232_Spring2023 ;
     schema:courseCode "INFO 232"^^xsd:string ;
     schema:name "Applied Behavioral Economics"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -409,10 +408,10 @@ ex:INFO233 a schema:Course ;
         "Sociology"^^xsd:string,
         "Software Systems"^^xsd:string,
         "Wearables"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO233_Spring2023,
+        ex:INFO233_Spring2024,
+        ex:INFO233_Spring2025,
+        ex:INFO233_Spring2026 ;
     schema:courseCode "INFO 233"^^xsd:string ;
     schema:name "Social Psychology and Information Technology"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -431,7 +430,7 @@ ex:INFO234 a schema:Course ;
         "Information Technology"^^xsd:string,
         "Lecturing"^^xsd:string,
         "Public Policies"^^xsd:string ;
-    ex:semester "2024 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO234_Spring2024 ;
     schema:courseCode "INFO 234"^^xsd:string ;
     schema:name "Information Technology Economics, Strategy, and Policy"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -446,7 +445,7 @@ ex:INFO239 a schema:Course ;
         "Source Codes"^^xsd:string,
         "Technical Solution Design"^^xsd:string,
         "Transparency (Human-Computer Interaction)"^^xsd:string ;
-    ex:semester "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO239_Fall2025 ;
     schema:courseCode "INFO 239"^^xsd:string ;
     schema:name "Technology and Delegation"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -457,9 +456,9 @@ ex:INFO241 a schema:Course ;
         "Experimentation"^^xsd:string,
         "Information Technology"^^xsd:string,
         "Research"^^xsd:string ;
-    ex:semester "2024 Fall"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO241_Fall2024,
+        ex:INFO241_Fall2025,
+        ex:INFO241_Spring2024 ;
     schema:courseCode "INFO 241"^^xsd:string ;
     schema:name "Experiments and Causal Inference"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -472,9 +471,9 @@ ex:INFO247 a schema:Course ;
         "Usability"^^xsd:string,
         "Visual Perception"^^xsd:string,
         "Visualization"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO247_Spring2023,
+        ex:INFO247_Spring2025,
+        ex:INFO247_Spring2026 ;
     schema:courseCode "INFO 247"^^xsd:string ;
     schema:name "Information Visualization and Presentation"^^xsd:string ;
     schema:numberOfCredits 3,
@@ -488,10 +487,10 @@ ex:INFO251 a schema:Course ;
         "Programming (Music)"^^xsd:string,
         "Statistics"^^xsd:string,
         "Supervision"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO251_Spring2023,
+        ex:INFO251_Spring2024,
+        ex:INFO251_Spring2025,
+        ex:INFO251_Spring2026 ;
     schema:courseCode "INFO 251"^^xsd:string ;
     schema:name "Applied Machine Learning"^^xsd:string ;
     schema:numberOfCredits 4 .
@@ -510,9 +509,9 @@ ex:INFO253A a schema:Course ;
         "Tablets"^^xsd:string,
         "User Interface"^^xsd:string,
         "Web Applications"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO253A_Fall2023,
+        ex:INFO253A_Fall2024,
+        ex:INFO253A_Fall2025 ;
     schema:courseCode "INFO 253A"^^xsd:string ;
     schema:name "Front-End Web Architecture"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -534,10 +533,10 @@ ex:INFO253B a schema:Course ;
         "Surveys"^^xsd:string,
         "Web Applications"^^xsd:string,
         "Web Technologies Certificates"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO253B_Spring2023,
+        ex:INFO253B_Spring2024,
+        ex:INFO253B_Spring2025,
+        ex:INFO253B_Spring2026 ;
     schema:courseCode "INFO 253B"^^xsd:string ;
     schema:name "Back-End Web Architecture"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -549,9 +548,9 @@ ex:INFO255 a schema:Course ;
         "Information Systems"^^xsd:string,
         "Phase (Waves)"^^xsd:string,
         "Systems Engineering"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO255_Spring2023,
+        ex:INFO255_Spring2024,
+        ex:INFO255_Spring2025 ;
     schema:courseCode "INFO 255"^^xsd:string ;
     schema:name "Privacy Engineering"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -573,18 +572,18 @@ ex:INFO256 a schema:Course ;
         "Text Classification"^^xsd:string,
         "Text Parsing"^^xsd:string,
         "Text Processing"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO256_Fall2023,
+        ex:INFO256_Fall2024,
+        ex:INFO256_Fall2025 ;
     schema:courseCode "INFO 256"^^xsd:string ;
     schema:name "Applied Natural Language Processing"^^xsd:string ;
     schema:numberOfCredits 3 .
 
 ex:INFO258 a schema:Course ;
-    ex:hasTopics "Clinical Data Management"^^xsd:string,
-        "Collaboration"^^xsd:string,
+    ex:hasTopics "Collaboration"^^xsd:string,
         "Data Analysis"^^xsd:string,
         "Data Management"^^xsd:string,
+        "Financial Data Management"^^xsd:string,
         "Life Cycle Engineering"^^xsd:string,
         "Machine Learning"^^xsd:string,
         "Machine Learning Methods"^^xsd:string,
@@ -594,8 +593,8 @@ ex:INFO258 a schema:Course ;
         "Scale (Map)"^^xsd:string,
         "Use Case Diagram"^^xsd:string,
         "Visualization"^^xsd:string ;
-    ex:semester "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO258_Spring2024,
+        ex:INFO258_Spring2025 ;
     schema:courseCode "INFO 258"^^xsd:string ;
     schema:name "Data Engineering"^^xsd:string ;
     schema:numberOfCredits 4 .
@@ -615,10 +614,10 @@ ex:INFO259 a schema:Course ;
         "Part-of-Speech Tagging"^^xsd:string,
         "Social Computing"^^xsd:string,
         "Social Sciences"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO259_Spring2023,
+        ex:INFO259_Spring2024,
+        ex:INFO259_Spring2025,
+        ex:INFO259_Spring2026 ;
     schema:courseCode "INFO 259"^^xsd:string ;
     schema:name "Natural Language Processing"^^xsd:string ;
     schema:numberOfCredits 4 .
@@ -634,9 +633,9 @@ ex:INFO271B a schema:Course ;
         "Research Design"^^xsd:string,
         "Statistics"^^xsd:string,
         "Survey Data Analysis"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO271B_Fall2023,
+        ex:INFO271B_Fall2024,
+        ex:INFO271B_Fall2025 ;
     schema:courseCode "INFO 271B"^^xsd:string ;
     schema:name "Quantitative Research Methods for Information Systems and Management"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -649,9 +648,9 @@ ex:INFO272 a schema:Course ;
         "Lecturing"^^xsd:string,
         "Naturalistic Observation"^^xsd:string,
         "Qualitative Research"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO272_Fall2023,
+        ex:INFO272_Fall2024,
+        ex:INFO272_Fall2025 ;
     schema:courseCode "INFO 272"^^xsd:string ;
     schema:name "Qualitative Research Methods for Information Systems and Management"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -666,24 +665,24 @@ ex:INFO283 a schema:Course ;
         "Management"^^xsd:string,
         "Public Health"^^xsd:string,
         "Sociology"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO283_Spring2023,
+        ex:INFO283_Spring2024 ;
     schema:courseCode "INFO 283"^^xsd:string ;
     schema:name "Information and Communications Technology for Development"^^xsd:string ;
     schema:numberOfCredits 3 .
 
 ex:INFO287 a schema:Course ;
-    ex:hasTopics "Business Model"^^xsd:string,
+    ex:hasTopics "Agile Product Development"^^xsd:string,
+        "Business Model"^^xsd:string,
         "Concept Testing"^^xsd:string,
         "Iterative Design"^^xsd:string,
-        "New Product Development"^^xsd:string,
         "New Ventures"^^xsd:string,
         "Prototype (Computer Science)"^^xsd:string,
         "Refining"^^xsd:string,
         "Socialization"^^xsd:string,
         "Sustainable Business"^^xsd:string,
         "Validations"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO287_Fall2023 ;
     schema:courseCode "INFO 287"^^xsd:string ;
     schema:name "Entrepreneurship: New Venture Discovery"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -703,8 +702,8 @@ ex:INFO288 a schema:Course ;
         "Social Sciences"^^xsd:string,
         "Statistics"^^xsd:string,
         "Student Development Theory"^^xsd:string ;
-    ex:semester "2024 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO288_Spring2024,
+        ex:INFO288_Spring2026 ;
     schema:courseCode "INFO 288"^^xsd:string ;
     schema:name "Big Data and Development"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -715,13 +714,13 @@ ex:INFO289 a schema:Course ;
         "Political Sociology"^^xsd:string,
         "Supervision"^^xsd:string,
         "Vulnerability"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2023 Spring"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Fall"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO289_Fall2023,
+        ex:INFO289_Fall2024,
+        ex:INFO289_Fall2025,
+        ex:INFO289_Spring2023,
+        ex:INFO289_Spring2024,
+        ex:INFO289_Spring2025,
+        ex:INFO289_Spring2026 ;
     schema:courseCode "INFO 289"^^xsd:string ;
     schema:name "Public Interest Cybersecurity: The Cybersecurity Clinic Practicum"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -732,11 +731,11 @@ ex:INFO290M a schema:Course ;
         "Decision Making"^^xsd:string,
         "Drawing"^^xsd:string,
         "Experimentation"^^xsd:string,
-        "Food Product Development"^^xsd:string,
-        "Good Manufacturing Practices"^^xsd:string,
+        "Good Laboratory Practice (GLP)"^^xsd:string,
         "Industry Practices"^^xsd:string,
         "Integrated Product Team"^^xsd:string,
         "Investments"^^xsd:string,
+        "Lean Product Development"^^xsd:string,
         "Lecturing"^^xsd:string,
         "Problem Solving"^^xsd:string,
         "Product Management"^^xsd:string,
@@ -745,10 +744,10 @@ ex:INFO290M a schema:Course ;
         "Student Development Theory"^^xsd:string,
         "Team Management"^^xsd:string,
         "User Research"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO290M_Fall2023,
+        ex:INFO290M_Fall2024,
+        ex:INFO290M_Fall2025,
+        ex:INFO290M_Spring2024 ;
     schema:courseCode "INFO 290M"^^xsd:string ;
     schema:name "Leading Empowered Product Teams"^^xsd:string,
         "Lean/Agile Product Management"^^xsd:string ;
@@ -802,10 +801,10 @@ ex:INFO290S a schema:Course ;
         "Socialization"^^xsd:string,
         "Surveys"^^xsd:string,
         "Trajectory"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2023 Spring"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2024 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290S_Fall2023,
+        ex:INFO290S_Fall2024,
+        ex:INFO290S_Spring2023,
+        ex:INFO290S_Spring2024 ;
     schema:courseCode "INFO 290S"^^xsd:string ;
     schema:name "Data, Power, and Infrastructure"^^xsd:string,
         "Introduction to Politics of Information"^^xsd:string,
@@ -820,7 +819,6 @@ ex:INFO290T a schema:Course ;
         "C# (Programming Language)"^^xsd:string,
         "Centering"^^xsd:string,
         "Certified EKG/ECG Technician"^^xsd:string,
-        "Clinical Data Management"^^xsd:string,
         "Clinical Research Ethics"^^xsd:string,
         "Clinical Study Design"^^xsd:string,
         "Communications"^^xsd:string,
@@ -838,6 +836,7 @@ ex:INFO290T a schema:Course ;
         "Electronic Design Automation (EDA) Software"^^xsd:string,
         "Engineering Design Process"^^xsd:string,
         "Eyes"^^xsd:string,
+        "Financial Data Management"^^xsd:string,
         "Image Processing"^^xsd:string,
         "Imaging"^^xsd:string,
         "Industry Standard Architecture"^^xsd:string,
@@ -845,7 +844,7 @@ ex:INFO290T a schema:Course ;
         "IntelliJ IDEA"^^xsd:string,
         "Interrogations"^^xsd:string,
         "Java (Programming Language)"^^xsd:string,
-        "Mental Health Consumer"^^xsd:string,
+        "Mental Health Assessments"^^xsd:string,
         "Needs Assessment"^^xsd:string,
         "Object-Oriented Programming (OOP)"^^xsd:string,
         "Pair Programming"^^xsd:string,
@@ -866,10 +865,10 @@ ex:INFO290T a schema:Course ;
         "User-Centered Design"^^xsd:string,
         "Visualization"^^xsd:string,
         "Writing"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290T_Fall2023,
+        ex:INFO290T_Spring2023,
+        ex:INFO290T_Spring2024,
+        ex:INFO290T_Spring2025 ;
     schema:courseCode "INFO 290T"^^xsd:string ;
     schema:name "Agile Engineering Practices"^^xsd:string,
         "Biosensory Computing"^^xsd:string,
@@ -885,9 +884,9 @@ ex:INFO290_applied_generative_ai_and_larg a schema:Course ;
         "Graphing"^^xsd:string,
         "Integration"^^xsd:string,
         "Mitigation"^^xsd:string,
-        "Open Source Intelligence"^^xsd:string,
+        "Open Source Technology"^^xsd:string,
         "Toolkits"^^xsd:string ;
-    ex:semester "2025 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_applied_generative_ai_and_larg_Spring2025 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Applied Generative AI and Large Language Models"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -901,8 +900,8 @@ ex:INFO290_behavioral_science_and_public_ a schema:Course ;
         "Economy"^^xsd:string,
         "Lecturing"^^xsd:string,
         "Psychology"^^xsd:string ;
-    ex:semester "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO290_behavioral_science_and_public__Fall2024,
+        ex:INFO290_behavioral_science_and_public__Fall2025 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Behavioral Science and Public Policy"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -917,10 +916,10 @@ ex:INFO290_building_data_products_for_pub a schema:Course ;
         "Product Requirements"^^xsd:string,
         "Public Policies"^^xsd:string,
         "Refining"^^xsd:string,
-        "SAS Statistical Analysis"^^xsd:string,
+        "Statistical Coupling Analysis"^^xsd:string,
         "Student Development"^^xsd:string,
         "Truthful"^^xsd:string ;
-    ex:semester "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO290_building_data_products_for_pub_Fall2025 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Building Data Products for Public Impact"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -932,7 +931,7 @@ ex:INFO290_calling_bullshit_the_art_of_sk a schema:Course ;
         "Dissection"^^xsd:string,
         "Social Media"^^xsd:string,
         "Statistics"^^xsd:string ;
-    ex:semester "2024 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_calling_bullshit_the_art_of_sk_Spring2024 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Calling Bullshit: The Art of Skepticism in a Data Driven World"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -954,9 +953,9 @@ ex:INFO290_climate_people_and_informatics a schema:Course ;
         "Scholastic READ 180"^^xsd:string,
         "Sustainability"^^xsd:string,
         "Systems Thinking"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO290_climate_people_and_informatics_Fall2024,
+        ex:INFO290_climate_people_and_informatics_Fall2025,
+        ex:INFO290_climate_people_and_informatics_Spring2023 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Climate, People, and Informatics"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -971,10 +970,10 @@ ex:INFO290_cultural_analytics a schema:Course ;
         "Product Requirements"^^xsd:string,
         "Public Policies"^^xsd:string,
         "Refining"^^xsd:string,
-        "SAS Statistical Analysis"^^xsd:string,
+        "Statistical Coupling Analysis"^^xsd:string,
         "Student Development"^^xsd:string,
         "Truthful"^^xsd:string ;
-    ex:semester "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO290_cultural_analytics_Fall2025 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Cultural Analytics"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -993,13 +992,13 @@ ex:INFO290_designing_future_systems a schema:Course ;
         "Mapping"^^xsd:string,
         "Product Design"^^xsd:string,
         "Product Management"^^xsd:string,
-        "Prototype (Manufacturing)"^^xsd:string,
+        "Prototype (Computer Science)"^^xsd:string,
         "Prototyping"^^xsd:string,
         "Scenario Planning"^^xsd:string,
         "Systems Theories"^^xsd:string,
         "Toolkits"^^xsd:string,
         "Translations"^^xsd:string ;
-    ex:semester "2025 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_designing_future_systems_Spring2025 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Designing Future Systems"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -1018,7 +1017,7 @@ ex:INFO290_fundamentals_of_generative_ai a schema:Course ;
         "Scholastic READ 180"^^xsd:string,
         "Student Development"^^xsd:string,
         "Threading Building Blocks"^^xsd:string ;
-    ex:semester "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_fundamentals_of_generative_ai_Spring2026 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Fundamentals of Generative AI"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -1033,16 +1032,15 @@ ex:INFO290_future_of_cybersecurity_workin a schema:Course ;
         "Research"^^xsd:string,
         "Scholastic READ 180"^^xsd:string,
         "Writing"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_future_of_cybersecurity_workin_Fall2023,
+        ex:INFO290_future_of_cybersecurity_workin_Spring2023,
+        ex:INFO290_future_of_cybersecurity_workin_Spring2024 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Future of Cybersecurity Working Group"^^xsd:string ;
     schema:numberOfCredits 1 .
 
 ex:INFO290_global_rights_innovation_lab_a a schema:Course ;
     ex:hasTopics "Advocacy"^^xsd:string,
-        "Clinical Data Management"^^xsd:string,
         "Data Science"^^xsd:string,
         "Digital Integration"^^xsd:string,
         "Digital Technology"^^xsd:string,
@@ -1050,13 +1048,14 @@ ex:INFO290_global_rights_innovation_lab_a a schema:Course ;
         "Human Rights Issues"^^xsd:string,
         "Innovation"^^xsd:string,
         "Investigation"^^xsd:string,
+        "NetApp Data Storage"^^xsd:string,
         "Public Interest Design"^^xsd:string,
         "Public International Laws"^^xsd:string,
         "Public Policies"^^xsd:string,
         "Social Justice"^^xsd:string,
         "Social Sciences"^^xsd:string,
         "Visualization"^^xsd:string ;
-    ex:semester "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_global_rights_innovation_lab_a_Spring2026 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Global Rights Innovation Lab Advanced Clinic"^^xsd:string ;
     schema:numberOfCredits 1,
@@ -1064,7 +1063,6 @@ ex:INFO290_global_rights_innovation_lab_a a schema:Course ;
 
 ex:INFO290_global_rights_innovation_lab_c a schema:Course ;
     ex:hasTopics "Advocacy"^^xsd:string,
-        "Clinical Data Management"^^xsd:string,
         "Data Science"^^xsd:string,
         "Digital Integration"^^xsd:string,
         "Digital Technology"^^xsd:string,
@@ -1072,13 +1070,14 @@ ex:INFO290_global_rights_innovation_lab_c a schema:Course ;
         "Human Rights Issues"^^xsd:string,
         "Innovation"^^xsd:string,
         "Investigation"^^xsd:string,
+        "NetApp Data Storage"^^xsd:string,
         "Public Interest Design"^^xsd:string,
         "Public International Laws"^^xsd:string,
         "Public Policies"^^xsd:string,
         "Social Justice"^^xsd:string,
         "Social Sciences"^^xsd:string,
         "Visualization"^^xsd:string ;
-    ex:semester "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_global_rights_innovation_lab_c_Spring2026 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Global Rights Innovation Lab Clinic"^^xsd:string,
         "Global Rights Innovation Lab Clinic Seminar"^^xsd:string ;
@@ -1099,7 +1098,7 @@ ex:INFO290_human_centered_ai a schema:Course ;
         "Technical Communication"^^xsd:string,
         "Transparency (Human-Computer Interaction)"^^xsd:string,
         "User-Centered Design"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_human_centered_ai_Spring2023 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Human-Centered AI"^^xsd:string ;
     schema:numberOfCredits 2 .
@@ -1119,9 +1118,9 @@ ex:INFO290_interaction_design a schema:Course ;
         "Refining"^^xsd:string,
         "Simulations"^^xsd:string,
         "Space Allocation Problem"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_interaction_design_Spring2023,
+        ex:INFO290_interaction_design_Spring2024,
+        ex:INFO290_interaction_design_Spring2026 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Interaction Design"^^xsd:string ;
     schema:numberOfCredits 2 .
@@ -1130,15 +1129,15 @@ ex:INFO290_knowledge_representation_for_i a schema:Course ;
     ex:hasTopics "Construction"^^xsd:string,
         "Dataset"^^xsd:string,
         "Domain-Specific Language"^^xsd:string,
-        "Electric Power Systems"^^xsd:string,
         "Graphing"^^xsd:string,
         "Information Structure"^^xsd:string,
         "Knowledge Graph"^^xsd:string,
         "Language Model"^^xsd:string,
+        "Power-System Automation"^^xsd:string,
         "Python (Programming Language)"^^xsd:string,
         "Semantic Web"^^xsd:string,
         "Visual Effects"^^xsd:string ;
-    ex:semester "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO290_knowledge_representation_for_i_Fall2025 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Knowledge Representation for Intelligent Applications"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -1161,7 +1160,7 @@ ex:INFO290_markets_and_information_ethics a schema:Course ;
         "Social Theories"^^xsd:string,
         "Socialization"^^xsd:string,
         "Student Marketing"^^xsd:string ;
-    ex:semester "2024 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_markets_and_information_ethics_Spring2024 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Markets and Information: Ethics, Theory and Applications"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -1171,30 +1170,30 @@ ex:INFO290_playful_design_gamification a schema:Course ;
         "Business Education"^^xsd:string,
         "E (Programming Language)"^^xsd:string,
         "Gamification"^^xsd:string,
-        "Good Manufacturing Practices"^^xsd:string,
+        "Good Laboratory Practice (GLP)"^^xsd:string,
         "Look And Feel"^^xsd:string,
         "Physiology"^^xsd:string,
         "Prototype (Computer Science)"^^xsd:string,
         "Psychology"^^xsd:string,
         "Rehabilitation"^^xsd:string,
-        "Video Game Console"^^xsd:string,
+        "Video Game Development"^^xsd:string,
         "Visualization"^^xsd:string ;
-    ex:semester "2025 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_playful_design_gamification_Spring2025 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Playful Design & Gamification"^^xsd:string ;
     schema:numberOfCredits 2 .
 
 ex:INFO290_political_visions_design_and_g a schema:Course ;
-    ex:hasTopics "Capitalism"^^xsd:string,
+    ex:hasTopics "Building Management Systems"^^xsd:string,
+        "Capitalism"^^xsd:string,
         "Communications"^^xsd:string,
         "Economics"^^xsd:string,
-        "GNU Build Systems"^^xsd:string,
         "Governance"^^xsd:string,
-        "Native American Studies"^^xsd:string,
+        "Native American Literature"^^xsd:string,
         "Political Philosophy"^^xsd:string,
         "Project Proposals"^^xsd:string,
         "Research Papers"^^xsd:string ;
-    ex:semester "2024 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO290_political_visions_design_and_g_Fall2024 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Political Visions, Design, and Governance"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -1219,7 +1218,7 @@ ex:INFO290_presentation_pitch_and_consult a schema:Course ;
         "Paving"^^xsd:string,
         "Presentations"^^xsd:string,
         "Social Media"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO290_presentation_pitch_and_consult_Fall2023 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Presentation, Pitch, and Consulting Skills"^^xsd:string ;
     schema:numberOfCredits 2 .
@@ -1232,7 +1231,7 @@ ex:INFO290_product_design_and_leadership_ a schema:Course ;
         "Research"^^xsd:string,
         "Scholastic READ 180"^^xsd:string,
         "Strategic Thinking"^^xsd:string ;
-    ex:semester "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_product_design_and_leadership__Spring2026 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Product, Design, and Leadership Workshop"^^xsd:string ;
     schema:numberOfCredits 2 .
@@ -1244,8 +1243,8 @@ ex:INFO290_public_interest_technology_cli a schema:Course ;
         "Integrated Product Team"^^xsd:string,
         "Machine Learning"^^xsd:string,
         "Research"^^xsd:string ;
-    ex:semester "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_public_interest_technology_cli_Spring2025,
+        ex:INFO290_public_interest_technology_cli_Spring2026 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Public Interest Technology Clinic"^^xsd:string ;
     schema:numberOfCredits 3 .
@@ -1259,9 +1258,9 @@ ex:INFO290_storytelling_for_your_ux_portf a schema:Course ;
         "Product Management"^^xsd:string,
         "Storytelling"^^xsd:string,
         "User Experience"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO290_storytelling_for_your_ux_portf_Fall2023,
+        ex:INFO290_storytelling_for_your_ux_portf_Fall2024,
+        ex:INFO290_storytelling_for_your_ux_portf_Fall2025 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Storytelling for Your UX Portfolio"^^xsd:string ;
     schema:numberOfCredits 2 .
@@ -1271,7 +1270,7 @@ ex:INFO290_tech_policy_practicum a schema:Course ;
         "Governance"^^xsd:string,
         "Policy Development"^^xsd:string,
         "Scholastic READ 180"^^xsd:string ;
-    ex:semester "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO290_tech_policy_practicum_Fall2025 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "Tech Policy Practicum"^^xsd:string ;
     schema:numberOfCredits 2 .
@@ -1287,7 +1286,7 @@ ex:INFO290_ux_for_ai a schema:Course ;
         "Research"^^xsd:string,
         "User-Centered Design"^^xsd:string,
         "Workflows"^^xsd:string ;
-    ex:semester "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO290_ux_for_ai_Spring2026 ;
     schema:courseCode "INFO 290"^^xsd:string ;
     schema:name "UX for AI"^^xsd:string ;
     schema:numberOfCredits 2 .
@@ -1298,10 +1297,10 @@ ex:INFO294 a schema:Course ;
         "Scholastic READ 180"^^xsd:string,
         "Socialization"^^xsd:string,
         "pH Meters"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO294_Spring2023,
+        ex:INFO294_Spring2024,
+        ex:INFO294_Spring2025,
+        ex:INFO294_Spring2026 ;
     schema:courseCode "INFO 294"^^xsd:string ;
     schema:name "Doctoral Research and Theory Workshop"^^xsd:string ;
     schema:numberOfCredits 2 .
@@ -1309,10 +1308,10 @@ ex:INFO294 a schema:Course ;
 ex:INFO295 a schema:Course ;
     ex:hasTopics "Scholastic READ 180"^^xsd:string,
         "pH Meters"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2023 Spring"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFO295_Fall2023,
+        ex:INFO295_Fall2024,
+        ex:INFO295_Fall2025,
+        ex:INFO295_Spring2023 ;
     schema:courseCode "INFO 295"^^xsd:string ;
     schema:name "Doctoral Colloquium"^^xsd:string ;
     schema:numberOfCredits 1 .
@@ -1336,11 +1335,11 @@ ex:INFO296A a schema:Course ;
         "User Interface"^^xsd:string,
         "User Interface Design"^^xsd:string,
         "Virtual Reality"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2023 Spring"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO296A_Fall2023,
+        ex:INFO296A_Fall2024,
+        ex:INFO296A_Spring2023,
+        ex:INFO296A_Spring2024,
+        ex:INFO296A_Spring2025 ;
     schema:courseCode "INFO 296A"^^xsd:string ;
     schema:name "Information Access Seminar"^^xsd:string,
         "Ludology: Critical Study of Games, Game Design, and Culture"^^xsd:string,
@@ -1353,9 +1352,9 @@ ex:INFO375 a schema:Course ;
         "Scholastic READ 180"^^xsd:string,
         "Supervision"^^xsd:string,
         "Teaching"^^xsd:string ;
-    ex:semester "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFO375_Spring2024,
+        ex:INFO375_Spring2025,
+        ex:INFO375_Spring2026 ;
     schema:courseCode "INFO 375"^^xsd:string ;
     schema:name "Teaching Assistance Practicum"^^xsd:string ;
     schema:numberOfCredits 2 .
@@ -1371,9 +1370,9 @@ ex:INFOC262 a schema:Course ;
         "Prototyping"^^xsd:string,
         "User Interface"^^xsd:string,
         "Writing"^^xsd:string ;
-    ex:semester "2023 Fall"^^xsd:string,
-        "2024 Fall"^^xsd:string,
-        "2025 Fall"^^xsd:string ;
+    ex:offeredIn ex:INFOC262_Fall2023,
+        ex:INFOC262_Fall2024,
+        ex:INFOC262_Fall2025 ;
     schema:courseCode "INFO C262"^^xsd:string ;
     schema:name "Theory and Practice of Tangible User Interfaces"^^xsd:string ;
     schema:numberOfCredits 4 .
@@ -1390,11 +1389,3802 @@ ex:INFOC265 a schema:Course ;
         "Typography"^^xsd:string,
         "User Interface"^^xsd:string,
         "Visual Design"^^xsd:string ;
-    ex:semester "2023 Spring"^^xsd:string,
-        "2024 Spring"^^xsd:string,
-        "2025 Spring"^^xsd:string,
-        "2026 Spring"^^xsd:string ;
+    ex:offeredIn ex:INFOC265_Spring2023,
+        ex:INFOC265_Spring2024,
+        ex:INFOC265_Spring2025,
+        ex:INFOC265_Spring2026 ;
     schema:courseCode "INFO C265"^^xsd:string ;
     schema:name "Interface Aesthetics"^^xsd:string ;
     schema:numberOfCredits 3 .
+
+ex:INFO103_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO103_Spring2023_LAB_0,
+        ex:INFO103_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO103_Spring2023_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO103_Spring2023_LAB_0_Slot ;
+    ex:instructor "Elijah Mercer  Discussion"^^xsd:string .
+
+ex:INFO103_Spring2023_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 600 ;
+    ex:startTime "10:00:00"^^xsd:time .
+
+ex:INFO103_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO103_Spring2023_LEC_0_Slot ;
+    ex:instructor "Paul Duguid"^^xsd:string ;
+    ex:notes "Website" ;
+    ex:sectionNumber 1 .
+
+ex:INFO103_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 1110 ;
+    ex:endTime "18:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 1020 ;
+    ex:startTime "17:00:00"^^xsd:time .
+
+ex:INFO103_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO103_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO103_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO103_Spring2024_LEC_0_Slot ;
+    ex:instructor "Elijah Mercer"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO103_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 1110 ;
+    ex:endTime "18:30:00"^^xsd:time ;
+    ex:location "Anthro/Art Practice Bldg 155  discussions and labs  Discussion 101  Fr 10:00 am - 11:00 am — 105 Dwinelle" ;
+    ex:startMinutes 1020 ;
+    ex:startTime "17:00:00"^^xsd:time .
+
+ex:INFO114_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO114_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO114_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO114_Spring2023_LEC_0_Slot ;
+    ex:instructor "Steve Fadden"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO114_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1110 ;
+    ex:endTime "18:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO114_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO114_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO114_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO114_Spring2024_LEC_0_Slot ;
+    ex:instructor "Steve Fadden"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO114_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1110 ;
+    ex:endTime "18:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO114_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO114_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO114_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO114_Spring2025_LEC_0_Slot ;
+    ex:instructor "Steve Fadden"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO114_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1050 ;
+    ex:endTime "17:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 870 ;
+    ex:startTime "14:30:00"^^xsd:time .
+
+ex:INFO114_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO114_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO114_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO114_Spring2026_LEC_0_Slot ;
+    ex:instructor "Steve Fadden"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO114_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1050 ;
+    ex:endTime "17:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 870 ;
+    ex:startTime "14:30:00"^^xsd:time .
+
+ex:INFO134_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO134_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO134_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO134_Spring2024_LEC_0_Slot ;
+    ex:instructor "John Chuang"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO134_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO153A_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO153A_Fall2023_LAB_0,
+        ex:INFO153A_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO153A_Fall2023_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO153A_Fall2023_LAB_0_Slot ;
+    ex:instructor "Aishwarya Sriram"^^xsd:string .
+
+ex:INFO153A_Fall2023_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 600 ;
+    ex:endTime "10:00:00"^^xsd:time ;
+    ex:location "Anthro/Art Practice Bldg 155" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO153A_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO153A_Fall2023_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO153A_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO153A_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO153A_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO153A_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO153A_Fall2024_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO153A_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO153A_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO153A_Fall2025_LAB_0,
+        ex:INFO153A_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO153A_Fall2025_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO153A_Fall2025_LAB_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string .
+
+ex:INFO153A_Fall2025_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 600 ;
+    ex:endTime "10:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO153A_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO153A_Fall2025_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO153A_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO153B_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO153B_Spring2023_LAB_0,
+        ex:INFO153B_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO153B_Spring2023_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO153B_Spring2023_LAB_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string .
+
+ex:INFO153B_Spring2023_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 600 ;
+    ex:endTime "10:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO153B_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO153B_Spring2023_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:notes ",  Rishabh Thakur" ;
+    ex:sectionNumber 1 .
+
+ex:INFO153B_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO153B_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO153B_Spring2024_LAB_0,
+        ex:INFO153B_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO153B_Spring2024_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO153B_Spring2024_LAB_0_Slot ;
+    ex:instructor "Aishwarya Sriram"^^xsd:string .
+
+ex:INFO153B_Spring2024_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 720 ;
+    ex:endTime "12:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO153B_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO153B_Spring2024_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO153B_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO153B_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO153B_Spring2025_LAB_0,
+        ex:INFO153B_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO153B_Spring2025_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO153B_Spring2025_LAB_0_Slot ;
+    ex:instructor "Aishwarya Sriram"^^xsd:string .
+
+ex:INFO153B_Spring2025_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 600 ;
+    ex:endTime "10:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO153B_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO153B_Spring2025_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:notes "Website" ;
+    ex:sectionNumber 1 .
+
+ex:INFO153B_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO153B_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO153B_Spring2026_LAB_0,
+        ex:INFO153B_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO153B_Spring2026_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO153B_Spring2026_LAB_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string .
+
+ex:INFO153B_Spring2026_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 600 ;
+    ex:endTime "10:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO153B_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO153B_Spring2026_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO153B_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO159_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO159_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO159_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO159_Spring2023_LEC_0_Slot ;
+    ex:instructor "David Bamman"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO159_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "Li Ka Shing 245" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO159_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO159_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO159_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO159_Spring2024_LEC_0_Slot ;
+    ex:instructor "Behrang Mohit"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO159_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 1200 ;
+    ex:endTime "20:00:00"^^xsd:time ;
+    ex:location "145 Dwinelle" ;
+    ex:startMinutes 1110 ;
+    ex:startTime "18:30:00"^^xsd:time .
+
+ex:INFO159_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO159_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO159_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO159_Spring2025_LEC_0_Slot ;
+    ex:instructor "David Bamman"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO159_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "100 Lewis" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO159_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO159_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO159_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO159_Spring2026_LEC_0_Slot ;
+    ex:instructor "David Bamman"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO159_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "Haas Faculty Wing F295" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO188_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO188_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO188_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO188_Fall2024_LEC_0_Slot ;
+    ex:instructor "Deirdre Mulligan"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO188_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO190_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO190_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO190_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO190_Spring2024_LEC_0_Slot ;
+    ex:instructor "Jevin West"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO190_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFO201_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO201_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO201_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO201_Fall2023_LEC_0_Slot ;
+    ex:instructor "Michael Rivera"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO201_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 1200 ;
+    ex:endTime "20:00:00"^^xsd:time ;
+    ex:location "159 Mulford" ;
+    ex:startMinutes 1110 ;
+    ex:startTime "18:30:00"^^xsd:time .
+
+ex:INFO201_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO201_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO201_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO201_Fall2024_LEC_0_Slot ;
+    ex:instructor "Andrew Chong"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO201_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1200 ;
+    ex:endTime "20:00:00"^^xsd:time ;
+    ex:location "Anthro/Art Practice Bldg 160" ;
+    ex:startMinutes 1110 ;
+    ex:startTime "18:30:00"^^xsd:time .
+
+ex:INFO201_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO201_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO201_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO201_Fall2025_LEC_0_Slot ;
+    ex:instructor "Michael Rivera"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO201_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1110 ;
+    ex:endTime "18:30:00"^^xsd:time ;
+    ex:location "Physics Building 2" ;
+    ex:startMinutes 1020 ;
+    ex:startTime "17:00:00"^^xsd:time .
+
+ex:INFO201_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO201_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO201_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO201_Spring2023_LEC_0_Slot ;
+    ex:instructor "Michael Rivera"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO201_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 1200 ;
+    ex:endTime "20:00:00"^^xsd:time ;
+    ex:location "Physics Building 2" ;
+    ex:startMinutes 1110 ;
+    ex:startTime "18:30:00"^^xsd:time .
+
+ex:INFO201_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO201_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO201_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO201_Spring2024_LEC_0_Slot ;
+    ex:instructor "Michael Rivera"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO201_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1110 ;
+    ex:endTime "18:30:00"^^xsd:time ;
+    ex:location "Anthro/Art Practice Bldg 160" ;
+    ex:startMinutes 1020 ;
+    ex:startTime "17:00:00"^^xsd:time .
+
+ex:INFO201_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO201_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO201_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO201_Spring2025_LEC_0_Slot ;
+    ex:instructor "Andrew Chong"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO201_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1110 ;
+    ex:endTime "18:30:00"^^xsd:time ;
+    ex:location "Physics Building 2" ;
+    ex:startMinutes 1020 ;
+    ex:startTime "17:00:00"^^xsd:time .
+
+ex:INFO201_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO201_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO201_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO201_Spring2026_LEC_0_Slot ;
+    ex:instructor "Michael Rivera"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO201_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 720 ;
+    ex:endTime "12:00:00"^^xsd:time ;
+    ex:location "Internet/Online" ;
+    ex:startMinutes 630 ;
+    ex:startTime "10:30:00"^^xsd:time .
+
+ex:INFO202_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO202_Fall2023_LEC_0,
+        ex:INFO202_Fall2023_LEC_1 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO202_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO202_Fall2023_LEC_0_Slot ;
+    ex:instructor "David Bamman"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO202_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "N/A" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO202_Fall2023_LEC_1 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO202_Fall2023_LEC_1_Slot ;
+    ex:instructor "David Bamman"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO202_Fall2023_LEC_1_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO202_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO202_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO202_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO202_Fall2024_LEC_0_Slot ;
+    ex:instructor "Aditya Parameswaran"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO202_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "180 Tan" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO202_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO202_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO202_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO202_Fall2025_LEC_0_Slot ;
+    ex:instructor "Marti Hearst"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO202_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "Joan and Sanford I. Weill  101" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO203_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO203_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO203_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO203_Spring2023_LEC_0_Slot ;
+    ex:instructor "Morgan Ames"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO203_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 720 ;
+    ex:endTime "12:00:00"^^xsd:time ;
+    ex:location "60 Evans" ;
+    ex:startMinutes 600 ;
+    ex:startTime "10:00:00"^^xsd:time .
+
+ex:INFO203_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO203_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO203_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO203_Spring2024_LEC_0_Slot ;
+    ex:instructor "Coye Cheshire"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO203_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "Moffitt Library 101" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO203_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO203_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO203_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO203_Spring2025_LEC_0_Slot ;
+    ex:instructor "Morgan Ames"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO203_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "Joan and Sanford I. Weill  101" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO203_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO203_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO203_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO203_Spring2026_LEC_0_Slot ;
+    ex:instructor "Morgan Ames"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO203_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "150 GSPP" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO205_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO205_Spring2023_LEC_0,
+        ex:INFO205_Spring2023_LEC_1 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO205_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO205_Spring2023_LEC_0_Slot ;
+    ex:instructor "Aaron Mackey"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO205_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFO205_Spring2023_LEC_1 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO205_Spring2023_LEC_1_Slot ;
+    ex:instructor "Aaron Mackey"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO205_Spring2023_LEC_1_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFO205_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO205_Spring2024_LEC_0,
+        ex:INFO205_Spring2024_LEC_1 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO205_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO205_Spring2024_LEC_0_Slot ;
+    ex:instructor "Aaron Mackey"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO205_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFO205_Spring2024_LEC_1 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO205_Spring2024_LEC_1_Slot ;
+    ex:instructor "Aaron Mackey"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO205_Spring2024_LEC_1_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFO205_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO205_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO205_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO205_Spring2025_LEC_0_Slot ;
+    ex:instructor "Deirdre Mulligan"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO205_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "9 Lewis" ;
+    ex:startMinutes 720 ;
+    ex:startTime "12:00:00"^^xsd:time .
+
+ex:INFO205_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO205_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO205_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO205_Spring2026_LEC_0_Slot ;
+    ex:instructor "Deirdre Mulligan"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO205_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "150 GSPP" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO206A_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO206A_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO206A_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO206A_Fall2023_LEC_0_Slot ;
+    ex:instructor "Hany Farid"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO206A_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "Physics Building 2" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO206A_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO206A_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO206A_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO206A_Fall2024_LEC_0_Slot ;
+    ex:instructor "John Chuang"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO206A_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "Joan and Sanford I. Weill  101" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO206A_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO206A_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO206A_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO206A_Fall2025_LEC_0_Slot ;
+    ex:instructor "Hany Farid"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO206A_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "Joan and Sanford I. Weill  101" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO206B_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO206B_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO206B_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO206B_Fall2023_LEC_0_Slot ;
+    ex:instructor "Hany Farid"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO206B_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "Physics Building 2" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO206B_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO206B_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO206B_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO206B_Fall2024_LEC_0_Slot ;
+    ex:instructor "John Chuang"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO206B_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "Joan and Sanford I. Weill  101" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO206B_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO206B_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO206B_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO206B_Fall2025_LEC_0_Slot ;
+    ex:instructor "Hany Farid"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO206B_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "Joan and Sanford I. Weill  101" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO213_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO213_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO213_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO213_Fall2023_LEC_0_Slot ;
+    ex:instructor "Stefanie Hutka"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO213_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO213_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO213_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO213_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO213_Fall2024_LEC_0_Slot ;
+    ex:instructor "Stefanie Hutka"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO213_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 690 ;
+    ex:endTime "11:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 600 ;
+    ex:startTime "10:00:00"^^xsd:time .
+
+ex:INFO213_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO213_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO213_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO213_Fall2025_LEC_0_Slot ;
+    ex:instructor "Stefanie Hutka"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO213_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFO214_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO214_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO214_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO214_Spring2023_LEC_0_Slot ;
+    ex:instructor "Steve Fadden"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO214_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1110 ;
+    ex:endTime "18:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO214_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO214_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO214_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO214_Spring2024_LEC_0_Slot ;
+    ex:instructor "Steve Fadden"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO214_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1110 ;
+    ex:endTime "18:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO214_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO214_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO214_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO214_Spring2025_LEC_0_Slot ;
+    ex:instructor "Steve Fadden"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO214_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1050 ;
+    ex:endTime "17:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 870 ;
+    ex:startTime "14:30:00"^^xsd:time .
+
+ex:INFO214_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO214_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO214_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO214_Spring2026_LEC_0_Slot ;
+    ex:instructor "Steve Fadden"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO214_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1050 ;
+    ex:endTime "17:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 870 ;
+    ex:startTime "14:30:00"^^xsd:time .
+
+ex:INFO215_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO215_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO215_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO215_Fall2023_LEC_0_Slot ;
+    ex:instructor "Jamie Reffell"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO215_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 1140 ;
+    ex:endTime "19:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 960 ;
+    ex:startTime "16:00:00"^^xsd:time .
+
+ex:INFO215_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO215_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO215_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO215_Fall2024_LEC_0_Slot ;
+    ex:instructor "Jamie Reffell"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO215_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1110 ;
+    ex:endTime "18:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO217A_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO217A_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO217A_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO217A_Spring2024_LEC_0_Slot ;
+    ex:instructor "Niloufar Salehi"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO217A_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO218_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO218_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO218_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO218_Spring2024_LEC_0_Slot ;
+    ex:instructor "AnnaLee Saxenian"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO218_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 780 ;
+    ex:startTime "13:00:00"^^xsd:time .
+
+ex:INFO218_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO218_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO218_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO218_Spring2026_LEC_0_Slot ;
+    ex:instructor "Deb Donig"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO218_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO225_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO225_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO225_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO225_Fall2023_LEC_0_Slot ;
+    ex:instructor "Judd Antin"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO225_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1140 ;
+    ex:endTime "19:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 960 ;
+    ex:startTime "16:00:00"^^xsd:time .
+
+ex:INFO225_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO225_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO225_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO225_Fall2024_LEC_0_Slot ;
+    ex:instructor "Judd Antin"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO225_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1140 ;
+    ex:endTime "19:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 960 ;
+    ex:startTime "16:00:00"^^xsd:time .
+
+ex:INFO225_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO225_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO225_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO225_Fall2025_LEC_0_Slot ;
+    ex:instructor "Judd Antin"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO225_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1140 ;
+    ex:endTime "19:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 960 ;
+    ex:startTime "16:00:00"^^xsd:time .
+
+ex:INFO225_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO225_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO225_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO225_Spring2026_LEC_0_Slot ;
+    ex:instructor "Judd Antin"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO225_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1140 ;
+    ex:endTime "19:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 960 ;
+    ex:startTime "16:00:00"^^xsd:time .
+
+ex:INFO230_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO230_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO230_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO230_Spring2026_LEC_0_Slot ;
+    ex:instructor "Timothy Tangherlini"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO230_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO231_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO231_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO231_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO231_Fall2024_LEC_0_Slot ;
+    ex:instructor "Diag Davenport"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO231_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 720 ;
+    ex:endTime "12:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO232_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO232_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO232_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO232_Spring2023_LEC_0_Slot ;
+    ex:instructor "Elaine Sedenberg"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO232_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 1200 ;
+    ex:endTime "20:00:00"^^xsd:time ;
+    ex:location "Internet/Online" ;
+    ex:startMinutes 1110 ;
+    ex:startTime "18:30:00"^^xsd:time .
+
+ex:INFO233_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO233_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO233_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO233_Spring2023_LEC_0_Slot ;
+    ex:instructor "Judd Antin"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO233_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 810 ;
+    ex:endTime "13:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 720 ;
+    ex:startTime "12:00:00"^^xsd:time .
+
+ex:INFO233_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO233_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO233_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO233_Spring2024_LEC_0_Slot ;
+    ex:instructor "Judd Antin"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO233_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO233_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO233_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO233_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO233_Spring2025_LEC_0_Slot ;
+    ex:instructor "Judd Antin"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO233_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO233_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO233_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO233_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO233_Spring2026_LEC_0_Slot ;
+    ex:instructor "Coye Cheshire"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO233_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO234_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO234_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO234_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO234_Spring2024_LEC_0_Slot ;
+    ex:instructor "John Chuang"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO234_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO239_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO239_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO239_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO239_Fall2025_LEC_0_Slot ;
+    ex:instructor "Deirdre Mulligan"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO239_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1110 ;
+    ex:endTime "18:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO241_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO241_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO241_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO241_Fall2024_LEC_0_Slot ;
+    ex:instructor "D. Alex Hughes"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO241_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO241_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO241_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO241_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO241_Fall2025_LEC_0_Slot ;
+    ex:instructor "D. Alex Hughes"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO241_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO241_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO241_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO241_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO241_Spring2024_LEC_0_Slot ;
+    ex:instructor "D. Alex Hughes"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO241_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO247_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO247_Spring2023_LEC_0,
+        ex:INFO247_Spring2023_LEC_1 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO247_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO247_Spring2023_LEC_0_Slot ;
+    ex:instructor "Marti Hearst"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO247_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO247_Spring2023_LEC_1 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO247_Spring2023_LEC_1_Slot ;
+    ex:instructor "Marti Hearst"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO247_Spring2023_LEC_1_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO247_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO247_Spring2025_LAB_0,
+        ex:INFO247_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO247_Spring2025_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO247_Spring2025_LAB_0_Slot ;
+    ex:instructor "Jasmine Shih"^^xsd:string .
+
+ex:INFO247_Spring2025_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 780 ;
+    ex:endTime "13:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 720 ;
+    ex:startTime "12:00:00"^^xsd:time .
+
+ex:INFO247_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO247_Spring2025_LEC_0_Slot ;
+    ex:instructor "Marti Hearst"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO247_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 690 ;
+    ex:endTime "11:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 600 ;
+    ex:startTime "10:00:00"^^xsd:time .
+
+ex:INFO247_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO247_Spring2026_LAB_0,
+        ex:INFO247_Spring2026_LEC_0,
+        ex:INFO247_Spring2026_LEC_1 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO247_Spring2026_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO247_Spring2026_LAB_0_Slot ;
+    ex:instructor "Marti Hearst"^^xsd:string .
+
+ex:INFO247_Spring2026_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 780 ;
+    ex:endTime "13:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 720 ;
+    ex:startTime "12:00:00"^^xsd:time .
+
+ex:INFO247_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO247_Spring2026_LEC_0_Slot ;
+    ex:instructor "Marti Hearst"^^xsd:string ;
+    ex:notes "Unit Count & Additional Lab  Students taking the course…  more  Unit Count & Additional Lab  Students taking the course for 3 units: 3 hours of lecture per week only; no additional lab For MIMS students: the 3-unit course does not satisfy the MIMS Technology Requirement  Students taking the course for 4 units: 3 hours of lecture per week 1 additional hour of lab per week For MIMS students: the 4-unit course does satisfy the MIMS Technology Requirement" ;
+    ex:sectionNumber 1 .
+
+ex:INFO247_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 690 ;
+    ex:endTime "11:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 600 ;
+    ex:startTime "10:00:00"^^xsd:time .
+
+ex:INFO247_Spring2026_LEC_1 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO247_Spring2026_LEC_1_Slot ;
+    ex:instructor "Marti Hearst"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO247_Spring2026_LEC_1_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 690 ;
+    ex:endTime "11:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 600 ;
+    ex:startTime "10:00:00"^^xsd:time .
+
+ex:INFO251_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO251_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO251_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO251_Spring2023_LEC_0_Slot ;
+    ex:instructor "Muhammad Raza Khan"^^xsd:string ;
+    ex:notes "Instructor is Muhammad Raza Khan.  Instructor is Muhammad Raza Khan." ;
+    ex:sectionNumber 1 .
+
+ex:INFO251_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday,
+        ex:Wednesday ;
+    ex:endMinutes 570 ;
+    ex:endTime "09:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 480 ;
+    ex:startTime "08:00:00"^^xsd:time .
+
+ex:INFO251_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO251_Spring2024_LAB_0,
+        ex:INFO251_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO251_Spring2024_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO251_Spring2024_LAB_0_Slot ;
+    ex:instructor "Suraj R. Nair"^^xsd:string .
+
+ex:INFO251_Spring2024_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 720 ;
+    ex:endTime "12:00:00"^^xsd:time ;
+    ex:location "105 North Gate" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO251_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO251_Spring2024_LEC_0_Slot ;
+    ex:instructor "Joshua Blumenstock"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO251_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "105 North Gate" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFO251_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO251_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO251_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO251_Spring2025_LEC_0_Slot ;
+    ex:instructor "Joshua Blumenstock"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO251_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "106 Stanley" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO251_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO251_Spring2026_LAB_0,
+        ex:INFO251_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO251_Spring2026_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO251_Spring2026_LAB_0_Slot ;
+    ex:instructor "Joshua Blumenstock"^^xsd:string .
+
+ex:INFO251_Spring2026_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 630 ;
+    ex:endTime "10:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO251_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO251_Spring2026_LEC_0_Slot ;
+    ex:instructor "Joshua Blumenstock"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO251_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFO253A_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO253A_Fall2023_LAB_0,
+        ex:INFO253A_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO253A_Fall2023_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO253A_Fall2023_LAB_0_Slot ;
+    ex:instructor "Aishwarya Sriram"^^xsd:string .
+
+ex:INFO253A_Fall2023_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 600 ;
+    ex:endTime "10:00:00"^^xsd:time ;
+    ex:location "Anthro/Art Practice Bldg 155" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO253A_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO253A_Fall2023_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO253A_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO253A_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO253A_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO253A_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO253A_Fall2024_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO253A_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO253A_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO253A_Fall2025_LAB_0,
+        ex:INFO253A_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO253A_Fall2025_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO253A_Fall2025_LAB_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string .
+
+ex:INFO253A_Fall2025_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 600 ;
+    ex:endTime "10:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO253A_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO253A_Fall2025_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:notes "Website" ;
+    ex:sectionNumber 1 .
+
+ex:INFO253A_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO253B_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO253B_Spring2023_LAB_0,
+        ex:INFO253B_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO253B_Spring2023_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO253B_Spring2023_LAB_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string .
+
+ex:INFO253B_Spring2023_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 600 ;
+    ex:endTime "10:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO253B_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO253B_Spring2023_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:notes ",  Rishabh Thakur" ;
+    ex:sectionNumber 1 .
+
+ex:INFO253B_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO253B_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO253B_Spring2024_LAB_0,
+        ex:INFO253B_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO253B_Spring2024_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO253B_Spring2024_LAB_0_Slot ;
+    ex:instructor "Aishwarya Sriram"^^xsd:string .
+
+ex:INFO253B_Spring2024_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 720 ;
+    ex:endTime "12:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO253B_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO253B_Spring2024_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO253B_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO253B_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO253B_Spring2025_LAB_0,
+        ex:INFO253B_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO253B_Spring2025_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO253B_Spring2025_LAB_0_Slot ;
+    ex:instructor "Aishwarya Sriram"^^xsd:string .
+
+ex:INFO253B_Spring2025_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 600 ;
+    ex:endTime "10:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO253B_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO253B_Spring2025_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:notes "Website" ;
+    ex:sectionNumber 1 .
+
+ex:INFO253B_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO253B_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO253B_Spring2026_LAB_0,
+        ex:INFO253B_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO253B_Spring2026_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFO253B_Spring2026_LAB_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string .
+
+ex:INFO253B_Spring2026_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 600 ;
+    ex:endTime "10:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO253B_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO253B_Spring2026_LEC_0_Slot ;
+    ex:instructor "Kay Ashaolu"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO253B_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO255_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO255_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO255_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO255_Spring2023_LEC_0_Slot ;
+    ex:instructor "Daniel Aranki"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO255_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO255_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO255_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO255_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO255_Spring2024_LEC_0_Slot ;
+    ex:instructor "Daniel Aranki"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO255_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO255_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO255_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO255_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO255_Spring2025_LEC_0_Slot ;
+    ex:instructor "Daniel Aranki"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO255_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 1050 ;
+    ex:endTime "17:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 960 ;
+    ex:startTime "16:00:00"^^xsd:time .
+
+ex:INFO256_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO256_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO256_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO256_Fall2023_LEC_0_Slot ;
+    ex:instructor "David Bamman"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO256_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO256_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO256_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO256_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO256_Fall2024_LEC_0_Slot ;
+    ex:instructor "David Bamman"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO256_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO256_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO256_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO256_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO256_Fall2025_LEC_0_Slot ;
+    ex:instructor "David Bamman"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO256_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO258_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO258_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO258_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO258_Spring2024_LEC_0_Slot ;
+    ex:instructor "Aditya Parameswaran"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO258_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO258_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO258_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO258_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO258_Spring2025_LEC_0_Slot ;
+    ex:instructor "Aditya Parameswaran"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO258_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "100 Lewis" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFO259_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO259_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO259_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO259_Spring2023_LEC_0_Slot ;
+    ex:instructor "David Bamman"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO259_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "Li Ka Shing 245" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO259_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO259_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO259_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO259_Spring2024_LEC_0_Slot ;
+    ex:instructor "Behrang Mohit"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO259_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 1200 ;
+    ex:endTime "20:00:00"^^xsd:time ;
+    ex:location "145 Dwinelle" ;
+    ex:startMinutes 1110 ;
+    ex:startTime "18:30:00"^^xsd:time .
+
+ex:INFO259_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO259_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO259_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO259_Spring2025_LEC_0_Slot ;
+    ex:instructor "David Bamman"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO259_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "100 Lewis" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO259_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO259_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO259_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO259_Spring2026_LEC_0_Slot ;
+    ex:instructor "David Bamman"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO259_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "Haas Faculty Wing F295" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO271B_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO271B_Fall2023_LEC_0,
+        ex:INFO271B_Fall2023_LEC_1 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO271B_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO271B_Fall2023_LEC_0_Slot ;
+    ex:instructor "Coye Cheshire"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO271B_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO271B_Fall2023_LEC_1 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO271B_Fall2023_LEC_1_Slot ;
+    ex:instructor "Coye Cheshire"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO271B_Fall2023_LEC_1_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO271B_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO271B_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO271B_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO271B_Fall2024_LEC_0_Slot ;
+    ex:instructor "Coye Cheshire"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO271B_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO271B_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO271B_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO271B_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO271B_Fall2025_LEC_0_Slot ;
+    ex:instructor "Coye Cheshire"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO271B_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO272_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO272_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO272_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO272_Fall2023_LEC_0_Slot ;
+    ex:instructor "Laith Ulaby"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO272_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO272_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO272_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO272_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO272_Fall2024_LEC_0_Slot ;
+    ex:instructor "Laith Ulaby"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO272_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO272_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO272_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO272_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO272_Fall2025_LEC_0_Slot ;
+    ex:instructor "Laith Ulaby"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO272_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO283_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO283_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO283_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO283_Spring2023_LEC_0_Slot ;
+    ex:instructor "Jay Chen"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO283_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 810 ;
+    ex:endTime "13:30:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 720 ;
+    ex:startTime "12:00:00"^^xsd:time .
+
+ex:INFO283_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO283_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO283_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO283_Spring2024_LEC_0_Slot ;
+    ex:instructor "Jay Chen"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO283_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO287_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO287_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO287_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO287_Fall2023_LEC_0_Slot ;
+    ex:instructor "Elliott Adams"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO287_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO288_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO288_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO288_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO288_Spring2024_LEC_0_Slot ;
+    ex:instructor "Joshua Blumenstock"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO288_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 990 ;
+    ex:endTime "16:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO288_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO288_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO288_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO288_Spring2026_LEC_0_Slot ;
+    ex:instructor "Joshua Blumenstock"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO288_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO289_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO289_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO289_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO289_Fall2023_LEC_0_Slot ;
+    ex:instructor "Tiffany Rad"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO289_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 1200 ;
+    ex:endTime "20:00:00"^^xsd:time ;
+    ex:location "Internet/Online" ;
+    ex:startMinutes 1110 ;
+    ex:startTime "18:30:00"^^xsd:time .
+
+ex:INFO289_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO289_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO289_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO289_Fall2024_LEC_0_Slot ;
+    ex:instructor "Elijah Baucom"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO289_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO289_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO289_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO289_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO289_Fall2025_LEC_0_Slot ;
+    ex:instructor "Elijah Baucom"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO289_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO289_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO289_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO289_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO289_Spring2023_LEC_0_Slot ;
+    ex:instructor "Tiffany Rad"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO289_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 1200 ;
+    ex:endTime "20:00:00"^^xsd:time ;
+    ex:location "Internet/Online" ;
+    ex:startMinutes 1110 ;
+    ex:startTime "18:30:00"^^xsd:time .
+
+ex:INFO289_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO289_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO289_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO289_Spring2024_LEC_0_Slot ;
+    ex:instructor "Elijah Baucom"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO289_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO289_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO289_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO289_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO289_Spring2025_LEC_0_Slot ;
+    ex:instructor "Elijah Baucom"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO289_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO289_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO289_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO289_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO289_Spring2026_LEC_0_Slot ;
+    ex:instructor "Elijah Baucom"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO289_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO290M_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290M_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO290M_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290M_Fall2023_LEC_0_Slot ;
+    ex:instructor "Jez Humble"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290M_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 720 ;
+    ex:startTime "12:00:00"^^xsd:time .
+
+ex:INFO290M_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290M_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO290M_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290M_Fall2024_LEC_0_Slot ;
+    ex:instructor "Elliott Adams"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290M_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO290M_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290M_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO290M_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290M_Fall2025_LEC_0_Slot ;
+    ex:instructor "Elliott Adams"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290M_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO290M_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290M_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO290M_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290M_Spring2024_LEC_0_Slot ;
+    ex:instructor "Krista Gettle"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290M_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 1230 ;
+    ex:endTime "20:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 1050 ;
+    ex:startTime "17:30:00"^^xsd:time .
+
+ex:INFO290S_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290S_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO290S_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290S_Fall2023_LEC_0_Slot ;
+    ex:instructor "AnnaLee Saxenian"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290S_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO290S_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290S_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO290S_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290S_Fall2024_LEC_0_Slot ;
+    ex:instructor "AnnaLee Saxenian"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290S_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO290S_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290S_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO290S_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290S_Spring2023_LEC_0_Slot ;
+    ex:instructor "Alex Hanna"^^xsd:string,
+        "Andrew Reddie"^^xsd:string,
+        "AnnaLee Saxenian"^^xsd:string ;
+    ex:sectionNumber 1,
+        2,
+        3 .
+
+ex:INFO290S_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 720,
+        900,
+        1020 ;
+    ex:endTime "12:00:00"^^xsd:time,
+        "15:00:00"^^xsd:time,
+        "17:00:00"^^xsd:time ;
+    ex:location "107 South Hall",
+        "202 South Hall",
+        "205 South Hall" ;
+    ex:startMinutes 540,
+        720,
+        840 ;
+    ex:startTime "09:00:00"^^xsd:time,
+        "12:00:00"^^xsd:time,
+        "14:00:00"^^xsd:time .
+
+ex:INFO290S_Spring2024 a ex:CourseOffering ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO290T_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290T_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO290T_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290T_Fall2023_LEC_0_Slot ;
+    ex:instructor "Aditya Parameswaran"^^xsd:string,
+        "John Chuang"^^xsd:string ;
+    ex:sectionNumber 1,
+        2 .
+
+ex:INFO290T_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 660,
+        1020 ;
+    ex:endTime "11:00:00"^^xsd:time,
+        "17:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 570,
+        930 ;
+    ex:startTime "09:30:00"^^xsd:time,
+        "15:30:00"^^xsd:time .
+
+ex:INFO290T_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290T_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO290T_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290T_Spring2023_LEC_0_Slot ;
+    ex:instructor "Jez Humble"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290T_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO290T_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290T_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO290T_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290T_Spring2024_LEC_0_Slot ;
+    ex:instructor "Jez Humble"^^xsd:string,
+        "Niloufar Salehi"^^xsd:string,
+        "Rachel Brown"^^xsd:string ;
+    ex:sectionNumber 1,
+        2,
+        3 .
+
+ex:INFO290T_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 780,
+        840 ;
+    ex:endTime "13:00:00"^^xsd:time,
+        "14:00:00"^^xsd:time ;
+    ex:location "202 South Hall",
+        "205 South Hall",
+        "Internet/Online" ;
+    ex:startMinutes 660,
+        750 ;
+    ex:startTime "11:00:00"^^xsd:time,
+        "12:30:00"^^xsd:time .
+
+ex:INFO290T_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290T_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO290T_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290T_Spring2025_LEC_0_Slot ;
+    ex:instructor "Hany Farid"^^xsd:string,
+        "John Chuang"^^xsd:string ;
+    ex:sectionNumber 1,
+        2 .
+
+ex:INFO290T_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Tuesday,
+        ex:Wednesday ;
+    ex:endMinutes 930,
+        1050 ;
+    ex:endTime "15:30:00"^^xsd:time,
+        "17:30:00"^^xsd:time ;
+    ex:location "205 South Hall",
+        "210 South Hall" ;
+    ex:startMinutes 750,
+        960 ;
+    ex:startTime "12:30:00"^^xsd:time,
+        "16:00:00"^^xsd:time .
+
+ex:INFO290_applied_generative_ai_and_larg_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_applied_generative_ai_and_larg_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO290_applied_generative_ai_and_larg_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_applied_generative_ai_and_larg_Spring2025_LEC_0_Slot ;
+    ex:instructor "Frank Coyle"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO290_applied_generative_ai_and_larg_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "Internet/Online" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFO290_behavioral_science_and_public__Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_behavioral_science_and_public__Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO290_behavioral_science_and_public__Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_behavioral_science_and_public__Fall2024_LEC_0_Slot ;
+    ex:instructor "Diag Davenport"^^xsd:string ;
+    ex:sectionNumber 3 .
+
+ex:INFO290_behavioral_science_and_public__Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "250 GSPP" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO290_behavioral_science_and_public__Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_behavioral_science_and_public__Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO290_behavioral_science_and_public__Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_behavioral_science_and_public__Fall2025_LEC_0_Slot ;
+    ex:instructor "Diag Davenport"^^xsd:string ;
+    ex:sectionNumber 6 .
+
+ex:INFO290_behavioral_science_and_public__Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO290_building_data_products_for_pub_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_building_data_products_for_pub_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO290_building_data_products_for_pub_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_building_data_products_for_pub_Fall2025_LEC_0_Slot ;
+    ex:instructor "Diag Davenport"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO290_building_data_products_for_pub_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO290_calling_bullshit_the_art_of_sk_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_calling_bullshit_the_art_of_sk_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO290_calling_bullshit_the_art_of_sk_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_calling_bullshit_the_art_of_sk_Spring2024_LEC_0_Slot ;
+    ex:instructor "Jevin West"^^xsd:string ;
+    ex:sectionNumber 5 .
+
+ex:INFO290_calling_bullshit_the_art_of_sk_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFO290_climate_people_and_informatics_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_climate_people_and_informatics_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO290_climate_people_and_informatics_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_climate_people_and_informatics_Fall2024_LEC_0_Slot ;
+    ex:instructor "John Chuang"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO290_climate_people_and_informatics_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 1080 ;
+    ex:endTime "18:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 990 ;
+    ex:startTime "16:30:00"^^xsd:time .
+
+ex:INFO290_climate_people_and_informatics_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_climate_people_and_informatics_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO290_climate_people_and_informatics_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_climate_people_and_informatics_Fall2025_LEC_0_Slot ;
+    ex:instructor "John Chuang"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290_climate_people_and_informatics_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 1050 ;
+    ex:endTime "17:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 960 ;
+    ex:startTime "16:00:00"^^xsd:time .
+
+ex:INFO290_climate_people_and_informatics_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_climate_people_and_informatics_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO290_climate_people_and_informatics_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_climate_people_and_informatics_Spring2023_LEC_0_Slot ;
+    ex:instructor "John Chuang"^^xsd:string ;
+    ex:sectionNumber 5 .
+
+ex:INFO290_climate_people_and_informatics_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 930 ;
+    ex:endTime "15:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO290_cultural_analytics_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_cultural_analytics_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO290_cultural_analytics_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_cultural_analytics_Fall2025_LEC_0_Slot ;
+    ex:instructor "Kent Chang"^^xsd:string ;
+    ex:sectionNumber 3 .
+
+ex:INFO290_cultural_analytics_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO290_designing_future_systems_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_designing_future_systems_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO290_designing_future_systems_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_designing_future_systems_Spring2025_LEC_0_Slot ;
+    ex:instructor "Stefanie Hutka"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290_designing_future_systems_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO290_fundamentals_of_generative_ai_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_fundamentals_of_generative_ai_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO290_fundamentals_of_generative_ai_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_fundamentals_of_generative_ai_Spring2026_LEC_0_Slot ;
+    ex:instructor "Cornelia Paulik"^^xsd:string ;
+    ex:sectionNumber 8 .
+
+ex:INFO290_fundamentals_of_generative_ai_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO290_future_of_cybersecurity_workin_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_future_of_cybersecurity_workin_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO290_future_of_cybersecurity_workin_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_future_of_cybersecurity_workin_Fall2023_LEC_0_Slot ;
+    ex:instructor "Chris Jay Hoofnagle"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO290_future_of_cybersecurity_workin_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 810 ;
+    ex:endTime "13:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 720 ;
+    ex:startTime "12:00:00"^^xsd:time .
+
+ex:INFO290_future_of_cybersecurity_workin_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_future_of_cybersecurity_workin_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO290_future_of_cybersecurity_workin_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_future_of_cybersecurity_workin_Spring2023_LEC_0_Slot ;
+    ex:instructor "Andrew Reddie"^^xsd:string ;
+    ex:sectionNumber 6 .
+
+ex:INFO290_future_of_cybersecurity_workin_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 780 ;
+    ex:endTime "13:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 720 ;
+    ex:startTime "12:00:00"^^xsd:time .
+
+ex:INFO290_future_of_cybersecurity_workin_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_future_of_cybersecurity_workin_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO290_future_of_cybersecurity_workin_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_future_of_cybersecurity_workin_Spring2024_LEC_0_Slot ;
+    ex:instructor "Andrew Reddie"^^xsd:string ;
+    ex:sectionNumber 3 .
+
+ex:INFO290_future_of_cybersecurity_workin_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO290_global_rights_innovation_lab_a_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_global_rights_innovation_lab_a_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO290_global_rights_innovation_lab_a_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_global_rights_innovation_lab_a_Spring2026_LEC_0_Slot ;
+    ex:instructor "['Laurel E Fletcher', ' Valentina Rozo Angel']"^^xsd:string ;
+    ex:sectionNumber 6 .
+
+ex:INFO290_global_rights_innovation_lab_a_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:location "N/A" .
+
+ex:INFO290_global_rights_innovation_lab_c_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_global_rights_innovation_lab_c_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO290_global_rights_innovation_lab_c_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_global_rights_innovation_lab_c_Spring2026_LEC_0_Slot ;
+    ex:instructor "Laurel E Fletcher"^^xsd:string,
+        "['Laurel E Fletcher', ' Valentina Rozo Angel']"^^xsd:string ;
+    ex:sectionNumber 4,
+        5 .
+
+ex:INFO290_global_rights_innovation_lab_c_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 1046 ;
+    ex:endTime "17:26:00"^^xsd:time ;
+    ex:location "N/A" ;
+    ex:startMinutes 935 ;
+    ex:startTime "15:35:00"^^xsd:time .
+
+ex:INFO290_human_centered_ai_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_human_centered_ai_Spring2023_LEC_0,
+        ex:INFO290_human_centered_ai_Spring2023_LEC_1,
+        ex:INFO290_human_centered_ai_Spring2023_LEC_2 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO290_human_centered_ai_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_human_centered_ai_Spring2023_LEC_0_Slot ;
+    ex:instructor "Niloufar Salehi"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO290_human_centered_ai_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO290_human_centered_ai_Spring2023_LEC_1 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_human_centered_ai_Spring2023_LEC_1_Slot ;
+    ex:instructor "Niloufar Salehi"^^xsd:string ;
+    ex:sectionNumber 201 .
+
+ex:INFO290_human_centered_ai_Spring2023_LEC_1_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 960 ;
+    ex:startTime "16:00:00"^^xsd:time .
+
+ex:INFO290_human_centered_ai_Spring2023_LEC_2 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_human_centered_ai_Spring2023_LEC_2_Slot ;
+    ex:instructor "Niloufar Salehi"^^xsd:string ;
+    ex:sectionNumber 202 .
+
+ex:INFO290_human_centered_ai_Spring2023_LEC_2_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 810 ;
+    ex:endTime "13:30:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 750 ;
+    ex:startTime "12:30:00"^^xsd:time .
+
+ex:INFO290_interaction_design_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_interaction_design_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO290_interaction_design_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_interaction_design_Spring2023_LEC_0_Slot ;
+    ex:instructor "Laith Ulaby"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290_interaction_design_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 1050 ;
+    ex:endTime "17:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO290_interaction_design_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_interaction_design_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO290_interaction_design_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_interaction_design_Spring2024_LEC_0_Slot ;
+    ex:instructor "Laith Ulaby"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO290_interaction_design_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 1050 ;
+    ex:endTime "17:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO290_interaction_design_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_interaction_design_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO290_interaction_design_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_interaction_design_Spring2026_LEC_0_Slot ;
+    ex:instructor "Laith Ulaby"^^xsd:string ;
+    ex:sectionNumber 3 .
+
+ex:INFO290_interaction_design_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 900 ;
+    ex:endTime "15:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 780 ;
+    ex:startTime "13:00:00"^^xsd:time .
+
+ex:INFO290_knowledge_representation_for_i_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_knowledge_representation_for_i_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO290_knowledge_representation_for_i_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_knowledge_representation_for_i_Fall2025_LEC_0_Slot ;
+    ex:instructor "Frank Coyle"^^xsd:string ;
+    ex:sectionNumber 5 .
+
+ex:INFO290_knowledge_representation_for_i_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 720 ;
+    ex:endTime "12:00:00"^^xsd:time ;
+    ex:location "Internet/Online" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO290_markets_and_information_ethics_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_markets_and_information_ethics_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO290_markets_and_information_ethics_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_markets_and_information_ethics_Spring2024_LEC_0_Slot ;
+    ex:instructor "Andrew Chong"^^xsd:string ;
+    ex:sectionNumber 4 .
+
+ex:INFO290_markets_and_information_ethics_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 1110 ;
+    ex:endTime "18:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO290_playful_design_gamification_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_playful_design_gamification_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO290_playful_design_gamification_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_playful_design_gamification_Spring2025_LEC_0_Slot ;
+    ex:instructor "Marc Oliver Korn"^^xsd:string ;
+    ex:sectionNumber 4 .
+
+ex:INFO290_playful_design_gamification_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO290_political_visions_design_and_g_Fall2024 a ex:CourseOffering ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO290_presentation_pitch_and_consult_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_presentation_pitch_and_consult_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO290_presentation_pitch_and_consult_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_presentation_pitch_and_consult_Fall2023_LEC_0_Slot ;
+    ex:instructor "Alberto Todeschini"^^xsd:string ;
+    ex:sectionNumber 3 .
+
+ex:INFO290_presentation_pitch_and_consult_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 1080 ;
+    ex:endTime "18:00:00"^^xsd:time ;
+    ex:location "Internet/Online" ;
+    ex:startMinutes 960 ;
+    ex:startTime "16:00:00"^^xsd:time .
+
+ex:INFO290_product_design_and_leadership__Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_product_design_and_leadership__Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO290_product_design_and_leadership__Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_product_design_and_leadership__Spring2026_LEC_0_Slot ;
+    ex:instructor "Judd Antin"^^xsd:string ;
+    ex:sectionNumber 2 .
+
+ex:INFO290_product_design_and_leadership__Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 720 ;
+    ex:startTime "12:00:00"^^xsd:time .
+
+ex:INFO290_public_interest_technology_cli_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_public_interest_technology_cli_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO290_public_interest_technology_cli_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_public_interest_technology_cli_Spring2025_LEC_0_Slot ;
+    ex:instructor "Diag Davenport"^^xsd:string ;
+    ex:sectionNumber 3 .
+
+ex:INFO290_public_interest_technology_cli_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 1050 ;
+    ex:endTime "17:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 960 ;
+    ex:startTime "16:00:00"^^xsd:time .
+
+ex:INFO290_public_interest_technology_cli_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_public_interest_technology_cli_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO290_public_interest_technology_cli_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_public_interest_technology_cli_Spring2026_LEC_0_Slot ;
+    ex:instructor "Diag Davenport"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290_public_interest_technology_cli_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday,
+        ex:Tuesday ;
+    ex:endMinutes 1050 ;
+    ex:endTime "17:30:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 960 ;
+    ex:startTime "16:00:00"^^xsd:time .
+
+ex:INFO290_storytelling_for_your_ux_portf_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_storytelling_for_your_ux_portf_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO290_storytelling_for_your_ux_portf_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_storytelling_for_your_ux_portf_Fall2023_LEC_0_Slot ;
+    ex:instructor "Mischelle Mulia"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290_storytelling_for_your_ux_portf_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1230 ;
+    ex:endTime "20:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 1080 ;
+    ex:startTime "18:00:00"^^xsd:time .
+
+ex:INFO290_storytelling_for_your_ux_portf_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_storytelling_for_your_ux_portf_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO290_storytelling_for_your_ux_portf_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_storytelling_for_your_ux_portf_Fall2024_LEC_0_Slot ;
+    ex:instructor "Mischelle Mulia"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO290_storytelling_for_your_ux_portf_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1230 ;
+    ex:endTime "20:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 1080 ;
+    ex:startTime "18:00:00"^^xsd:time .
+
+ex:INFO290_storytelling_for_your_ux_portf_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_storytelling_for_your_ux_portf_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO290_storytelling_for_your_ux_portf_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_storytelling_for_your_ux_portf_Fall2025_LEC_0_Slot ;
+    ex:instructor "Mischelle Mulia"^^xsd:string ;
+    ex:sectionNumber 4 .
+
+ex:INFO290_storytelling_for_your_ux_portf_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 1230 ;
+    ex:endTime "20:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 1080 ;
+    ex:startTime "18:00:00"^^xsd:time .
+
+ex:INFO290_tech_policy_practicum_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_tech_policy_practicum_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO290_tech_policy_practicum_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_tech_policy_practicum_Fall2025_LEC_0_Slot ;
+    ex:instructor "Deirdre Mulligan"^^xsd:string ;
+    ex:sectionNumber 7 .
+
+ex:INFO290_tech_policy_practicum_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:location "N/A" .
+
+ex:INFO290_ux_for_ai_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO290_ux_for_ai_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO290_ux_for_ai_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO290_ux_for_ai_Spring2026_LEC_0_Slot ;
+    ex:instructor "Stefanie Hutka"^^xsd:string ;
+    ex:sectionNumber 7 .
+
+ex:INFO290_ux_for_ai_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO294_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO294_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO294_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO294_Spring2023_LEC_0_Slot ;
+    ex:instructor "Judd Antin"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO294_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1080 ;
+    ex:endTime "18:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 960 ;
+    ex:startTime "16:00:00"^^xsd:time .
+
+ex:INFO294_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO294_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO294_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO294_Spring2024_LEC_0_Slot ;
+    ex:instructor "Coye Cheshire"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO294_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1050 ;
+    ex:endTime "17:30:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 930 ;
+    ex:startTime "15:30:00"^^xsd:time .
+
+ex:INFO294_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO294_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO294_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO294_Spring2025_LEC_0_Slot ;
+    ex:instructor "Coye Cheshire"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO294_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO294_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO294_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO294_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO294_Spring2026_LEC_0_Slot ;
+    ex:instructor "Coye Cheshire"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO294_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 840 ;
+    ex:startTime "14:00:00"^^xsd:time .
+
+ex:INFO295_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO295_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO295_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO295_Fall2023_LEC_0_Slot ;
+    ex:instructor "D. Alex Hughes"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO295_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 840 ;
+    ex:endTime "14:00:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 780 ;
+    ex:startTime "13:00:00"^^xsd:time .
+
+ex:INFO295_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO295_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO295_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO295_Fall2024_LEC_0_Slot ;
+    ex:instructor "AnnaLee Saxenian"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO295_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 600 ;
+    ex:startTime "10:00:00"^^xsd:time .
+
+ex:INFO295_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO295_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFO295_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO295_Fall2025_LEC_0_Slot ;
+    ex:instructor "David Bamman"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO295_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Wednesday ;
+    ex:endMinutes 960 ;
+    ex:endTime "16:00:00"^^xsd:time ;
+    ex:location "205 South Hall" ;
+    ex:startMinutes 900 ;
+    ex:startTime "15:00:00"^^xsd:time .
+
+ex:INFO295_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO295_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO295_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO295_Spring2023_LEC_0_Slot ;
+    ex:instructor "Niloufar Salehi"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO295_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Tuesday ;
+    ex:endMinutes 1140 ;
+    ex:endTime "19:00:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 1080 ;
+    ex:startTime "18:00:00"^^xsd:time .
+
+ex:INFO296A_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO296A_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFO296A_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO296A_Fall2023_LEC_0_Slot ;
+    ex:instructor "Michael Buckland"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO296A_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 900 ;
+    ex:startTime "15:00:00"^^xsd:time .
+
+ex:INFO296A_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO296A_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFO296A_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO296A_Fall2024_LEC_0_Slot ;
+    ex:instructor "Coye Cheshire"^^xsd:string,
+        "Michael Buckland"^^xsd:string ;
+    ex:sectionNumber 1,
+        2 .
+
+ex:INFO296A_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday,
+        ex:Tuesday ;
+    ex:endMinutes 960,
+        1020 ;
+    ex:endTime "16:00:00"^^xsd:time,
+        "17:00:00"^^xsd:time ;
+    ex:location "107 South Hall",
+        "205 South Hall" ;
+    ex:startMinutes 840,
+        900 ;
+    ex:startTime "14:00:00"^^xsd:time,
+        "15:00:00"^^xsd:time .
+
+ex:INFO296A_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO296A_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFO296A_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO296A_Spring2023_LEC_0_Slot ;
+    ex:instructor "Michael Buckland"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO296A_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 900 ;
+    ex:startTime "15:00:00"^^xsd:time .
+
+ex:INFO296A_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO296A_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO296A_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO296A_Spring2024_LEC_0_Slot ;
+    ex:instructor "Jevin West"^^xsd:string,
+        "Michael Buckland"^^xsd:string ;
+    ex:sectionNumber 1,
+        2 .
+
+ex:INFO296A_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday,
+        ex:Wednesday ;
+    ex:endMinutes 1020,
+        1050 ;
+    ex:endTime "17:00:00"^^xsd:time,
+        "17:30:00"^^xsd:time ;
+    ex:location "107 South Hall",
+        "205 South Hall" ;
+    ex:startMinutes 900,
+        930 ;
+    ex:startTime "15:00:00"^^xsd:time,
+        "15:30:00"^^xsd:time .
+
+ex:INFO296A_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO296A_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO296A_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO296A_Spring2025_LEC_0_Slot ;
+    ex:instructor "Michael Buckland"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO296A_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 1020 ;
+    ex:endTime "17:00:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 900 ;
+    ex:startTime "15:00:00"^^xsd:time .
+
+ex:INFO375_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO375_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFO375_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO375_Spring2024_LEC_0_Slot ;
+    ex:instructor "Kimiko Ryokai"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO375_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday ;
+    ex:endMinutes 780 ;
+    ex:endTime "13:00:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 660 ;
+    ex:startTime "11:00:00"^^xsd:time .
+
+ex:INFO375_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO375_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFO375_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO375_Spring2025_LEC_0_Slot ;
+    ex:instructor "Kimiko Ryokai"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO375_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFO375_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFO375_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFO375_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFO375_Spring2026_LEC_0_Slot ;
+    ex:instructor "Kimiko Ryokai"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFO375_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 660 ;
+    ex:endTime "11:00:00"^^xsd:time ;
+    ex:location "107 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFOC262_Fall2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFOC262_Fall2023_LEC_0 ;
+    ex:semester "2023 Fall"^^xsd:string .
+
+ex:INFOC262_Fall2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFOC262_Fall2023_LEC_0_Slot ;
+    ex:instructor "Kimiko Ryokai"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFOC262_Fall2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 690 ;
+    ex:endTime "11:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 600 ;
+    ex:startTime "10:00:00"^^xsd:time .
+
+ex:INFOC262_Fall2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFOC262_Fall2024_LEC_0 ;
+    ex:semester "2024 Fall"^^xsd:string .
+
+ex:INFOC262_Fall2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFOC262_Fall2024_LEC_0_Slot ;
+    ex:instructor "Kimiko Ryokai"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFOC262_Fall2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 690 ;
+    ex:endTime "11:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 600 ;
+    ex:startTime "10:00:00"^^xsd:time .
+
+ex:INFOC262_Fall2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFOC262_Fall2025_LAB_0,
+        ex:INFOC262_Fall2025_LEC_0 ;
+    ex:semester "2025 Fall"^^xsd:string .
+
+ex:INFOC262_Fall2025_LAB_0 a ex:LabComponent ;
+    ex:componentType "Lab" ;
+    ex:hasTimeSlot ex:INFOC262_Fall2025_LAB_0_Slot ;
+    ex:instructor "Kimiko Ryokai"^^xsd:string .
+
+ex:INFOC262_Fall2025_LAB_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Thursday ;
+    ex:endMinutes 600 ;
+    ex:endTime "10:00:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 540 ;
+    ex:startTime "09:00:00"^^xsd:time .
+
+ex:INFOC262_Fall2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFOC262_Fall2025_LEC_0_Slot ;
+    ex:instructor "Kimiko Ryokai"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFOC262_Fall2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Monday,
+        ex:Wednesday ;
+    ex:endMinutes 690 ;
+    ex:endTime "11:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 600 ;
+    ex:startTime "10:00:00"^^xsd:time .
+
+ex:INFOC265_Spring2023 a ex:CourseOffering ;
+    ex:hasComponent ex:INFOC265_Spring2023_LEC_0 ;
+    ex:semester "2023 Spring"^^xsd:string .
+
+ex:INFOC265_Spring2023_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFOC265_Spring2023_LEC_0_Slot ;
+    ex:instructor "Kimiko Ryokai"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFOC265_Spring2023_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "210 South Hall" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFOC265_Spring2024 a ex:CourseOffering ;
+    ex:hasComponent ex:INFOC265_Spring2024_LEC_0 ;
+    ex:semester "2024 Spring"^^xsd:string .
+
+ex:INFOC265_Spring2024_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFOC265_Spring2024_LEC_0_Slot ;
+    ex:instructor "Kimiko Ryokai"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFOC265_Spring2024_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFOC265_Spring2025 a ex:CourseOffering ;
+    ex:hasComponent ex:INFOC265_Spring2025_LEC_0 ;
+    ex:semester "2025 Spring"^^xsd:string .
+
+ex:INFOC265_Spring2025_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFOC265_Spring2025_LEC_0_Slot ;
+    ex:instructor "Kimiko Ryokai"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFOC265_Spring2025_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
+
+ex:INFOC265_Spring2026 a ex:CourseOffering ;
+    ex:hasComponent ex:INFOC265_Spring2026_LEC_0 ;
+    ex:semester "2026 Spring"^^xsd:string .
+
+ex:INFOC265_Spring2026_LEC_0 a ex:LectureComponent ;
+    ex:componentType "Lecture" ;
+    ex:hasTimeSlot ex:INFOC265_Spring2026_LEC_0_Slot ;
+    ex:instructor "Kimiko Ryokai"^^xsd:string ;
+    ex:sectionNumber 1 .
+
+ex:INFOC265_Spring2026_LEC_0_Slot a ex:TimeSlot ;
+    ex:dayOfWeek ex:Friday ;
+    ex:endMinutes 750 ;
+    ex:endTime "12:30:00"^^xsd:time ;
+    ex:location "202 South Hall" ;
+    ex:startMinutes 570 ;
+    ex:startTime "09:30:00"^^xsd:time .
 

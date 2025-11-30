@@ -6,6 +6,24 @@ Transforms JSON data into RDF triples using rdflib
 from rdflib import Graph, Namespace, Literal, URIRef, RDF, RDFS, XSD, SDO
 from skill_extractor import load_ner_model, extract_skills_from_description
 import json
+import re
+
+def create_slug(text, max_length=30):
+    """
+    Convert course name to URL-friendly slug
+    Example: "Front-End Web Architecture" -> "frontend_web_architecture"
+    """
+    # Convert to lowercase
+    slug = text.lower()
+    
+    # Replace special characters and spaces with hyphens
+    slug = re.sub(r'[^\w\s-]', '', slug)
+    slug = re.sub(r'[-\s]+', '_', slug)
+    
+    # Truncate to max length
+    slug = slug[:max_length].strip('-')
+    
+    return slug
 
 def json_to_rdf(json_data, ner_model, skills_db, base_uri="http://example.org/"):
     """
@@ -31,17 +49,23 @@ def json_to_rdf(json_data, ner_model, skills_db, base_uri="http://example.org/")
         "title": SDO.name,
         "units": SDO.numberOfCredits,
         "description": ex.hasTopics,
-        "semester": SDO.semester
+        "semester": ex.semester
     }
     
     for item in json_data:
-        # Create subject URI
-        course_id = item.get("course_id").replace(" ", "")
-        course = ex[str(course_id)]
-        g.add((course, RDF.type, SDO.Course)) # Each item is a Course
-        
-        # Add Course ID
+
         if (item['course_id']):
+            course_id = item.get("course_id").replace(" ", "")
+
+            # Create subject URI
+            if (item['course_id'] == "INFO 290"):
+                name_course = create_slug(item['title'])
+                course = ex[f"{course_id}_{name_course}"]
+            else:
+                course = ex[str(course_id)]
+            g.add((course, RDF.type, SDO.Course))
+
+            # Add course ID
             g.add((course, key_to_predicate['course_id'], Literal(item['course_id'], datatype=XSD.string)))
         
         # Add Course Title
@@ -68,7 +92,7 @@ def json_to_rdf(json_data, ner_model, skills_db, base_uri="http://example.org/")
         if (item['year'] and item['semester']):
             g.add((course, key_to_predicate['semester'], Literal(f"{item['year']} {item['semester'].capitalize()}", datatype=XSD.string)))
         
-        
+
     return g
 
 # CONFIGURATION

@@ -7,25 +7,25 @@ ex:INFO103 a schema:Course ;
         "Number Systems"^^xsd:string,
         "Social Media"^^xsd:string,
         "Surveying"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string ;
     schema:courseCode "INFO 103"^^xsd:string ;
     schema:name "History of Information"^^xsd:string ;
-    schema:numberOfCredits 4 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string .
+    schema:numberOfCredits 4 .
 
 ex:INFO114 a schema:Course ;
-    ex:hasTopics "Computer Reservations Systems"^^xsd:string,
+    ex:hasTopics "Computer Booking Systems"^^xsd:string,
         "Knowledge-Based Systems"^^xsd:string,
         "Lecturing"^^xsd:string,
         "Prototyping"^^xsd:string,
         "Term Life Insurance"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 114"^^xsd:string ;
     schema:name "User Experience Research"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO134 a schema:Course ;
     ex:hasTopics "Applied Economics"^^xsd:string,
@@ -40,10 +40,10 @@ ex:INFO134 a schema:Course ;
         "Information Organization"^^xsd:string,
         "Information Technology"^^xsd:string,
         "Public Policies"^^xsd:string ;
+    ex:semester "2024 Spring"^^xsd:string ;
     schema:courseCode "INFO 134"^^xsd:string ;
     schema:name "Information Technology Economics, Strategy, and Policy"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2024"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO153A a schema:Course ;
     ex:hasTopics "Cascading Style Sheets (CSS)"^^xsd:string,
@@ -59,12 +59,12 @@ ex:INFO153A a schema:Course ;
         "Tablets"^^xsd:string,
         "User Interface"^^xsd:string,
         "Web Applications"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 153A"^^xsd:string ;
     schema:name "Front-End Web Architecture"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO153B a schema:Course ;
     ex:hasTopics "Amazon Data Pipeline"^^xsd:string,
@@ -84,13 +84,13 @@ ex:INFO153B a schema:Course ;
         "Surveys"^^xsd:string,
         "Web Applications"^^xsd:string,
         "Web Technologies Certificates"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 153B"^^xsd:string ;
     schema:name "Back-End Web Architecture"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO159 a schema:Course ;
     ex:hasTopics "Algorithms"^^xsd:string,
@@ -107,13 +107,13 @@ ex:INFO159 a schema:Course ;
         "Part-of-Speech Tagging"^^xsd:string,
         "Social Computing"^^xsd:string,
         "Social Sciences"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 159"^^xsd:string ;
     schema:name "Natural Language Processing"^^xsd:string ;
-    schema:numberOfCredits 4 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 4 .
 
 ex:INFO188 a schema:Course ;
     ex:hasTopics "Accountability"^^xsd:string,
@@ -130,10 +130,10 @@ ex:INFO188 a schema:Course ;
         "Socialization"^^xsd:string,
         "Storages"^^xsd:string,
         "Student Development"^^xsd:string ;
+    ex:semester "2024 Fall"^^xsd:string ;
     schema:courseCode "INFO 188"^^xsd:string ;
     schema:name "Behind the Data: Humans and Values"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2024"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO190 a schema:Course ;
     ex:hasTopics "Big Data"^^xsd:string,
@@ -142,10 +142,10 @@ ex:INFO190 a schema:Course ;
         "Dissection"^^xsd:string,
         "Social Media"^^xsd:string,
         "Statistics"^^xsd:string ;
+    ex:semester "2024 Spring"^^xsd:string ;
     schema:courseCode "INFO 190"^^xsd:string ;
     schema:name "Calling Bullshit: The Art of Skepticism in a Data Driven World"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2024"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO201 a schema:Course ;
     ex:hasTopics "Big Data"^^xsd:string,
@@ -157,16 +157,16 @@ ex:INFO201 a schema:Course ;
         "Scholastic READ 180"^^xsd:string,
         "Strategic Decision-Making"^^xsd:string,
         "Teaching"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2023 Spring"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Fall"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 201"^^xsd:string ;
     schema:name "Research Design and Applications for Data and Analysis"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string,
-        "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO202 a schema:Course ;
     ex:hasTopics "Conceptual Model"^^xsd:string,
@@ -176,25 +176,25 @@ ex:INFO202 a schema:Course ;
         "Metadata"^^xsd:string,
         "Semantics"^^xsd:string,
         "Vocabulary"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 202"^^xsd:string ;
     schema:name "Information Organization and Retrieval"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO203 a schema:Course ;
     ex:hasTopics "Automation"^^xsd:string,
         "Information Technology"^^xsd:string,
         "Interactivity"^^xsd:string,
         "Socialization"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 203"^^xsd:string ;
     schema:name "Social Issues of Information"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO205 a schema:Course ;
     ex:hasTopics "Clinical Research Ethics"^^xsd:string,
@@ -205,13 +205,13 @@ ex:INFO205 a schema:Course ;
         "Data Warehouse Architectures"^^xsd:string,
         "Information And Communications Technology"^^xsd:string,
         "Social Media"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 205"^^xsd:string ;
     schema:name "Information Law and Policy"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO206A a schema:Course ;
     ex:hasTopics "Computer Programming"^^xsd:string,
@@ -227,41 +227,42 @@ ex:INFO206A a schema:Course ;
         "Simulations"^^xsd:string,
         "Text Processing"^^xsd:string,
         "Writing"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 206A"^^xsd:string ;
     schema:name "Introduction to Programming and Computation"^^xsd:string ;
-    schema:numberOfCredits 2 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string .
+    schema:numberOfCredits 2 .
 
 ex:INFO206B a schema:Course ;
-    ex:hasTopics "Data Science"^^xsd:string,
+    ex:hasTopics "Array Data Structures"^^xsd:string,
+        "Data Science"^^xsd:string,
         "Data Structures"^^xsd:string,
-        "Financial Data Analysis"^^xsd:string,
+        "Exploratory Data Analysis"^^xsd:string,
         "Good Manufacturing Practices"^^xsd:string,
-        "Persistent Data Structure"^^xsd:string,
         "Python (Programming Language)"^^xsd:string,
         "Writing"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 206B"^^xsd:string ;
     schema:name "Introduction to Data Structures and Analytics"^^xsd:string ;
-    schema:numberOfCredits 2 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string .
+    schema:numberOfCredits 2 .
 
 ex:INFO213 a schema:Course ;
     ex:hasTopics "Communications"^^xsd:string,
         "Design Technology"^^xsd:string,
         "Human-Computer Interaction"^^xsd:string,
         "Product Lifecycle Management"^^xsd:string,
+        "Student Development Theory"^^xsd:string,
         "User Experience"^^xsd:string,
         "User-Centered Design"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 213"^^xsd:string ;
     schema:name "Introduction to User Experience Design"^^xsd:string ;
-    schema:numberOfCredits 4 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string .
+    schema:numberOfCredits 4 .
 
 ex:INFO214 a schema:Course ;
     ex:hasTopics "Agility"^^xsd:string,
@@ -275,30 +276,30 @@ ex:INFO214 a schema:Course ;
         "Translations"^^xsd:string,
         "Usability"^^xsd:string,
         "User Experience"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 214"^^xsd:string ;
     schema:name "User Experience Research"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO215 a schema:Course ;
     ex:hasTopics "E (Programming Language)"^^xsd:string,
+        "Electrical System Design"^^xsd:string,
         "Engineering Design Process"^^xsd:string,
         "Industrial Design"^^xsd:string,
         "Industry Practices"^^xsd:string,
         "Lecturing"^^xsd:string,
-        "Plant Design Systems"^^xsd:string,
         "Product Design"^^xsd:string,
         "Productivity Software"^^xsd:string,
         "Project-Based Solutions"^^xsd:string,
         "Prototyping"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string ;
     schema:courseCode "INFO 215"^^xsd:string ;
     schema:name "Product Design Studio"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO217A a schema:Course ;
     ex:hasTopics "Collaboration"^^xsd:string,
@@ -308,10 +309,10 @@ ex:INFO217A a schema:Course ;
         "Research Papers"^^xsd:string,
         "Scholastic READ 180"^^xsd:string,
         "Social Computing"^^xsd:string ;
+    ex:semester "2024 Spring"^^xsd:string ;
     schema:courseCode "INFO 217A"^^xsd:string ;
     schema:name "Human-Computer Interaction (HCI) Research"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2024"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO218 a schema:Course ;
     ex:hasTopics "Abstractions"^^xsd:string,
@@ -324,11 +325,11 @@ ex:INFO218 a schema:Course ;
         "Label Information Base"^^xsd:string,
         "Lecturing"^^xsd:string,
         "Social Sciences"^^xsd:string ;
+    ex:semester "2024 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 218"^^xsd:string ;
     schema:name "Concepts of Information"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2024"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO225 a schema:Course ;
     ex:hasTopics "Drawing"^^xsd:string,
@@ -340,13 +341,13 @@ ex:INFO225 a schema:Course ;
         "Social Psychology"^^xsd:string,
         "Socialization"^^xsd:string,
         "Team Management"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 225"^^xsd:string ;
     schema:name "Foundations of Leadership and Influence in Tech"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO230 a schema:Course ;
     ex:hasTopics "Analytics"^^xsd:string,
@@ -360,10 +361,10 @@ ex:INFO230 a schema:Course ;
         "Scale (Map)"^^xsd:string,
         "Scholastic READ 180"^^xsd:string,
         "Social Sciences"^^xsd:string ;
+    ex:semester "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 230"^^xsd:string ;
     schema:name "Cultural Analytics: Theories and Methods"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO231 a schema:Course ;
     ex:hasTopics "Algorithms"^^xsd:string,
@@ -377,20 +378,20 @@ ex:INFO231 a schema:Course ;
         "Social Psychology"^^xsd:string,
         "Statistics"^^xsd:string,
         "Surveys"^^xsd:string ;
+    ex:semester "2024 Fall"^^xsd:string ;
     schema:courseCode "INFO 231"^^xsd:string ;
     schema:name "Decisions and Algorithms"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2024"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO232 a schema:Course ;
     ex:hasTopics "Economics"^^xsd:string,
         "Perspective (Graphical)"^^xsd:string,
         "Smart Systems"^^xsd:string,
         "Testability"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string ;
     schema:courseCode "INFO 232"^^xsd:string ;
     schema:name "Applied Behavioral Economics"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2023"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO233 a schema:Course ;
     ex:hasTopics "Augmented Reality"^^xsd:string,
@@ -408,13 +409,13 @@ ex:INFO233 a schema:Course ;
         "Sociology"^^xsd:string,
         "Software Systems"^^xsd:string,
         "Wearables"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 233"^^xsd:string ;
     schema:name "Social Psychology and Information Technology"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO234 a schema:Course ;
     ex:hasTopics "Applied Economics"^^xsd:string,
@@ -430,10 +431,10 @@ ex:INFO234 a schema:Course ;
         "Information Technology"^^xsd:string,
         "Lecturing"^^xsd:string,
         "Public Policies"^^xsd:string ;
+    ex:semester "2024 Spring"^^xsd:string ;
     schema:courseCode "INFO 234"^^xsd:string ;
     schema:name "Information Technology Economics, Strategy, and Policy"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2024"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO239 a schema:Course ;
     ex:hasTopics "Accountability"^^xsd:string,
@@ -445,10 +446,10 @@ ex:INFO239 a schema:Course ;
         "Source Codes"^^xsd:string,
         "Technical Solution Design"^^xsd:string,
         "Transparency (Human-Computer Interaction)"^^xsd:string ;
+    ex:semester "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 239"^^xsd:string ;
     schema:name "Technology and Delegation"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2025"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO241 a schema:Course ;
     ex:hasTopics "Creative Thinking"^^xsd:string,
@@ -456,12 +457,12 @@ ex:INFO241 a schema:Course ;
         "Experimentation"^^xsd:string,
         "Information Technology"^^xsd:string,
         "Research"^^xsd:string ;
+    ex:semester "2024 Fall"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 241"^^xsd:string ;
     schema:name "Experiments and Causal Inference"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string,
-        "Spring 2024"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO247 a schema:Course ;
     ex:hasTopics "Adoptions"^^xsd:string,
@@ -471,13 +472,13 @@ ex:INFO247 a schema:Course ;
         "Usability"^^xsd:string,
         "Visual Perception"^^xsd:string,
         "Visualization"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 247"^^xsd:string ;
     schema:name "Information Visualization and Presentation"^^xsd:string ;
     schema:numberOfCredits 3,
-        4 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+        4 .
 
 ex:INFO251 a schema:Course ;
     ex:hasTopics "Algorithms"^^xsd:string,
@@ -487,13 +488,13 @@ ex:INFO251 a schema:Course ;
         "Programming (Music)"^^xsd:string,
         "Statistics"^^xsd:string,
         "Supervision"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 251"^^xsd:string ;
     schema:name "Applied Machine Learning"^^xsd:string ;
-    schema:numberOfCredits 4 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 4 .
 
 ex:INFO253A a schema:Course ;
     ex:hasTopics "Cascading Style Sheets (CSS)"^^xsd:string,
@@ -509,12 +510,12 @@ ex:INFO253A a schema:Course ;
         "Tablets"^^xsd:string,
         "User Interface"^^xsd:string,
         "Web Applications"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 253A"^^xsd:string ;
     schema:name "Front-End Web Architecture"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO253B a schema:Course ;
     ex:hasTopics "Amazon Data Pipeline"^^xsd:string,
@@ -533,13 +534,13 @@ ex:INFO253B a schema:Course ;
         "Surveys"^^xsd:string,
         "Web Applications"^^xsd:string,
         "Web Technologies Certificates"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 253B"^^xsd:string ;
     schema:name "Back-End Web Architecture"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO255 a schema:Course ;
     ex:hasTopics "Accredited Systems Engineer"^^xsd:string,
@@ -548,12 +549,12 @@ ex:INFO255 a schema:Course ;
         "Information Systems"^^xsd:string,
         "Phase (Waves)"^^xsd:string,
         "Systems Engineering"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string ;
     schema:courseCode "INFO 255"^^xsd:string ;
     schema:name "Privacy Engineering"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO256 a schema:Course ;
     ex:hasTopics "Algorithms"^^xsd:string,
@@ -572,19 +573,19 @@ ex:INFO256 a schema:Course ;
         "Text Classification"^^xsd:string,
         "Text Parsing"^^xsd:string,
         "Text Processing"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 256"^^xsd:string ;
     schema:name "Applied Natural Language Processing"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO258 a schema:Course ;
-    ex:hasTopics "Collaboration"^^xsd:string,
+    ex:hasTopics "Clinical Data Management"^^xsd:string,
+        "Collaboration"^^xsd:string,
         "Data Analysis"^^xsd:string,
         "Data Management"^^xsd:string,
-        "Hyperion Data Management"^^xsd:string,
-        "Life Cycle Planning"^^xsd:string,
+        "Life Cycle Engineering"^^xsd:string,
         "Machine Learning"^^xsd:string,
         "Machine Learning Methods"^^xsd:string,
         "Operationalization"^^xsd:string,
@@ -593,11 +594,11 @@ ex:INFO258 a schema:Course ;
         "Scale (Map)"^^xsd:string,
         "Use Case Diagram"^^xsd:string,
         "Visualization"^^xsd:string ;
+    ex:semester "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string ;
     schema:courseCode "INFO 258"^^xsd:string ;
     schema:name "Data Engineering"^^xsd:string ;
-    schema:numberOfCredits 4 ;
-    schema:semester "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string .
+    schema:numberOfCredits 4 .
 
 ex:INFO259 a schema:Course ;
     ex:hasTopics "Algorithms"^^xsd:string,
@@ -614,13 +615,13 @@ ex:INFO259 a schema:Course ;
         "Part-of-Speech Tagging"^^xsd:string,
         "Social Computing"^^xsd:string,
         "Social Sciences"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 259"^^xsd:string ;
     schema:name "Natural Language Processing"^^xsd:string ;
-    schema:numberOfCredits 4 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 4 .
 
 ex:INFO271B a schema:Course ;
     ex:hasTopics "Causal Inference"^^xsd:string,
@@ -633,12 +634,12 @@ ex:INFO271B a schema:Course ;
         "Research Design"^^xsd:string,
         "Statistics"^^xsd:string,
         "Survey Data Analysis"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 271B"^^xsd:string ;
     schema:name "Quantitative Research Methods for Information Systems and Management"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO272 a schema:Course ;
     ex:hasTopics "Focus Group"^^xsd:string,
@@ -648,12 +649,12 @@ ex:INFO272 a schema:Course ;
         "Lecturing"^^xsd:string,
         "Naturalistic Observation"^^xsd:string,
         "Qualitative Research"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 272"^^xsd:string ;
     schema:name "Qualitative Research Methods for Information Systems and Management"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO283 a schema:Course ;
     ex:hasTopics "Computer Engineering"^^xsd:string,
@@ -665,27 +666,27 @@ ex:INFO283 a schema:Course ;
         "Management"^^xsd:string,
         "Public Health"^^xsd:string,
         "Sociology"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string ;
     schema:courseCode "INFO 283"^^xsd:string ;
     schema:name "Information and Communications Technology for Development"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO287 a schema:Course ;
     ex:hasTopics "Business Model"^^xsd:string,
         "Concept Testing"^^xsd:string,
-        "Food Product Development"^^xsd:string,
         "Iterative Design"^^xsd:string,
+        "New Product Development"^^xsd:string,
         "New Ventures"^^xsd:string,
         "Prototype (Computer Science)"^^xsd:string,
         "Refining"^^xsd:string,
         "Socialization"^^xsd:string,
         "Sustainable Business"^^xsd:string,
         "Validations"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string ;
     schema:courseCode "INFO 287"^^xsd:string ;
     schema:name "Entrepreneurship: New Venture Discovery"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO288 a schema:Course ;
     ex:hasTopics "Dataset"^^xsd:string,
@@ -702,11 +703,11 @@ ex:INFO288 a schema:Course ;
         "Social Sciences"^^xsd:string,
         "Statistics"^^xsd:string,
         "Student Development Theory"^^xsd:string ;
+    ex:semester "2024 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 288"^^xsd:string ;
     schema:name "Big Data and Development"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2024"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO289 a schema:Course ;
     ex:hasTopics "Cybersecurity Compliance"^^xsd:string,
@@ -714,236 +715,16 @@ ex:INFO289 a schema:Course ;
         "Political Sociology"^^xsd:string,
         "Supervision"^^xsd:string,
         "Vulnerability"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2023 Spring"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Fall"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 289"^^xsd:string ;
     schema:name "Public Interest Cybersecurity: The Cybersecurity Clinic Practicum"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string,
-        "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
-
-ex:INFO290 a schema:Course ;
-    ex:hasTopics "AD Model Builder (ADMB)"^^xsd:string,
-        "Accountability"^^xsd:string,
-        "Acting"^^xsd:string,
-        "Active Learning"^^xsd:string,
-        "Adaptability"^^xsd:string,
-        "Advocacy"^^xsd:string,
-        "Analytical Skills"^^xsd:string,
-        "Anxiety Disorder"^^xsd:string,
-        "Appeals"^^xsd:string,
-        "Application Development"^^xsd:string,
-        "Application Programming Interface (API)"^^xsd:string,
-        "Applied Psychology"^^xsd:string,
-        "Articulation"^^xsd:string,
-        "Artificial Intelligence"^^xsd:string,
-        "B (Programming Language)"^^xsd:string,
-        "Behavioral Science"^^xsd:string,
-        "Big Data"^^xsd:string,
-        "Biodiversity"^^xsd:string,
-        "Blockchain"^^xsd:string,
-        "Branding"^^xsd:string,
-        "Bridges"^^xsd:string,
-        "Business Education"^^xsd:string,
-        "Capitalism"^^xsd:string,
-        "Centering"^^xsd:string,
-        "Civic Engagement"^^xsd:string,
-        "Claims Processing"^^xsd:string,
-        "Climate Change Adaptation"^^xsd:string,
-        "Climate Change Mitigation"^^xsd:string,
-        "Clinical Study Design"^^xsd:string,
-        "Collaboration"^^xsd:string,
-        "Communications"^^xsd:string,
-        "Construction"^^xsd:string,
-        "Consulting"^^xsd:string,
-        "Coordinating"^^xsd:string,
-        "Cross-Functional Collaboration"^^xsd:string,
-        "Cross-Functional Coordination"^^xsd:string,
-        "Cybersecurity Compliance"^^xsd:string,
-        "Data Engineering"^^xsd:string,
-        "Data Processing"^^xsd:string,
-        "Data Science"^^xsd:string,
-        "Data Visualization"^^xsd:string,
-        "Dataset"^^xsd:string,
-        "Debating"^^xsd:string,
-        "Decision Making"^^xsd:string,
-        "Design Methods"^^xsd:string,
-        "Design Review"^^xsd:string,
-        "Design Studio"^^xsd:string,
-        "Design Tool"^^xsd:string,
-        "Digital Integration"^^xsd:string,
-        "Digital Marketing"^^xsd:string,
-        "Digital Technology"^^xsd:string,
-        "Digital Transformation"^^xsd:string,
-        "Discussion Groups"^^xsd:string,
-        "Dissection"^^xsd:string,
-        "Domain-Specific Language"^^xsd:string,
-        "E (Programming Language)"^^xsd:string,
-        "E-Commerce"^^xsd:string,
-        "Early Head Start (Education Program)"^^xsd:string,
-        "Economics"^^xsd:string,
-        "Economy"^^xsd:string,
-        "Electric Power Systems"^^xsd:string,
-        "Embedding"^^xsd:string,
-        "Enforcement"^^xsd:string,
-        "Engineering Design Process"^^xsd:string,
-        "Ethnography"^^xsd:string,
-        "Figma (Design Software)"^^xsd:string,
-        "Forging"^^xsd:string,
-        "FourGen Computer-Aided Software Engineering (CASE) Tools"^^xsd:string,
-        "GNU Build Systems"^^xsd:string,
-        "Gamification"^^xsd:string,
-        "Good Manufacturing Practices"^^xsd:string,
-        "Governance"^^xsd:string,
-        "Graphing"^^xsd:string,
-        "Group Work"^^xsd:string,
-        "Human Musculoskeletal Systems"^^xsd:string,
-        "Human Rights Issues"^^xsd:string,
-        "Human-Computer Interaction"^^xsd:string,
-        "Informatics"^^xsd:string,
-        "Information Design"^^xsd:string,
-        "Information Economics"^^xsd:string,
-        "Information Processing"^^xsd:string,
-        "Information Sciences"^^xsd:string,
-        "Information Structure"^^xsd:string,
-        "Information Technology"^^xsd:string,
-        "Innovation"^^xsd:string,
-        "Inquiry"^^xsd:string,
-        "Instructing"^^xsd:string,
-        "Integrated Product Team"^^xsd:string,
-        "Integration"^^xsd:string,
-        "Intelligence Gathering"^^xsd:string,
-        "Interaction Design"^^xsd:string,
-        "Interactivity"^^xsd:string,
-        "Interconnection"^^xsd:string,
-        "International Economic Law"^^xsd:string,
-        "Investigation"^^xsd:string,
-        "Knowledge Graph"^^xsd:string,
-        "Landscaping"^^xsd:string,
-        "Language Model"^^xsd:string,
-        "Leadership"^^xsd:string,
-        "Lecturing"^^xsd:string,
-        "Look And Feel"^^xsd:string,
-        "Machine Learning"^^xsd:string,
-        "Management"^^xsd:string,
-        "MapGuide Open Source"^^xsd:string,
-        "Mapping"^^xsd:string,
-        "Microsoft Delve"^^xsd:string,
-        "Microsoft Power Platform"^^xsd:string,
-        "Mitigation"^^xsd:string,
-        "Native American Studies"^^xsd:string,
-        "Needs Assessment"^^xsd:string,
-        "New Product Development"^^xsd:string,
-        "Open-Source Licensing"^^xsd:string,
-        "Operations"^^xsd:string,
-        "Organizational Skills"^^xsd:string,
-        "Parameter"^^xsd:string,
-        "Patentable Subject Matter"^^xsd:string,
-        "Paving"^^xsd:string,
-        "Physiology"^^xsd:string,
-        "Policy Development"^^xsd:string,
-        "Political Philosophy"^^xsd:string,
-        "Political Sciences"^^xsd:string,
-        "Prediction"^^xsd:string,
-        "Presentations"^^xsd:string,
-        "Product Data Management"^^xsd:string,
-        "Product Design"^^xsd:string,
-        "Product Management"^^xsd:string,
-        "Product Requirements"^^xsd:string,
-        "Professional Practice Evaluation"^^xsd:string,
-        "Professionalism"^^xsd:string,
-        "Programming (Music)"^^xsd:string,
-        "Project Portfolio Management"^^xsd:string,
-        "Project Proposals"^^xsd:string,
-        "Prototype (Computer Science)"^^xsd:string,
-        "Prototype (Manufacturing)"^^xsd:string,
-        "Prototyping"^^xsd:string,
-        "Psychology"^^xsd:string,
-        "Public Interest Design"^^xsd:string,
-        "Public International Laws"^^xsd:string,
-        "Public Policies"^^xsd:string,
-        "Python (Programming Language)"^^xsd:string,
-        "Reasoning Systems"^^xsd:string,
-        "Refining"^^xsd:string,
-        "Rehabilitation"^^xsd:string,
-        "Reinforcement Learning"^^xsd:string,
-        "Remote Sensing"^^xsd:string,
-        "Research"^^xsd:string,
-        "Research Papers"^^xsd:string,
-        "Scenario Planning"^^xsd:string,
-        "Scholastic READ 180"^^xsd:string,
-        "Semantic Web"^^xsd:string,
-        "Simulations"^^xsd:string,
-        "Social Justice"^^xsd:string,
-        "Social Media"^^xsd:string,
-        "Social Sciences"^^xsd:string,
-        "Social Theories"^^xsd:string,
-        "Socialization"^^xsd:string,
-        "Space Allocation Problem"^^xsd:string,
-        "Statistical Coupling Analysis"^^xsd:string,
-        "Statistics"^^xsd:string,
-        "Storytelling"^^xsd:string,
-        "Strategic Thinking"^^xsd:string,
-        "Student Development"^^xsd:string,
-        "Student Information Systems"^^xsd:string,
-        "Student Marketing"^^xsd:string,
-        "Sustainability"^^xsd:string,
-        "Systems Theories"^^xsd:string,
-        "Systems Thinking"^^xsd:string,
-        "Teaching"^^xsd:string,
-        "Technical Communication"^^xsd:string,
-        "Test Data Generation"^^xsd:string,
-        "Threading Building Blocks"^^xsd:string,
-        "Toolkits"^^xsd:string,
-        "Translations"^^xsd:string,
-        "Transparency (Projection)"^^xsd:string,
-        "Truthful"^^xsd:string,
-        "User Experience"^^xsd:string,
-        "User-Centered Design"^^xsd:string,
-        "Video Game Development"^^xsd:string,
-        "Visual Effects"^^xsd:string,
-        "Visualization"^^xsd:string,
-        "Workflows"^^xsd:string,
-        "Writing"^^xsd:string ;
-    schema:courseCode "INFO 290"^^xsd:string ;
-    schema:name "Applied Generative AI and Large Language Models"^^xsd:string,
-        "Behavioral Science and Public Policy"^^xsd:string,
-        "Building Data Products for Public Impact"^^xsd:string,
-        "Calling Bullshit: The Art of Skepticism in a Data Driven World"^^xsd:string,
-        "Climate, People, and Informatics"^^xsd:string,
-        "Cultural Analytics"^^xsd:string,
-        "Designing Future Systems"^^xsd:string,
-        "Fundamentals of Generative AI"^^xsd:string,
-        "Future of Cybersecurity Working Group"^^xsd:string,
-        "Global Rights Innovation Lab Advanced Clinic"^^xsd:string,
-        "Global Rights Innovation Lab Clinic"^^xsd:string,
-        "Global Rights Innovation Lab Clinic Seminar"^^xsd:string,
-        "Human-Centered AI"^^xsd:string,
-        "Interaction Design"^^xsd:string,
-        "Knowledge Representation for Intelligent Applications"^^xsd:string,
-        "Markets and Information: Ethics, Theory and Applications"^^xsd:string,
-        "Playful Design & Gamification"^^xsd:string,
-        "Political Visions, Design, and Governance"^^xsd:string,
-        "Presentation, Pitch, and Consulting Skills"^^xsd:string,
-        "Product, Design, and Leadership Workshop"^^xsd:string,
-        "Public Interest Technology Clinic"^^xsd:string,
-        "Storytelling for Your UX Portfolio"^^xsd:string,
-        "Tech Policy Practicum"^^xsd:string,
-        "UX for AI"^^xsd:string ;
-    schema:numberOfCredits 1,
-        2,
-        3,
-        4 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string,
-        "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO290M a schema:Course ;
     ex:hasTopics "Agile Product Management"^^xsd:string,
@@ -951,11 +732,11 @@ ex:INFO290M a schema:Course ;
         "Decision Making"^^xsd:string,
         "Drawing"^^xsd:string,
         "Experimentation"^^xsd:string,
+        "Food Product Development"^^xsd:string,
         "Good Manufacturing Practices"^^xsd:string,
         "Industry Practices"^^xsd:string,
         "Integrated Product Team"^^xsd:string,
         "Investments"^^xsd:string,
-        "Lean Product Development"^^xsd:string,
         "Lecturing"^^xsd:string,
         "Problem Solving"^^xsd:string,
         "Product Management"^^xsd:string,
@@ -964,14 +745,14 @@ ex:INFO290M a schema:Course ;
         "Student Development Theory"^^xsd:string,
         "Team Management"^^xsd:string,
         "User Research"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 290M"^^xsd:string ;
     schema:name "Leading Empowered Product Teams"^^xsd:string,
         "Lean/Agile Product Management"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string,
-        "Spring 2024"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO290S a schema:Course ;
     ex:hasTopics "Academic Writing"^^xsd:string,
@@ -996,7 +777,7 @@ ex:INFO290S a schema:Course ;
         "Encryption"^^xsd:string,
         "European Union Laws"^^xsd:string,
         "FourGen Computer-Aided Software Engineering (CASE) Tools"^^xsd:string,
-        "Framing (Construction)"^^xsd:string,
+        "Framing (HTML)"^^xsd:string,
         "Governance"^^xsd:string,
         "Information Infrastructure"^^xsd:string,
         "Information Security Management"^^xsd:string,
@@ -1021,16 +802,16 @@ ex:INFO290S a schema:Course ;
         "Socialization"^^xsd:string,
         "Surveys"^^xsd:string,
         "Trajectory"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2023 Spring"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2024 Spring"^^xsd:string ;
     schema:courseCode "INFO 290S"^^xsd:string ;
     schema:name "Data, Power, and Infrastructure"^^xsd:string,
         "Introduction to Politics of Information"^^xsd:string,
         "Seminar in the Politics of Information"^^xsd:string,
         "War? Politics, Security, and Emerging Technologies"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string .
+    schema:numberOfCredits 3 .
 
 ex:INFO290T a schema:Course ;
     ex:hasTopics "Agility"^^xsd:string,
@@ -1039,6 +820,7 @@ ex:INFO290T a schema:Course ;
         "C# (Programming Language)"^^xsd:string,
         "Centering"^^xsd:string,
         "Certified EKG/ECG Technician"^^xsd:string,
+        "Clinical Data Management"^^xsd:string,
         "Clinical Research Ethics"^^xsd:string,
         "Clinical Study Design"^^xsd:string,
         "Communications"^^xsd:string,
@@ -1063,7 +845,7 @@ ex:INFO290T a schema:Course ;
         "IntelliJ IDEA"^^xsd:string,
         "Interrogations"^^xsd:string,
         "Java (Programming Language)"^^xsd:string,
-        "Mental Health Act"^^xsd:string,
+        "Mental Health Consumer"^^xsd:string,
         "Needs Assessment"^^xsd:string,
         "Object-Oriented Programming (OOP)"^^xsd:string,
         "Pair Programming"^^xsd:string,
@@ -1079,12 +861,15 @@ ex:INFO290T a schema:Course ;
         "Surveys"^^xsd:string,
         "Teaching"^^xsd:string,
         "Technical Communication"^^xsd:string,
-        "Test Data Management"^^xsd:string,
         "Test-Driven Development (TDD)"^^xsd:string,
         "User Generated Content"^^xsd:string,
         "User-Centered Design"^^xsd:string,
         "Visualization"^^xsd:string,
         "Writing"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string ;
     schema:courseCode "INFO 290T"^^xsd:string ;
     schema:name "Agile Engineering Practices"^^xsd:string,
         "Biosensory Computing"^^xsd:string,
@@ -1092,11 +877,420 @@ ex:INFO290T a schema:Course ;
         "Human-Centered AI"^^xsd:string,
         "Human-Centered Data Management"^^xsd:string ;
     schema:numberOfCredits 2,
-        3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string .
+        3 .
+
+ex:INFO290_applied_generative_ai_and_larg a schema:Course ;
+    ex:hasTopics "Application Development"^^xsd:string,
+        "Application Programming Interface (API)"^^xsd:string,
+        "Graphing"^^xsd:string,
+        "Integration"^^xsd:string,
+        "Mitigation"^^xsd:string,
+        "Open Source Intelligence"^^xsd:string,
+        "Toolkits"^^xsd:string ;
+    ex:semester "2025 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Applied Generative AI and Large Language Models"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290_behavioral_science_and_public_ a schema:Course ;
+    ex:hasTopics "Applied Psychology"^^xsd:string,
+        "Behavioral Science"^^xsd:string,
+        "Decision Making"^^xsd:string,
+        "Discussion Groups"^^xsd:string,
+        "Economics"^^xsd:string,
+        "Economy"^^xsd:string,
+        "Lecturing"^^xsd:string,
+        "Psychology"^^xsd:string ;
+    ex:semester "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Behavioral Science and Public Policy"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290_building_data_products_for_pub a schema:Course ;
+    ex:hasTopics "B (Programming Language)"^^xsd:string,
+        "Civic Engagement"^^xsd:string,
+        "Graphing"^^xsd:string,
+        "Machine Learning"^^xsd:string,
+        "Prediction"^^xsd:string,
+        "Product Data Management"^^xsd:string,
+        "Product Requirements"^^xsd:string,
+        "Public Policies"^^xsd:string,
+        "Refining"^^xsd:string,
+        "SAS Statistical Analysis"^^xsd:string,
+        "Student Development"^^xsd:string,
+        "Truthful"^^xsd:string ;
+    ex:semester "2025 Fall"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Building Data Products for Public Impact"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290_calling_bullshit_the_art_of_sk a schema:Course ;
+    ex:hasTopics "Big Data"^^xsd:string,
+        "Claims Processing"^^xsd:string,
+        "Data Visualization"^^xsd:string,
+        "Dissection"^^xsd:string,
+        "Social Media"^^xsd:string,
+        "Statistics"^^xsd:string ;
+    ex:semester "2024 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Calling Bullshit: The Art of Skepticism in a Data Driven World"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290_climate_people_and_informatics a schema:Course ;
+    ex:hasTopics "Adaptability"^^xsd:string,
+        "Advocacy"^^xsd:string,
+        "Anxiety Disorder"^^xsd:string,
+        "Biodiversity"^^xsd:string,
+        "Climate Change Adaptation"^^xsd:string,
+        "Climate Change Mitigation"^^xsd:string,
+        "Human-Computer Interaction"^^xsd:string,
+        "Informatics"^^xsd:string,
+        "Information Design"^^xsd:string,
+        "Machine Learning"^^xsd:string,
+        "Mitigation"^^xsd:string,
+        "Remote Sensing"^^xsd:string,
+        "Research"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string,
+        "Sustainability"^^xsd:string,
+        "Systems Thinking"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Climate, People, and Informatics"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290_cultural_analytics a schema:Course ;
+    ex:hasTopics "B (Programming Language)"^^xsd:string,
+        "Civic Engagement"^^xsd:string,
+        "Graphing"^^xsd:string,
+        "Machine Learning"^^xsd:string,
+        "Prediction"^^xsd:string,
+        "Product Data Management"^^xsd:string,
+        "Product Requirements"^^xsd:string,
+        "Public Policies"^^xsd:string,
+        "Refining"^^xsd:string,
+        "SAS Statistical Analysis"^^xsd:string,
+        "Student Development"^^xsd:string,
+        "Truthful"^^xsd:string ;
+    ex:semester "2025 Fall"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Cultural Analytics"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290_designing_future_systems a schema:Course ;
+    ex:hasTopics "Centering"^^xsd:string,
+        "Communications"^^xsd:string,
+        "Cross-Functional Coordination"^^xsd:string,
+        "Ethnography"^^xsd:string,
+        "FourGen Computer-Aided Software Engineering (CASE) Tools"^^xsd:string,
+        "Human Musculoskeletal Systems"^^xsd:string,
+        "Innovation"^^xsd:string,
+        "Interconnection"^^xsd:string,
+        "Landscaping"^^xsd:string,
+        "Lecturing"^^xsd:string,
+        "Mapping"^^xsd:string,
+        "Product Design"^^xsd:string,
+        "Product Management"^^xsd:string,
+        "Prototype (Manufacturing)"^^xsd:string,
+        "Prototyping"^^xsd:string,
+        "Scenario Planning"^^xsd:string,
+        "Systems Theories"^^xsd:string,
+        "Toolkits"^^xsd:string,
+        "Translations"^^xsd:string ;
+    ex:semester "2025 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Designing Future Systems"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290_fundamentals_of_generative_ai a schema:Course ;
+    ex:hasTopics "Artificial Intelligence"^^xsd:string,
+        "Embedding"^^xsd:string,
+        "Instructing"^^xsd:string,
+        "Language Model"^^xsd:string,
+        "Open-Source Software"^^xsd:string,
+        "Parameter"^^xsd:string,
+        "Programming (Music)"^^xsd:string,
+        "Reasoning Systems"^^xsd:string,
+        "Reinforcement Learning"^^xsd:string,
+        "Research Papers"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string,
+        "Student Development"^^xsd:string,
+        "Threading Building Blocks"^^xsd:string ;
+    ex:semester "2026 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Fundamentals of Generative AI"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290_future_of_cybersecurity_workin a schema:Course ;
+    ex:hasTopics "Cybersecurity Compliance"^^xsd:string,
+        "Group Work"^^xsd:string,
+        "Inquiry"^^xsd:string,
+        "Intelligence Gathering"^^xsd:string,
+        "International Economic Law"^^xsd:string,
+        "Political Sciences"^^xsd:string,
+        "Research"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string,
+        "Writing"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Future of Cybersecurity Working Group"^^xsd:string ;
+    schema:numberOfCredits 1 .
+
+ex:INFO290_global_rights_innovation_lab_a a schema:Course ;
+    ex:hasTopics "Advocacy"^^xsd:string,
+        "Clinical Data Management"^^xsd:string,
+        "Data Science"^^xsd:string,
+        "Digital Integration"^^xsd:string,
+        "Digital Technology"^^xsd:string,
+        "Forging"^^xsd:string,
+        "Human Rights Issues"^^xsd:string,
+        "Innovation"^^xsd:string,
+        "Investigation"^^xsd:string,
+        "Public Interest Design"^^xsd:string,
+        "Public International Laws"^^xsd:string,
+        "Public Policies"^^xsd:string,
+        "Social Justice"^^xsd:string,
+        "Social Sciences"^^xsd:string,
+        "Visualization"^^xsd:string ;
+    ex:semester "2026 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Global Rights Innovation Lab Advanced Clinic"^^xsd:string ;
+    schema:numberOfCredits 1,
+        4 .
+
+ex:INFO290_global_rights_innovation_lab_c a schema:Course ;
+    ex:hasTopics "Advocacy"^^xsd:string,
+        "Clinical Data Management"^^xsd:string,
+        "Data Science"^^xsd:string,
+        "Digital Integration"^^xsd:string,
+        "Digital Technology"^^xsd:string,
+        "Forging"^^xsd:string,
+        "Human Rights Issues"^^xsd:string,
+        "Innovation"^^xsd:string,
+        "Investigation"^^xsd:string,
+        "Public Interest Design"^^xsd:string,
+        "Public International Laws"^^xsd:string,
+        "Public Policies"^^xsd:string,
+        "Social Justice"^^xsd:string,
+        "Social Sciences"^^xsd:string,
+        "Visualization"^^xsd:string ;
+    ex:semester "2026 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Global Rights Innovation Lab Clinic"^^xsd:string,
+        "Global Rights Innovation Lab Clinic Seminar"^^xsd:string ;
+    schema:numberOfCredits 2,
+        4 .
+
+ex:INFO290_human_centered_ai a schema:Course ;
+    ex:hasTopics "Accountability"^^xsd:string,
+        "Clinical Study Design"^^xsd:string,
+        "E (Programming Language)"^^xsd:string,
+        "Engineering Design Process"^^xsd:string,
+        "Lecturing"^^xsd:string,
+        "Needs Assessment"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string,
+        "Socialization"^^xsd:string,
+        "Student Information Systems"^^xsd:string,
+        "Teaching"^^xsd:string,
+        "Technical Communication"^^xsd:string,
+        "Transparency (Human-Computer Interaction)"^^xsd:string,
+        "User-Centered Design"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Human-Centered AI"^^xsd:string ;
+    schema:numberOfCredits 2 .
+
+ex:INFO290_interaction_design a schema:Course ;
+    ex:hasTopics "Collaboration"^^xsd:string,
+        "Design Methods"^^xsd:string,
+        "Design Review"^^xsd:string,
+        "Design Studio"^^xsd:string,
+        "Interaction Design"^^xsd:string,
+        "Interactivity"^^xsd:string,
+        "New Product Development"^^xsd:string,
+        "Professional Practice Evaluation"^^xsd:string,
+        "Professionalism"^^xsd:string,
+        "Project Portfolio Management"^^xsd:string,
+        "Prototyping"^^xsd:string,
+        "Refining"^^xsd:string,
+        "Simulations"^^xsd:string,
+        "Space Allocation Problem"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Interaction Design"^^xsd:string ;
+    schema:numberOfCredits 2 .
+
+ex:INFO290_knowledge_representation_for_i a schema:Course ;
+    ex:hasTopics "Construction"^^xsd:string,
+        "Dataset"^^xsd:string,
+        "Domain-Specific Language"^^xsd:string,
+        "Electric Power Systems"^^xsd:string,
+        "Graphing"^^xsd:string,
+        "Information Structure"^^xsd:string,
+        "Knowledge Graph"^^xsd:string,
+        "Language Model"^^xsd:string,
+        "Python (Programming Language)"^^xsd:string,
+        "Semantic Web"^^xsd:string,
+        "Visual Effects"^^xsd:string ;
+    ex:semester "2025 Fall"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Knowledge Representation for Intelligent Applications"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290_markets_and_information_ethics a schema:Course ;
+    ex:hasTopics "AD Model Builder (ADMB)"^^xsd:string,
+        "Blockchain"^^xsd:string,
+        "Construction"^^xsd:string,
+        "Coordinating"^^xsd:string,
+        "Digital Marketing"^^xsd:string,
+        "E-Commerce"^^xsd:string,
+        "Economics"^^xsd:string,
+        "Economy"^^xsd:string,
+        "Information Economics"^^xsd:string,
+        "Information Processing"^^xsd:string,
+        "Information Sciences"^^xsd:string,
+        "Information Technology"^^xsd:string,
+        "Microsoft Power Platform"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string,
+        "Social Theories"^^xsd:string,
+        "Socialization"^^xsd:string,
+        "Student Marketing"^^xsd:string ;
+    ex:semester "2024 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Markets and Information: Ethics, Theory and Applications"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290_playful_design_gamification a schema:Course ;
+    ex:hasTopics "Appeals"^^xsd:string,
+        "Business Education"^^xsd:string,
+        "E (Programming Language)"^^xsd:string,
+        "Gamification"^^xsd:string,
+        "Good Manufacturing Practices"^^xsd:string,
+        "Look And Feel"^^xsd:string,
+        "Physiology"^^xsd:string,
+        "Prototype (Computer Science)"^^xsd:string,
+        "Psychology"^^xsd:string,
+        "Rehabilitation"^^xsd:string,
+        "Video Game Console"^^xsd:string,
+        "Visualization"^^xsd:string ;
+    ex:semester "2025 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Playful Design & Gamification"^^xsd:string ;
+    schema:numberOfCredits 2 .
+
+ex:INFO290_political_visions_design_and_g a schema:Course ;
+    ex:hasTopics "Capitalism"^^xsd:string,
+        "Communications"^^xsd:string,
+        "Economics"^^xsd:string,
+        "GNU Build Systems"^^xsd:string,
+        "Governance"^^xsd:string,
+        "Native American Studies"^^xsd:string,
+        "Political Philosophy"^^xsd:string,
+        "Project Proposals"^^xsd:string,
+        "Research Papers"^^xsd:string ;
+    ex:semester "2024 Fall"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Political Visions, Design, and Governance"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290_presentation_pitch_and_consult a schema:Course ;
+    ex:hasTopics "Acting"^^xsd:string,
+        "Articulation"^^xsd:string,
+        "Branding"^^xsd:string,
+        "Bridges"^^xsd:string,
+        "Communications"^^xsd:string,
+        "Consulting"^^xsd:string,
+        "Cross-Functional Collaboration"^^xsd:string,
+        "Digital Transformation"^^xsd:string,
+        "FourGen Computer-Aided Software Engineering (CASE) Tools"^^xsd:string,
+        "Innovation"^^xsd:string,
+        "Landscaping"^^xsd:string,
+        "Leadership"^^xsd:string,
+        "Microsoft Delve"^^xsd:string,
+        "Operations"^^xsd:string,
+        "Organizational Skills"^^xsd:string,
+        "Patentable Subject Matter"^^xsd:string,
+        "Paving"^^xsd:string,
+        "Presentations"^^xsd:string,
+        "Social Media"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Presentation, Pitch, and Consulting Skills"^^xsd:string ;
+    schema:numberOfCredits 2 .
+
+ex:INFO290_product_design_and_leadership_ a schema:Course ;
+    ex:hasTopics "Cross-Functional Collaboration"^^xsd:string,
+        "Early Head Start (Education Program)"^^xsd:string,
+        "Leadership"^^xsd:string,
+        "Product Design"^^xsd:string,
+        "Research"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string,
+        "Strategic Thinking"^^xsd:string ;
+    ex:semester "2026 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Product, Design, and Leadership Workshop"^^xsd:string ;
+    schema:numberOfCredits 2 .
+
+ex:INFO290_public_interest_technology_cli a schema:Course ;
+    ex:hasTopics "Analytical Skills"^^xsd:string,
+        "Data Engineering"^^xsd:string,
+        "Data Science"^^xsd:string,
+        "Integrated Product Team"^^xsd:string,
+        "Machine Learning"^^xsd:string,
+        "Research"^^xsd:string ;
+    ex:semester "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Public Interest Technology Clinic"^^xsd:string ;
+    schema:numberOfCredits 3 .
+
+ex:INFO290_storytelling_for_your_ux_portf a schema:Course ;
+    ex:hasTopics "Data Processing"^^xsd:string,
+        "Data Science"^^xsd:string,
+        "Engineering Design Process"^^xsd:string,
+        "FourGen Computer-Aided Software Engineering (CASE) Tools"^^xsd:string,
+        "Management"^^xsd:string,
+        "Product Management"^^xsd:string,
+        "Storytelling"^^xsd:string,
+        "User Experience"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Storytelling for Your UX Portfolio"^^xsd:string ;
+    schema:numberOfCredits 2 .
+
+ex:INFO290_tech_policy_practicum a schema:Course ;
+    ex:hasTopics "Enforcement"^^xsd:string,
+        "Governance"^^xsd:string,
+        "Policy Development"^^xsd:string,
+        "Scholastic READ 180"^^xsd:string ;
+    ex:semester "2025 Fall"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "Tech Policy Practicum"^^xsd:string ;
+    schema:numberOfCredits 2 .
+
+ex:INFO290_ux_for_ai a schema:Course ;
+    ex:hasTopics "Active Learning"^^xsd:string,
+        "Artificial Intelligence"^^xsd:string,
+        "Debating"^^xsd:string,
+        "Design Tool"^^xsd:string,
+        "E (Programming Language)"^^xsd:string,
+        "Figma (Design Software)"^^xsd:string,
+        "Landscaping"^^xsd:string,
+        "Research"^^xsd:string,
+        "User-Centered Design"^^xsd:string,
+        "Workflows"^^xsd:string ;
+    ex:semester "2026 Spring"^^xsd:string ;
+    schema:courseCode "INFO 290"^^xsd:string ;
+    schema:name "UX for AI"^^xsd:string ;
+    schema:numberOfCredits 2 .
 
 ex:INFO294 a schema:Course ;
     ex:hasTopics "Article (Publishing)"^^xsd:string,
@@ -1104,24 +1298,24 @@ ex:INFO294 a schema:Course ;
         "Scholastic READ 180"^^xsd:string,
         "Socialization"^^xsd:string,
         "pH Meters"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 294"^^xsd:string ;
     schema:name "Doctoral Research and Theory Workshop"^^xsd:string ;
-    schema:numberOfCredits 2 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 2 .
 
 ex:INFO295 a schema:Course ;
     ex:hasTopics "Scholastic READ 180"^^xsd:string,
         "pH Meters"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2023 Spring"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO 295"^^xsd:string ;
     schema:name "Doctoral Colloquium"^^xsd:string ;
-    schema:numberOfCredits 1 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string,
-        "Spring 2023"^^xsd:string .
+    schema:numberOfCredits 1 .
 
 ex:INFO296A a schema:Course ;
     ex:hasTopics "Game Design"^^xsd:string,
@@ -1142,29 +1336,29 @@ ex:INFO296A a schema:Course ;
         "User Interface"^^xsd:string,
         "User Interface Design"^^xsd:string,
         "Virtual Reality"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2023 Spring"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string ;
     schema:courseCode "INFO 296A"^^xsd:string ;
     schema:name "Information Access Seminar"^^xsd:string,
         "Ludology: Critical Study of Games, Game Design, and Culture"^^xsd:string,
         "Misinformation in the Era of ChatGPT"^^xsd:string ;
     schema:numberOfCredits 2,
-        3 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string .
+        3 .
 
 ex:INFO375 a schema:Course ;
     ex:hasTopics "Information Management"^^xsd:string,
         "Scholastic READ 180"^^xsd:string,
         "Supervision"^^xsd:string,
         "Teaching"^^xsd:string ;
+    ex:semester "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO 375"^^xsd:string ;
     schema:name "Teaching Assistance Practicum"^^xsd:string ;
-    schema:numberOfCredits 2 ;
-    schema:semester "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 2 .
 
 ex:INFOC262 a schema:Course ;
     ex:hasTopics "Experimentation"^^xsd:string,
@@ -1177,12 +1371,12 @@ ex:INFOC262 a schema:Course ;
         "Prototyping"^^xsd:string,
         "User Interface"^^xsd:string,
         "Writing"^^xsd:string ;
+    ex:semester "2023 Fall"^^xsd:string,
+        "2024 Fall"^^xsd:string,
+        "2025 Fall"^^xsd:string ;
     schema:courseCode "INFO C262"^^xsd:string ;
     schema:name "Theory and Practice of Tangible User Interfaces"^^xsd:string ;
-    schema:numberOfCredits 4 ;
-    schema:semester "Fall 2023"^^xsd:string,
-        "Fall 2024"^^xsd:string,
-        "Fall 2025"^^xsd:string .
+    schema:numberOfCredits 4 .
 
 ex:INFOC265 a schema:Course ;
     ex:hasTopics "Aesthetics"^^xsd:string,
@@ -1196,11 +1390,11 @@ ex:INFOC265 a schema:Course ;
         "Typography"^^xsd:string,
         "User Interface"^^xsd:string,
         "Visual Design"^^xsd:string ;
+    ex:semester "2023 Spring"^^xsd:string,
+        "2024 Spring"^^xsd:string,
+        "2025 Spring"^^xsd:string,
+        "2026 Spring"^^xsd:string ;
     schema:courseCode "INFO C265"^^xsd:string ;
     schema:name "Interface Aesthetics"^^xsd:string ;
-    schema:numberOfCredits 3 ;
-    schema:semester "Spring 2023"^^xsd:string,
-        "Spring 2024"^^xsd:string,
-        "Spring 2025"^^xsd:string,
-        "Spring 2026"^^xsd:string .
+    schema:numberOfCredits 3 .
 

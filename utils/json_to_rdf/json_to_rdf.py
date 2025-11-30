@@ -30,7 +30,8 @@ def json_to_rdf(json_data, ner_model, skills_db, base_uri="http://example.org/")
         "course_id": SDO.courseCode,
         "title": SDO.name,
         "units": SDO.numberOfCredits,
-        "description": ex.hasTopics
+        "description": ex.hasTopics,
+        "semester": SDO.semester
     }
     
     for item in json_data:
@@ -39,31 +40,35 @@ def json_to_rdf(json_data, ner_model, skills_db, base_uri="http://example.org/")
         course = ex[str(course_id)]
         g.add((course, RDF.type, SDO.Course)) # Each item is a Course
         
-        # Convert each key-value pair to triples
-        for key, value in item.items():
-            # Use the mapped predicate, or fall back to the custom 'ex' namespace
-            predicate = key_to_predicate.get(key)
+        # Add Course ID
+        if (item['course_id']):
+            g.add((course, key_to_predicate['course_id'], Literal(item['course_id'], datatype=XSD.string)))
+        
+        # Add Course Title
+        if (item['title']):
+            g.add((course, key_to_predicate['title'], Literal(item['title'], datatype=XSD.string)))
 
-            if (key == "course_id"):
-                g.add((course, predicate, Literal(value, datatype=XSD.string)))
-            elif (key == "title"):
-                g.add((course, predicate, Literal(value, datatype=XSD.string)))
-            elif (key == "units"):
-                if isinstance(value, list):
-                    for unit in value:
-                        g.add((course, predicate, Literal(int(unit), datatype=XSD.integer)))
-                else:
-                    g.add((course, predicate, Literal(int(value), datatype=XSD.integer)))
+        # Add Units
+        if isinstance(item['units'], list):
+            for unit in item['units']:
+                g.add((course, key_to_predicate['units'], Literal(int(unit), datatype=XSD.integer)))
+        elif isinstance(item['units'], float):
+            g.add((course, key_to_predicate['units'], Literal(int(item['units']), datatype=XSD.integer)))
 
-            elif (key == "description"):
-                try:
-                    extracted_skills = extract_skills_from_description(value, ner_model, skills_db)
-                except ValueError as e:
-                    print(f"Error processing text: {e}") # Handle the error or skip this text
-                    
-                for skill in extracted_skills:
-                    g.add((course, predicate, Literal(skill, datatype=XSD.string)))
-    
+        # Add Course Topics
+        if (item['description']):
+            try:
+                extracted_skills = extract_skills_from_description(item['description'], ner_model, skills_db)
+            except ValueError as e:
+                print(f"Error processing text: {e}") # Handle the error or skip this text
+                
+            for skill in extracted_skills:
+                g.add((course, key_to_predicate['description'], Literal(skill, datatype=XSD.string)))
+        
+        if (item['year'] and item['semester']):
+            g.add((course, key_to_predicate['semester'], Literal(f"{item['year']} {item['semester'].capitalize()}", datatype=XSD.string)))
+        
+        
     return g
 
 # CONFIGURATION

@@ -167,10 +167,13 @@ class JsonToRdfConverter:
             # Create Prerequisites
             if (item.get('prerequisites')):
                 parser = CourseCodeParser()
-                courses = parser.parse_prerequisite_text(item['prerequisites'].get('text'))
-                for course_code in courses:
-                    if(self.validate_course_code(g, course_code)):
-                        g.add((course_uri, ex.hasPrerequisite, Literal(course_code, datatype=XSD.string)))
+                parse_result = parser.parse_prerequisite_text(item['prerequisites'].get('text'))
+                courses = parse_result['courses']
+                if (courses):
+                    for course_json in courses:
+                        course_code = course_json['course_code']
+                        prerequisite_uri = ex[f"{course_code.replace(' ', '')}"]
+                        g.add((course_uri, ex.hasPrerequisite, prerequisite_uri))
                 
             # Process sections
             for section_idx, section in enumerate(item.get('sections', [])):

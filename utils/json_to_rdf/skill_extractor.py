@@ -1,4 +1,10 @@
-# Model used : https://github.com/AnasAito/SkillNER
+"""
+Skill Extractor Module
+
+Extract skills and topics from course descriptions using a pre-trained NER model.
+Model used : https://github.com/AnasAito/SkillNER
+
+"""
 
 import json
 import spacy
@@ -6,109 +12,121 @@ from spacy.matcher import PhraseMatcher
 from skillNer.general_params import SKILL_DB
 from skillNer.skill_extractor_class import SkillExtractor
 
-# --- Configuration ---
-INPUT_FILENAME = '../parse-html/ischool_courses_data.json'
-SKILLS_JSON_FILENAME = 'skill_db_relax_20.json'
-MODEL_NAME = 'en_core_web_lg'
 
-def load_ner_model(model_name=MODEL_NAME):
-    """Loads a pre-trained NER model from Hugging Face via SpaCy."""
-    print(f"Loading NER model: {model_name}...")
-    try:
-        # Load the transformer model. This may take a moment and require internet access
-        # on the first run to download the model.
-        ner = spacy.load(model_name)
-        print("Successfully loaded model.")
-        return ner
-    except OSError:
-        print(f"---")
-        print(f"Error: Could not load model '{model_name}'.")
-        print("Please ensure you have run the following commands:")
-        print("pip install skillNer")
-        print("python -m spacy download en_core_web_lg")
-        print(f"---")
-        return None
+class SkillExtractorWrapper:
 
-def extract_skills_from_description(description, ner, skills_db):
-    # Initiate skill extractor
-    skill_extractor = SkillExtractor(ner, SKILL_DB, PhraseMatcher)
-    annotations = skill_extractor.annotate(description)
+    def __init__(self, json_file, skills_db, model_name):
+        """
+        Initialize SkillExtractorWrapper
+        Args:
+            json_file: Path to JSON file with course data
+            skills_db: Path to skills database JSON
+            model_name: Name of the SpaCy model to load
+        """
+        with open(json_file, 'r', encoding='utf-8') as f:
+            self.json_file = json.load(f)
 
-    skills =[]
-    # Get values from full_matches
-    for match in annotations['results']['full_matches']:
-        skill_id = match['skill_id']
-        if skill_id in skills_db:
-            skill_name = skills_db[skill_id]['skill_name']
-            if skill_name not in skills:
-                skills.append(skill_name)
+        with open(skills_db, 'r', encoding='utf-8') as f:
+            self.skills_db = json.load(f)   
+            
+        self.model_name = model_name
 
-    # Get values from ngram_scored
-    for match in annotations['results']['ngram_scored']:
-        skill_id = match['skill_id']
-        if skill_id in skills_db:
-            skill_name = skills_db[skill_id]['skill_name']
-            if skill_name not in skills:
-                skills.append(skill_name)
-    return skills
 
-def extract_skills_from_courses(course_data, ner, skills_db):
-    """
-    Extracts skills and topics from the description of each course.
-
-    Args:
-        course_data (list): A list of course dictionaries from the JSON file.
-        ner: A loaded SpaCy ner pipeline.
-
-    Returns:
-        dict: A dictionary mapping each course_id to a set of extracted skill strings.
-    """
-    if not ner:
-        print("ner model is not available. Aborting skill extraction.")
-        return {}
-
-    # Use dictionary to easily append to a set for each course
-    course_skills = {}
-    print(f"\nProcessing {len(course_data)} courses to extract skills...")
-
-    for course in course_data:
-        course_id = course.get('course_id', 'Unknown Course ID')
-        description = course.get('description', '')
-
-        if not description:
-            continue
-
-        # Process the description text with the ner model
+    def load_ner_model(self):
+        """Loads a pre-trained NER model from Hugging Face via SpaCy."""
+        print(f"Loading NER model: {self.model_name}...")
         try:
-            skills = extract_skills_from_description(description, ner, skills_db)
-            course_skills[course_id] = skills
-        except ValueError as e:
-            print(f"Error processing text: {e}")
-            # Handle the error or skip this text
-    return course_skills
+            # Load the transformer model. This may take a moment and require internet access
+            # on the first run to download the model.
+            ner = spacy.load(self.model_name)
+            print("Successfully loaded model.")
+            return ner
+        except OSError:
+            print(f"---")
+            print(f"Error: Could not load model '{self.model_name}'.")
+            print("Please ensure you have run the following commands:")
+            print("pip install skillNer")
+            print("python -m spacy download en_core_web_lg")
+            print(f"---")
+            return None
 
-def main():
-    """
-    Main function to load data, run skill extraction, and print the results.
-    """
-    ner_model = load_ner_model(MODEL_NAME)
-    if not ner_model:
-        return
+    def extract_skills_from_description(self, ner_model, description):
+        """Extract skills from a course description using the NER model."""
+        
+        skill_extractor = SkillExtractor(ner_model, self.skills_db, PhraseMatcher)
+        annotations = skill_extractor.annotate(description)
 
-    with open(INPUT_FILENAME, 'r', encoding='utf-8') as f:
-        all_courses = json.load(f)
+        skills =[]
+        # Get values from full_matches
+        for match in annotations['results']['full_matches']:
+            skill_id = match['skill_id']
+            if skill_id in self.skills_db:
+                skill_name = self.skills_db[skill_id]['skill_name']
+                if skill_name not in skills:
+                    skills.append(skill_name)
 
-    with open(SKILLS_JSON_FILENAME, 'r', encoding='utf-8') as f:
-        skills_db = json.load(f)    
+        # Get values from ngram_scored
+        for match in annotations['results']['ngram_scored']:
+            skill_id = match['skill_id']
+            if skill_id in self.skills_db:
+                skill_name = self.skills_db[skill_id]['skill_name']
+                if skill_name not in skills:
+                    skills.append(skill_name)
+        return skills
 
-    extracted_skills = extract_skills_from_courses(all_courses, ner_model, skills_db)
+    def extract_skills_from_courses(self):
+        """
+        Extracts skills and topics from the description of each course.
 
-    with open('extracted_skills.txt', 'w', encoding='utf-8') as f:
-        f.write("--- Extracted Skills per Course ---\n")
-        for courses in extracted_skills:
-            f.write(f"\n[{courses}]\n")
-            for skill in sorted(list(extracted_skills[courses])):
-                f.write(f"  - {skill}\n")
+        Returns:
+            dict: A dictionary mapping each course_id to a set of extracted skill strings.
+        """
+
+        ner_model = self.load_ner_model()
+        if not ner_model:
+            return
+
+        # Use dictionary to easily append to a set for each course
+        course_skills = {}
+        print(f"\nProcessing {len(self.json_file)} courses to extract skills...")
+
+        for course in self.json_file:
+            course_id = course.get('course_id', 'Unknown Course ID')
+            description = course.get('description', '')
+
+            if not description:
+                continue
+
+            # Process the description text with the ner model
+            try:
+                skills = self.extract_skills_from_description(ner_model, description)
+                course_skills[course_id] = skills
+            except ValueError as e:
+                print(f"Error processing text: {e}")
+                # Handle the error or skip this text
+        return course_skills
+
+    def export_skills_to_file(self, output_filepath, extracted_skills):
+        """
+        Export the extracted skills to a text file.
+
+        Args:
+            output_filepath: Path to the output text file.
+            extracted_skills: Dictionary of extracted skills per course.
+        """
+        with open(output_filepath, 'w', encoding='utf-8') as f:
+            f.write("--- Extracted Skills per Course ---\n")
+            for course_id in extracted_skills:
+                f.write(f"\n[{course_id}]\n")
+                for skill in sorted(list(extracted_skills[course_id])):
+                    f.write(f"  - {skill}\n")
+
 
 if __name__ == "__main__":
-    main()
+    course_json_filepath = '../parse-html/ischool_courses_data.json'
+    skills_json_filepath = 'skill_db_relax_20.json'
+    model_name = 'en_core_web_lg'
+    
+    extractor = SkillExtractorWrapper(course_json_filepath, skills_json_filepath, model_name)
+    extracted_skills = extractor.extract_skills_from_courses()
+    extractor.export_skills_to_file('extracted_skills.txt', extracted_skills)

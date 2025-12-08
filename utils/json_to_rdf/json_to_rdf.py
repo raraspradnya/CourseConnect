@@ -5,6 +5,7 @@ Transforms JSON data into RDF triples using rdflib
 
 from rdflib import Graph, Namespace, Literal, URIRef, RDF, RDFS, XSD, SDO
 from skill_extractor import load_ner_model, extract_skills_from_description
+from course_code_parser import CourseCodeParser
 import json
 import re
 
@@ -113,7 +114,8 @@ def json_to_rdf(json_data, ner_model, skills_db, base_uri="http://example.org/")
             for skill in extracted_skills:
                 g.add((course_uri, key_to_predicate['description'], Literal(skill, datatype=XSD.string)))
         
-        # Add Semester - ALREADY COVERED IN COURSE OFFERING OBJECT
+        # Add Semester
+        # UNUSED - ALREADY COVERED IN COURSE OFFERING OBJECT
         if (item['year'] and item['semester']):
             semester_string= f"{item['year']} {item['semester'].capitalize()}"
             # g.add((course_uri, key_to_predicate['semester'], Literal(semester_string, datatype=XSD.string))) - ALREADY COVERED IN COURSE OFFERING OBJECT

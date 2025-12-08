@@ -54,8 +54,8 @@
   - Array Data Structures
   - Data Science
   - Data Structures
-  - Exploratory Data Analysis
-  - Good Laboratory Practice (GLP)
+  - Financial Data Analysis
+  - Good Manufacturing Practices
   - Python (Programming Language)
   - Writing
 
@@ -68,7 +68,7 @@
   - User-Centered Design
 
 [INFO 215]
-  - Advanced Design Systems
+  - Advance Design System
   - E (Programming Language)
   - Engineering Design Process
   - Industrial Design
@@ -237,7 +237,7 @@
   - Surveying
 
 [INFO 114]
-  - Computer Reservations Systems
+  - Business Computer Systems
   - Knowledge-Based Systems
   - Lecturing
   - Prototyping
@@ -290,6 +290,7 @@
   - Copyright Laws
   - Cybersecurity Compliance
   - Data Server Interface
+  - Data Warehouse Architectures
   - Information And Communications Technology
   - Social Media
 
@@ -495,8 +496,8 @@
   - Economics
   - Information Theory
   - Intellectual Property
+  - Label Information Base
   - Lecturing
-  - Management Information Base
   - Social Sciences
 
 [INFO 234]
@@ -516,16 +517,16 @@
 
 [INFO 258]
   - Collaboration
-  - Corporate Data Management
   - Data Analysis
   - Data Management
-  - Life Cycle Logistics
+  - Life Cycle Engineering
   - Machine Learning
   - Machine Learning Methods
   - Operationalization
   - Reliability
   - Scalability
   - Scale (Map)
+  - Test Data Management
   - Use Case Diagram
   - Visualization
 

@@ -19,16 +19,12 @@ class SkillExtractorWrapper:
         """
         Initialize SkillExtractorWrapper
         Args:
-            json_file: Path to JSON file with course data
-            skills_db: Path to skills database JSON
+            json_file: JSON object with course data
+            skills_db: JSON object of skills database JSON
             model_name: Name of the SpaCy model to load
         """
-        with open(json_file, 'r', encoding='utf-8') as f:
-            self.json_file = json.load(f)
-
-        with open(skills_db, 'r', encoding='utf-8') as f:
-            self.skills_db = json.load(f)   
-            
+        self.json_file = json_file
+        self.skills_db = skills_db
         self.model_name = model_name
 
 
@@ -126,7 +122,13 @@ if __name__ == "__main__":
     course_json_filepath = '../parse-html/ischool_courses_data.json'
     skills_json_filepath = 'skill_db_relax_20.json'
     model_name = 'en_core_web_lg'
-    
-    extractor = SkillExtractorWrapper(course_json_filepath, skills_json_filepath, model_name)
+
+    with open(course_json_filepath, 'r', encoding='utf-8') as f:
+        course_json = json.load(f)
+
+    with open(skills_json_filepath, 'r', encoding='utf-8') as f:
+        skills_db = json.load(f)
+
+    extractor = SkillExtractorWrapper(course_json, skills_db, model_name)
     extracted_skills = extractor.extract_skills_from_courses()
     extractor.export_skills_to_file('extracted_skills.txt', extracted_skills)

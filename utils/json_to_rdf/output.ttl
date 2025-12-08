@@ -14,8 +14,7 @@ ex:INFO103 a schema:Course ;
     schema:numberOfCredits 4 .
 
 ex:INFO114 a schema:Course ;
-    ex:hasTopics "Computer Booking Systems"^^xsd:string,
-        "Knowledge-Based Systems"^^xsd:string,
+    ex:hasTopics "Knowledge-Based Systems"^^xsd:string,
         "Lecturing"^^xsd:string,
         "Prototyping"^^xsd:string,
         "Term Life Insurance"^^xsd:string ;
@@ -234,11 +233,11 @@ ex:INFO206A a schema:Course ;
     schema:numberOfCredits 2 .
 
 ex:INFO206B a schema:Course ;
-    ex:hasTopics "Array Data Structures"^^xsd:string,
-        "Data Science"^^xsd:string,
+    ex:hasTopics "Data Science"^^xsd:string,
+        "Data Structure Alignment"^^xsd:string,
         "Data Structures"^^xsd:string,
-        "Financial Data Analysis"^^xsd:string,
-        "Good Laboratory Practice (GLP)"^^xsd:string,
+        "Exploratory Data Analysis"^^xsd:string,
+        "Good Manufacturing Practices"^^xsd:string,
         "Python (Programming Language)"^^xsd:string,
         "Writing"^^xsd:string ;
     ex:offeredIn ex:INFO206B_Fall2023,
@@ -285,11 +284,11 @@ ex:INFO214 a schema:Course ;
 
 ex:INFO215 a schema:Course ;
     ex:hasTopics "E (Programming Language)"^^xsd:string,
-        "Electrical System Design"^^xsd:string,
         "Engineering Design Process"^^xsd:string,
         "Industrial Design"^^xsd:string,
         "Industry Practices"^^xsd:string,
         "Lecturing"^^xsd:string,
+        "Plant Design Systems"^^xsd:string,
         "Product Design"^^xsd:string,
         "Productivity Software"^^xsd:string,
         "Project-Based Solutions"^^xsd:string,
@@ -321,8 +320,8 @@ ex:INFO218 a schema:Course ;
         "Economics"^^xsd:string,
         "Information Theory"^^xsd:string,
         "Intellectual Property"^^xsd:string,
+        "Label Information Base"^^xsd:string,
         "Lecturing"^^xsd:string,
-        "Management Information Base"^^xsd:string,
         "Social Sciences"^^xsd:string ;
     ex:offeredIn ex:INFO218_Spring2024,
         ex:INFO218_Spring2026 ;
@@ -580,11 +579,11 @@ ex:INFO256 a schema:Course ;
     schema:numberOfCredits 3 .
 
 ex:INFO258 a schema:Course ;
-    ex:hasTopics "Collaboration"^^xsd:string,
+    ex:hasTopics "Clinical Data Management"^^xsd:string,
+        "Collaboration"^^xsd:string,
         "Data Analysis"^^xsd:string,
         "Data Management"^^xsd:string,
-        "Financial Data Management"^^xsd:string,
-        "Life Cycle Engineering"^^xsd:string,
+        "Life Cycle Logistics"^^xsd:string,
         "Machine Learning"^^xsd:string,
         "Machine Learning Methods"^^xsd:string,
         "Operationalization"^^xsd:string,
@@ -677,7 +676,7 @@ ex:INFO287 a schema:Course ;
         "Concept Testing"^^xsd:string,
         "Iterative Design"^^xsd:string,
         "New Ventures"^^xsd:string,
-        "Prototype (Computer Science)"^^xsd:string,
+        "Prototype (Manufacturing)"^^xsd:string,
         "Refining"^^xsd:string,
         "Socialization"^^xsd:string,
         "Sustainable Business"^^xsd:string,
@@ -731,11 +730,11 @@ ex:INFO290M a schema:Course ;
         "Decision Making"^^xsd:string,
         "Drawing"^^xsd:string,
         "Experimentation"^^xsd:string,
-        "Good Laboratory Practice (GLP)"^^xsd:string,
+        "Food Product Development"^^xsd:string,
+        "Good Manufacturing Practices"^^xsd:string,
         "Industry Practices"^^xsd:string,
         "Integrated Product Team"^^xsd:string,
         "Investments"^^xsd:string,
-        "Lean Product Development"^^xsd:string,
         "Lecturing"^^xsd:string,
         "Problem Solving"^^xsd:string,
         "Product Management"^^xsd:string,
@@ -767,16 +766,16 @@ ex:INFO290S a schema:Course ;
         "Corporate Laws"^^xsd:string,
         "Data Collection"^^xsd:string,
         "Data Encoding"^^xsd:string,
+        "Data Processing Systems"^^xsd:string,
         "Debating"^^xsd:string,
         "Digital Advertising"^^xsd:string,
-        "Digital Data Systems"^^xsd:string,
         "Drawing"^^xsd:string,
         "Economics"^^xsd:string,
         "Encodings"^^xsd:string,
         "Encryption"^^xsd:string,
         "European Union Laws"^^xsd:string,
         "FourGen Computer-Aided Software Engineering (CASE) Tools"^^xsd:string,
-        "Framing (HTML)"^^xsd:string,
+        "Framing (Construction)"^^xsd:string,
         "Governance"^^xsd:string,
         "Information Infrastructure"^^xsd:string,
         "Information Security Management"^^xsd:string,
@@ -836,7 +835,7 @@ ex:INFO290T a schema:Course ;
         "Electronic Design Automation (EDA) Software"^^xsd:string,
         "Engineering Design Process"^^xsd:string,
         "Eyes"^^xsd:string,
-        "Financial Data Management"^^xsd:string,
+        "Hyperion Data Management"^^xsd:string,
         "Image Processing"^^xsd:string,
         "Imaging"^^xsd:string,
         "Industry Standard Architecture"^^xsd:string,
@@ -844,7 +843,7 @@ ex:INFO290T a schema:Course ;
         "IntelliJ IDEA"^^xsd:string,
         "Interrogations"^^xsd:string,
         "Java (Programming Language)"^^xsd:string,
-        "Mental Health Assessments"^^xsd:string,
+        "Mental Health Court"^^xsd:string,
         "Needs Assessment"^^xsd:string,
         "Object-Oriented Programming (OOP)"^^xsd:string,
         "Pair Programming"^^xsd:string,
@@ -884,7 +883,7 @@ ex:INFO290_applied_generative_ai_and_larg a schema:Course ;
         "Graphing"^^xsd:string,
         "Integration"^^xsd:string,
         "Mitigation"^^xsd:string,
-        "Open Source Technology"^^xsd:string,
+        "Open-Source Software"^^xsd:string,
         "Toolkits"^^xsd:string ;
     ex:offeredIn ex:INFO290_applied_generative_ai_and_larg_Spring2025 ;
     schema:courseCode "INFO 290"^^xsd:string ;
@@ -916,7 +915,7 @@ ex:INFO290_building_data_products_for_pub a schema:Course ;
         "Product Requirements"^^xsd:string,
         "Public Policies"^^xsd:string,
         "Refining"^^xsd:string,
-        "Statistical Coupling Analysis"^^xsd:string,
+        "SAS Statistical Analysis"^^xsd:string,
         "Student Development"^^xsd:string,
         "Truthful"^^xsd:string ;
     ex:offeredIn ex:INFO290_building_data_products_for_pub_Fall2025 ;
@@ -970,7 +969,7 @@ ex:INFO290_cultural_analytics a schema:Course ;
         "Product Requirements"^^xsd:string,
         "Public Policies"^^xsd:string,
         "Refining"^^xsd:string,
-        "Statistical Coupling Analysis"^^xsd:string,
+        "SAS Statistical Analysis"^^xsd:string,
         "Student Development"^^xsd:string,
         "Truthful"^^xsd:string ;
     ex:offeredIn ex:INFO290_cultural_analytics_Fall2025 ;
@@ -981,7 +980,7 @@ ex:INFO290_cultural_analytics a schema:Course ;
 ex:INFO290_designing_future_systems a schema:Course ;
     ex:hasTopics "Centering"^^xsd:string,
         "Communications"^^xsd:string,
-        "Cross-Functional Coordination"^^xsd:string,
+        "Cross-Functional Collaboration"^^xsd:string,
         "Ethnography"^^xsd:string,
         "FourGen Computer-Aided Software Engineering (CASE) Tools"^^xsd:string,
         "Human Musculoskeletal Systems"^^xsd:string,
@@ -992,7 +991,7 @@ ex:INFO290_designing_future_systems a schema:Course ;
         "Mapping"^^xsd:string,
         "Product Design"^^xsd:string,
         "Product Management"^^xsd:string,
-        "Prototype (Computer Science)"^^xsd:string,
+        "Prototype (Manufacturing)"^^xsd:string,
         "Prototyping"^^xsd:string,
         "Scenario Planning"^^xsd:string,
         "Systems Theories"^^xsd:string,
@@ -1040,7 +1039,8 @@ ex:INFO290_future_of_cybersecurity_workin a schema:Course ;
     schema:numberOfCredits 1 .
 
 ex:INFO290_global_rights_innovation_lab_a a schema:Course ;
-    ex:hasTopics "Advocacy"^^xsd:string,
+    ex:hasTopics "ActiveX Data Objects"^^xsd:string,
+        "Advocacy"^^xsd:string,
         "Data Science"^^xsd:string,
         "Digital Integration"^^xsd:string,
         "Digital Technology"^^xsd:string,
@@ -1048,7 +1048,6 @@ ex:INFO290_global_rights_innovation_lab_a a schema:Course ;
         "Human Rights Issues"^^xsd:string,
         "Innovation"^^xsd:string,
         "Investigation"^^xsd:string,
-        "NetApp Data Storage"^^xsd:string,
         "Public Interest Design"^^xsd:string,
         "Public International Laws"^^xsd:string,
         "Public Policies"^^xsd:string,
@@ -1062,7 +1061,8 @@ ex:INFO290_global_rights_innovation_lab_a a schema:Course ;
         4 .
 
 ex:INFO290_global_rights_innovation_lab_c a schema:Course ;
-    ex:hasTopics "Advocacy"^^xsd:string,
+    ex:hasTopics "ActiveX Data Objects"^^xsd:string,
+        "Advocacy"^^xsd:string,
         "Data Science"^^xsd:string,
         "Digital Integration"^^xsd:string,
         "Digital Technology"^^xsd:string,
@@ -1070,7 +1070,6 @@ ex:INFO290_global_rights_innovation_lab_c a schema:Course ;
         "Human Rights Issues"^^xsd:string,
         "Innovation"^^xsd:string,
         "Investigation"^^xsd:string,
-        "NetApp Data Storage"^^xsd:string,
         "Public Interest Design"^^xsd:string,
         "Public International Laws"^^xsd:string,
         "Public Policies"^^xsd:string,
@@ -1170,10 +1169,10 @@ ex:INFO290_playful_design_gamification a schema:Course ;
         "Business Education"^^xsd:string,
         "E (Programming Language)"^^xsd:string,
         "Gamification"^^xsd:string,
-        "Good Laboratory Practice (GLP)"^^xsd:string,
+        "Good Manufacturing Practices"^^xsd:string,
         "Look And Feel"^^xsd:string,
         "Physiology"^^xsd:string,
-        "Prototype (Computer Science)"^^xsd:string,
+        "Prototype (Manufacturing)"^^xsd:string,
         "Psychology"^^xsd:string,
         "Rehabilitation"^^xsd:string,
         "Video Game Development"^^xsd:string,
@@ -1184,10 +1183,10 @@ ex:INFO290_playful_design_gamification a schema:Course ;
     schema:numberOfCredits 2 .
 
 ex:INFO290_political_visions_design_and_g a schema:Course ;
-    ex:hasTopics "Building Management Systems"^^xsd:string,
-        "Capitalism"^^xsd:string,
+    ex:hasTopics "Capitalism"^^xsd:string,
         "Communications"^^xsd:string,
         "Economics"^^xsd:string,
+        "GNU Build Systems"^^xsd:string,
         "Governance"^^xsd:string,
         "Native American Literature"^^xsd:string,
         "Political Philosophy"^^xsd:string,

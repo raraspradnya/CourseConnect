@@ -272,6 +272,6 @@ if __name__ == "__main__":
     graph = converter.json_to_rdf()
 
     # Serialize to turtle formats
-    result_filepath = 'result/INFO-SKG.ttl'
+    result_filepath = '../../knowledge-graph/S-KG/INFO-SKG.ttl'
     graph.serialize(destination=result_filepath, format='turtle')
     print("Saved to", result_filepath)   

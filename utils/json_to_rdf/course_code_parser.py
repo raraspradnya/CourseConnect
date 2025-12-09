@@ -9,25 +9,30 @@ Handles formats like:
 """
 
 import re
+import pandas as pd
 from typing import List, Dict, Tuple, Optional
 
 class CourseCodeParser:
     """Parse and normalize course codes from prerequisite text"""
     
-    def __init__(self):
+    def __init__(self, course_catalog_filepath):
         """
         Initialize parser
         
         Args:
-            graph: Optional RDF graph to validate course codes against
+            course_catalog: filepath to CSV of course codes from official Berkeley Catalog https://catalog.berkeley.edu
         """
-        
-        # Department abbreviation mappings (short → full)
-        self.dept_aliases = {
-            'COMPSCI': 'CS',
-            'STATISTICS': 'STAT'
-        }
-        
+                
+        # Load the CSV file
+        df_courses = pd.read_csv(course_catalog_filepath)
+
+        # Get distinct values in the "Subject" column
+        distinct_departments = df_courses["Subject"].unique()
+
+        # Convert to list and print
+        self.distinct_dept = list(distinct_departments)
+
+
     def parse_prerequisite_text(self, text: str) -> Dict:
         """
         Parse prerequisite text and extract course codes
@@ -83,9 +88,13 @@ class CourseCodeParser:
         
         # Pattern 1: Full format "COMPSCI 61A", "INFO 206B"
         # Matches: DEPT### or DEPT###X or DEPT C### (for cross-listed)
-        full_pattern = r'\b([A-Z]+)\s+([C]?[0-9]+[A-Z]?)\b'
+
+        # Build regex dynamically to only match departments in the list
+        # Join the subjects with | to create an "OR" pattern
+        dept_pattern = "|".join(self.distinct_dept)
+        course_code_full_pattern = rf'\b({dept_pattern})\s+([C]?[0-9]+[A-Z]?)\b'
         
-        for match in re.finditer(full_pattern, text):
+        for match in re.finditer(course_code_full_pattern, text):
             dept = match.group(1)
             number = match.group(2).replace(' ', '')  # Remove spaces from "C 100"
             
@@ -96,20 +105,17 @@ class CourseCodeParser:
                 else:
                     continue
             
-            # Normalize department
-            dept_normalized = self.dept_aliases.get(dept, dept)
-            
-            course_code = f"{dept_normalized} {number}"
+            course_code = f"{dept} {number}"
             courses.append({
             'course_code': course_code,
-            'department': dept_normalized,
+            'department': dept,
             'number': number,
             'original_match': match.group(0)
             })
         
         # Pattern 2: Abbreviated format "61A and 61B" (inherit department from context)
         # This requires looking at the last full course code mentioned
-        abbreviated_pattern = r'(and|or|,|&|/)\s+([C]?[0-9]+[A-Z]?)\b'
+        abbreviated_pattern = r'(AND|OR|,|&|/)\s+([C]?[0-9]+[A-Z]?)\b'
         
         last_dept = None
         for course in courses:
@@ -132,16 +138,16 @@ class CourseCodeParser:
         
         # Pattern 3: Slash-separated cross-listed courses "COMPSCI C100/DATA C100/STAT C100"
         
-        slash_pattern = r'(?:[A-Z]+\s+[C]?[0-9]+[A-Z]?\s*/\s*)+[A-Z]+\s+[C]?[0-9]+[A-Z]?' 
+        slash_pattern = rf'(?:({dept_pattern})\s+[C]?[0-9]+[A-Z]?\s*/\s*)+({dept_pattern})\s+[C]?[0-9]+[A-Z]?'
         
         for match in re.finditer(slash_pattern, text):
             # Split by slash and parse each
             parts = match.group(0).split('/')
             for part in parts:
                 part = part.strip()
-                dept_match = re.match(r'([A-Z]+)\s+([C]?[0-9]+[A-Z]?)', part)
+                dept_match = re.match(course_code_full_pattern, part)
                 if dept_match:
-                    dept = self.dept_aliases.get(dept_match.group(1), dept_match.group(1))
+                    dept = dept_match.group(1)
                     number = dept_match.group(2)
                     course_code = f"{dept} {number}"
                     if not any(c['course_code'] == course_code for c in courses):
@@ -206,17 +212,30 @@ class CourseCodeParser:
         if not match:
             return code
         
-        dept = self.dept_aliases.get(match.group(1), match.group(1))
+        dept = match.group(1)
         number = match.group(2)
         
         return f"{dept} {number}"
+
+    def load_dept_codes(self, filepath: str) -> None:
+        """
+        Load department codes from a file (one per line)
+        
+        Args:
+            filepath: Path to the file containing department codes
+        """
+        with open(filepath, 'r') as f:
+            for line in f:
+                dept = line.strip().upper()
+                if dept and dept not in self.dept_aliases.values():
+                    self.dept_aliases[dept] = dept
 
 
 # Example usage and tests
 if __name__ == "__main__":
     
     # Initialize parser
-    parser = CourseCodeParser()
+    parser = CourseCodeParser("courses.csv")
     
     # Test cases
     test_cases = [

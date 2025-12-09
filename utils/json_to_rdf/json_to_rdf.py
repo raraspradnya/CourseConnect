@@ -166,7 +166,7 @@ class JsonToRdfConverter:
 
             # Create Prerequisites
             if (item.get('prerequisites')):
-                parser = CourseCodeParser()
+                parser = CourseCodeParser("courses.csv")
                 parse_result = parser.parse_prerequisite_text(item['prerequisites'].get('text'))
                 courses = parse_result['courses']
                 if (courses):
@@ -272,5 +272,6 @@ if __name__ == "__main__":
     graph = converter.json_to_rdf()
 
     # Serialize to turtle formats
-    graph.serialize(destination='output.ttl', format='turtle')
-    print("Saved to output.ttl")
+    result_filepath = 'result/INFO-SKG.ttl'
+    graph.serialize(destination=result_filepath, format='turtle')
+    print("Saved to", result_filepath)   

@@ -1,0 +1,29 @@
+PREFIX ex: <http://example.org/>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# SELECT ?prereq ?prereqName ?prereqCode WHERE {
+#     ex:INFO251 ex:hasPrerequisite+ ?prereq .
+#     ?prereq a schema:Course .
+#     ?prereq schema:name ?prereqName .
+#     ?prereq schema:courseCode ?prereqCode .
+# }
+
+# SELECT ?courses ?prereq
+# WHERE {
+#   ex:INFO258 (ex:hasPrerequisite)+ ?courses .
+#   ?courses ex:hasPrerequisite ?prereq .
+# }
+
+SELECT DISTINCT ?prereq ?directParent
+WHERE {
+    VALUES ?target { ex:INFO258 }
+
+    # Reachable prereqs (direct + indirect)
+    ?target (ex:hasPrerequisite)+ ?prereq .
+
+    # Get who that prereq depends on
+    OPTIONAL {
+        ?prereq (ex:hasPrerequisite) ?directParent .
+    }
+}

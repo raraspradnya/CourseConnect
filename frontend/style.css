@@ -1,0 +1,217 @@
+:root {
+    --primary-color: #c026d3; /* Vibrant Purple/Magenta */
+    --primary-light: #f5d0fe; /* Light Purple for badge */
+    --bg-color: #ffffff;
+    --text-dark: #1f2937;
+    --text-grey: #6b7280;
+    --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+    --border-color: #e5e7eb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfdfd;
+    /* Creating the subtle grid pattern seen in the mock */
+    background-image: 
+        linear-gradient(#f0f0f0 1px, transparent 1px),
+        linear-gradient(90deg, #f0f0f0 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Badge Style */
+.badge-container {
+    margin-bottom: 1rem;
+}
+
+.badge {
+    background-color: #fce7f3; /* Very light pink/purple */
+    color: #9d174d;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Typography */
+.logo-text {
+    font-size: 3.5rem;
+    font-weight: 800;
+    /* Gradient text effect */
+    background: linear-gradient(to right, #d946ef, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.025em;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: var(--text-grey);
+    margin-bottom: 3rem;
+}
+
+/* Main Input Card */
+.input-card {
+    background: white;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.icon-sparkle {
+    background: var(--primary-color);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.card-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.input-wrapper {
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    background: #fff;
+    transition: border-color 0.2s;
+}
+
+.input-wrapper:focus-within {
+    border-color: var(--primary-color);
+    outline: 2px solid rgba(192, 38, 211, 0.1);
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 1rem;
+    height: 80px;
+    color: var(--text-dark);
+}
+
+textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* Ask Button */
+.ask-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: linear-gradient(to right, #d946ef, #a855f7);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.1s;
+}
+
+.ask-btn:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+.send-icon {
+    font-size: 0.8rem;
+}
+
+/* Suggestions Area */
+.suggestions {
+    width: 100%;
+    text-align: center;
+}
+
+.suggestions-label {
+    color: var(--text-grey);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.suggestion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.suggestion-chip {
+    background: white;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    color: var(--text-grey);
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.suggestion-chip:hover {
+    border-color: #d946ef;
+    color: var(--primary-color);
+    background-color: #fdf4ff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    .logo-text {
+        font-size: 2.5rem;
+    }
+    .suggestion-chip {
+        font-size: 0.85rem;
+    }
+}

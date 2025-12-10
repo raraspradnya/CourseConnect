@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseConnect - AI Academic Advisor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <div class="badge-container">
+            <span class="badge">✨ AI-Powered Academic Advisor</span>
+        </div>
+
+        <header class="hero-section">
+            <h1 class="logo-text">CourseConnect</h1>
+            <p class="subtitle">Plan your future. Get smart course recommendations instantly.</p>
+        </header>
+
+        <section class="input-card">
+            <div class="card-header">
+                <div class="icon-sparkle">✨</div>
+                <h2>Ask me anything about planning your semester.</h2>
+            </div>
+            
+            <div class="input-wrapper">
+                <textarea id="userInput" placeholder="Looking to learn something new? Tell me what's on your mind"></textarea>
+                <button id="askBtn" class="ask-btn">
+                    <span class="send-icon">➤</span> Ask
+                </button>
+            </div>
+        </section>
+
+        <section class="suggestions">
+            <p class="suggestions-label">Try asking:</p>
+            
+            <div class="suggestion-list">
+                <button class="suggestion-chip" onclick="fillInput('What courses can I take next semester that fulfill my major\'s core requirement?')">
+                    "What courses can I take next semester that fulfill my major's core requirement?"
+                </button>
+                
+                <button class="suggestion-chip" onclick="fillInput('Suggest a schedule for Fall with \'GenAl\' with no lab sessions')">
+                    "Suggest a schedule for Fall with 'GenAl' with no lab sessions"
+                </button>
+                
+                <button class="suggestion-chip" onclick="fillInput('What electives from other departments are offered next semester for cybersecurity')">
+                    "What electives from other departments are offered next semester for cybersecurity"
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

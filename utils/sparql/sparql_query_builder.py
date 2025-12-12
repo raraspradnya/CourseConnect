@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Union
 
 class CourseQueryBuilder:
     """Builds domain-specific SPARQL queries"""
@@ -144,13 +144,45 @@ class CourseQueryBuilder:
         """
     
     @staticmethod
-    def find_courses_by_topic_query(topics: List[str]) -> str:
-        """Find courses related to specific topics"""
-        # 1. Clean inputs to prevent SPARQL injection
+    # def find_courses_by_topic_query(topics: List[str]) -> str:
+    #     """Find courses related to specific topics"""
+    #     # 1. Clean inputs to prevent SPARQL injection
+    #     clean_topics = [t.replace('"', '').strip() for t in topics if t.strip()]
+        
+    #     if not clean_topics:
+    #         # Fallback if list is empty, though tool should prevent this
+    #         return ""
+        
+    #     # Create a regex pattern that matches any of the topics (case-insensitive)
+    #     topic_pattern = '|'.join(clean_topics)
+        
+    #     return f"""
+    #     PREFIX ex: <http://example.org/>
+    #     PREFIX schema: <https://schema.org/>
+    #     SELECT DISTINCT ?course ?courseName ?courseCode ?topic
+    #     WHERE {{
+    #         ?course a schema:Course ;
+    #                 schema:name ?courseName ;
+    #                 schema:courseCode ?courseCode ;
+    #                 ex:hasTopics ?topic .
+    #         FILTER(REGEX(?topic, "{topic_pattern}", "i"))
+    #     }}
+    #     ORDER BY ?courseCode
+    #     """
+    def find_courses_by_topic_query(topics: Union[str, List[str]]) -> str:
+        """
+        Find courses related to a specific topic.
+        Uses case-insensitive matching.
+        """
+        # # distinct cleaning to prevent injection or broken quotes
+        # safe_topic = topic.replace('"', '').strip()
+        if isinstance(topics, str):
+            topics = [topics]
+            
+        # 2. Clean inputs to prevent injection or broken quotes
         clean_topics = [t.replace('"', '').strip() for t in topics if t.strip()]
         
         if not clean_topics:
-            # Fallback if list is empty, though tool should prevent this
             return ""
         
         # Create a regex pattern that matches any of the topics (case-insensitive)
@@ -159,15 +191,20 @@ class CourseQueryBuilder:
         return f"""
         PREFIX ex: <http://example.org/>
         PREFIX schema: <https://schema.org/>
-        SELECT DISTINCT ?course ?courseName ?courseCode ?topic
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+        SELECT DISTINCT ?courseCode ?courseName ?topicLabel
         WHERE {{
             ?course a schema:Course ;
-                    schema:name ?courseName ;
                     schema:courseCode ?courseCode ;
-                    ex:hasTopics ?topic .
-            FILTER(REGEX(?topic, "{topic_pattern}", "i"))
+                    schema:name ?courseName ;
+                    ex:hasTopics ?topicLabel .
+            
+            # Regex match: case-insensitive ("i") matching the joined pattern
+            FILTER(REGEX(?topicLabel, "{topic_pattern}", "i"))
         }}
         ORDER BY ?courseCode
+        LIMIT 10
         """
     
     @staticmethod

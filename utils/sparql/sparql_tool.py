@@ -1,6 +1,7 @@
 from rdflib import Graph
 from typing import List, Dict, Any, Optional
 from crewai.tools import tool
+from .sparql_query_builder import CourseQueryBuilder 
 
 class SPARQLKnowledgeGraph:
     """Manages SPARQL queries against the knowledge graph"""
@@ -43,3 +44,31 @@ def query_knowledge_graph(query: str) -> List[Dict[str, Any]]:
     if _kg_instance is None:
         return [{"error": "Knowledge graph not initialized"}]
     return _kg_instance.execute_query(query)
+
+@tool("Search Courses by Topic")
+def search_courses_by_topic(topics_string: str) -> str:
+    """
+    Useful for finding courses that match specific topics of interest.
+    Input should be a string of topics, optionally comma-separated (e.g., "AI" or "AI, Design").
+    Returns course codes, names, and matched topics.
+    """
+    if _kg_instance is None:
+        return "Error: Knowledge graph not initialized."
+    
+    # 1. Convert Agent's string input to List[str]
+    # Splits "AI, Machine Learning" -> ["AI", "Machine Learning"]
+    topics_list = [t.strip() for t in topics_string.split(',')]
+    
+    # 2. Use Builder to generate the correct SPARQL
+    query = CourseQueryBuilder.find_courses_by_topic_query(topics_list)
+    
+    if not query:
+        return "Error: No valid topics provided."
+
+    # 3. Execute against the Graph
+    results = _kg_instance.execute_query(query)
+    
+    # 4. Return results
+    if not results:
+        return f"No courses found specifically matching the topics: {topics_list}."
+    return str(results)

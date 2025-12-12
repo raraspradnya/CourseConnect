@@ -1,0 +1,58 @@
+PREFIX ex: <http://example.org/>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Check for time conflicts among a list of courses
+SELECT 
+    ?course1 ?course1Name
+    ?course2 ?course2Name
+    ?semester
+    ?comp1 ?comp2
+    ?day
+    ?start1 ?end1
+    ?start2 ?end2
+WHERE {
+    # User input: list of courses
+    VALUES ?course1 { ex:INFO213 ex:INFO290_knowledge_representation_for_i ex:INFOC262 }
+    VALUES ?course2 { ex:INFO213 ex:INFO290_knowledge_representation_for_i ex:INFOC262 }
+    FILTER(STR(?course1) < STR(?course2))
+
+    # User input: semester to check
+    VALUES ?selectedSemester { "2025 Fall"^^xsd:string }
+
+    # Names
+    ?course1 schema:name ?course1Name .
+    ?course2 schema:name ?course2Name .
+
+    # Offerings
+    ?course1 ex:offeredIn ?off1 .
+    ?course2 ex:offeredIn ?off2 .
+
+    # Must match selected semester
+    ?off1 ex:semester ?semester .
+    ?off2 ex:semester ?semester .
+    FILTER(?semester = ?selectedSemester)
+
+    # Components in that offering
+    ?off1 ex:hasComponent ?comp1 .
+    ?off2 ex:hasComponent ?comp2 .
+
+    # Time slots
+    ?comp1 ex:hasTimeSlot ?slot1 .
+    ?comp2 ex:hasTimeSlot ?slot2 .
+
+    # Day + time
+    ?slot1 ex:dayOfWeek ?day .
+    ?slot1 ex:startTime ?start1 .
+    ?slot1 ex:endTime ?end1 .
+
+    ?slot2 ex:dayOfWeek ?day .
+    ?slot2 ex:startTime ?start2 .
+    ?slot2 ex:endTime ?end2 .
+
+    # Overlap condition
+    FILTER(
+        ?start1 < ?end2 &&
+        ?start2 < ?end1
+    )
+}

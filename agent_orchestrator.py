@@ -32,6 +32,10 @@ class CourseRecommenderSystem:
         """Get prerequisite chain"""
         return self.prerequisite_agent.initiate_prerequisite_agent(course_id)
     
+    def check_schedule_conflicts(self, course_ids: List[str], semester: str) -> Dict:
+        """Check for schedule conflicts"""
+        return self.conflict_agent.initiate_scheduler_agent(course_ids, semester)
+    
 # Example usage
 if __name__ == "__main__":
 
@@ -40,4 +44,7 @@ if __name__ == "__main__":
     system = CourseRecommenderSystem("knowledge-graph/S-KG/INFO-SKG.ttl")
     
     # Check Prerequisites Courses
-    result = system.get_prerequisites("INFO 258")
+    # system.get_prerequisites("INFO 258")
+
+    # Check Schedule Conflicts
+    system.check_schedule_conflicts(["INFO213", "INFO C262"], "2025 Fall")

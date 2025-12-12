@@ -8,6 +8,7 @@ class EligibilityAgent():
     
     def __init__(self, query_builder: CourseQueryBuilder):
         self.query_builder = query_builder
+        self.agent: Optional[Agent] = None       
     
     def create_agent(self) -> Agent:
         self.agent = Agent(
@@ -15,7 +16,7 @@ class EligibilityAgent():
             goal="Determine which courses a student can take based on completed prerequisites",
             backstory="""You are an academic advisor expert who understands 
             prerequisite requirements and can determine course eligibility.""",
-            tools=[query_knowledge_graph],  # Use the @tool function
+            tools=[],
             verbose=True
         )
         return self.agent

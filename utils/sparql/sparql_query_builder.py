@@ -67,40 +67,74 @@ class CourseQueryBuilder:
         """
     
     @staticmethod
-    def check_time_conflicts_query(course_ids: List[str]) -> str:
+    def check_time_conflicts_query(course_ids: List[str], semester: str) -> str:
         """
         Check for schedule conflicts between courses.
-        Note: Assumes you have schedule data in your TTL with properties like:
-        ex:hasSchedule, ex:hasDay, ex:hasTime, etc.
-        Adjust based on your actual schedule schema.
+        Only returns conflicting pairs.
         """
-        course_filter = ', '.join([f'ex:{c}' for c in course_ids])
+        course_filter = ' '.join([f'ex:{c}' for c in course_ids])
+        semester_filter = "\"" + semester +"\"^^xsd:string"
         
         return f"""
         PREFIX ex: <http://example.org/>
         PREFIX schema: <http://schema.org/>
-        SELECT ?course1 ?course1Name ?course2 ?course2Name ?offering1 ?offering2 ?day ?time
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+        # Check for time conflicts among a list of courses
+        SELECT 
+            ?course1 ?course1Name
+            ?course2 ?course2Name
+            ?semester
+            ?comp1 ?comp2
+            ?day
+            ?start1 ?end1
+            ?start2 ?end2
         WHERE {{
-            # Get two different courses from the list
-            VALUES ?course1 {{ {course_filter} }}
-            VALUES ?course2 {{ {course_filter} }}
-            FILTER(?course1 < ?course2)
-            
-            # Get course names
+            # User input: list of courses
+            VALUES ?course1 { {course_filter} }
+            VALUES ?course2 { {course_filter} }
+            FILTER(STR(?course1) < STR(?course2))
+
+            # User input: semester to check
+            VALUES ?selectedSemester { {semester_filter} }
+
+            # Names
             ?course1 schema:name ?course1Name .
             ?course2 schema:name ?course2Name .
-            
-            # Get their offerings
-            ?course1 ex:offeredIn ?offering1 .
-            ?course2 ex:offeredIn ?offering2 .
-            
-            # Check if they have the same day and time
-            # Note: Adjust these properties based on your actual schedule schema
-            ?offering1 ex:hasDay ?day ;
-                      ex:hasTime ?time .
-            ?offering2 ex:hasDay ?day ;
-                      ex:hasTime ?time .
+
+            # Offerings
+            ?course1 ex:offeredIn ?off1 .
+            ?course2 ex:offeredIn ?off2 .
+
+            # Must match selected semester
+            ?off1 ex:semester ?semester .
+            ?off2 ex:semester ?semester .
+            FILTER(?semester = ?selectedSemester)
+
+            # Components in that offering
+            ?off1 ex:hasComponent ?comp1 .
+            ?off2 ex:hasComponent ?comp2 .
+
+            # Time slots
+            ?comp1 ex:hasTimeSlot ?slot1 .
+            ?comp2 ex:hasTimeSlot ?slot2 .
+
+            # Day + time
+            ?slot1 ex:dayOfWeek ?day .
+            ?slot1 ex:startTime ?start1 .
+            ?slot1 ex:endTime ?end1 .
+
+            ?slot2 ex:dayOfWeek ?day .
+            ?slot2 ex:startTime ?start2 .
+            ?slot2 ex:endTime ?end2 .
+
+            # Overlap condition
+            FILTER(
+                ?start1 < ?end2 &&
+                ?start2 < ?end1
+            )
         }}
+
         """
     
     @staticmethod

@@ -2,19 +2,7 @@ PREFIX ex: <http://example.org/>
 PREFIX schema: <http://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-# SELECT ?prereq ?prereqName ?prereqCode WHERE {
-#     ex:INFO251 ex:hasPrerequisite+ ?prereq .
-#     ?prereq a schema:Course .
-#     ?prereq schema:name ?prereqName .
-#     ?prereq schema:courseCode ?prereqCode .
-# }
-
-# SELECT ?courses ?prereq
-# WHERE {
-#   ex:INFO258 (ex:hasPrerequisite)+ ?courses .
-#   ?courses ex:hasPrerequisite ?prereq .
-# }
-
+# Get all prereqs (direct + indirect) for a target course, along with their direct parents
 SELECT DISTINCT ?prereq ?directParent
 WHERE {
     VALUES ?target { ex:INFO258 }

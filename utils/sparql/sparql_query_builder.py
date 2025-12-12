@@ -66,6 +66,46 @@ class CourseQueryBuilder:
         ORDER BY ?courseCode
         """
     
+    # # Alternative approach to check eligibility, commented out for now
+    # @staticmethod
+    # def check_eligibility_query(completed_courses: List[str]) -> str:
+    #     """
+    #     Find courses where all prerequisites are met.
+    #     completed_courses should be course IDs like ['INFO101', 'INFO206B']
+    #     """
+    #     # Build the filter for completed courses
+    #     if not completed_courses:
+    #         # If no courses taken, simple NOT IN isn't needed; 
+    #         # we just look for courses with NO prerequisites.
+    #         completed_filter = "" 
+    #     else:
+    #         # Format: ex:INFO101, ex:INFO206B
+    #         completed_list_str = ', '.join([f'ex:{c}' for c in completed_courses])
+    #         completed_filter = f"FILTER (?prereq IN ({completed_list_str}))"
+
+    #     return f"""
+    #     PREFIX ex: <http://example.org/>
+    #     PREFIX schema: <http://schema.org/>
+
+    #     SELECT DISTINCT ?course ?courseName ?courseCode
+    #     WHERE {{
+    #         ?course a schema:Course ;
+    #                 schema:name ?courseName ;
+    #                 schema:courseCode ?courseCode .
+
+    #         # LOGIC: Exclude any course that HAS a prerequisite 
+    #         # which the student has NOT taken.
+    #         FILTER NOT EXISTS {{
+    #             ?course ex:hasPrerequisite ?prereq .
+    #             # If the student HAS taken this prereq, we don't want to exclude the course.
+    #             # We only exclude if the prereq exists AND is NOT in the completed list.
+                
+    #             {completed_filter} if {completed_courses} else "ex:ImpossibleCourse"))
+    #         }}
+    #     }}
+    #     ORDER BY ?courseCode
+    #     """
+    
     @staticmethod
     def check_time_conflicts_query(course_ids: List[str], semester: str) -> str:
         """
@@ -140,19 +180,26 @@ class CourseQueryBuilder:
     @staticmethod
     def find_courses_by_topic_query(topics: List[str]) -> str:
         """Find courses related to specific topics"""
+        # 1. Clean inputs to prevent SPARQL injection
+        clean_topics = [t.replace('"', '').strip() for t in topics if t.strip()]
+        
+        if not clean_topics:
+            # Fallback if list is empty, though tool should prevent this
+            return ""
+        
         # Create a regex pattern that matches any of the topics (case-insensitive)
-        topic_filter = '|'.join(topics)
+        topic_pattern = '|'.join(clean_topics)
         
         return f"""
         PREFIX ex: <http://example.org/>
-        PREFIX schema: <http://schema.org/>
+        PREFIX schema: <https://schema.org/>
         SELECT DISTINCT ?course ?courseName ?courseCode ?topic
         WHERE {{
             ?course a schema:Course ;
                     schema:name ?courseName ;
                     schema:courseCode ?courseCode ;
                     ex:hasTopics ?topic .
-            FILTER(REGEX(?topic, "{topic_filter}", "i"))
+            FILTER(REGEX(?topic, "{topic_pattern}", "i"))
         }}
         ORDER BY ?courseCode
         """

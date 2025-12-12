@@ -7,7 +7,10 @@ class SPARQLKnowledgeGraph:
     
     def __init__(self, ttl_file_path: str):
         self.graph = Graph()
-        self.graph.parse(ttl_file_path, format='ttl')
+        try:
+            self.graph.parse(ttl_file_path, format='ttl')
+        except Exception as e:
+            raise RuntimeError(f"Failed to load TTL file at {ttl_file_path}: {e}")
     
     def execute_query(self, query: str) -> List[Dict[str, Any]]:
         """Execute a SPARQL query and return results"""

@@ -9,31 +9,36 @@
 </head>
 <body>
 
+    <button id="clearHistoryBtn" class="clear-btn" title="Clear Chat History">
+        <span class="icon">🗑️</span> Clear History
+    </button>
+
     <main class="container">
-        <div class="badge-container">
-            <span class="badge">✨ AI-Powered Academic Advisor</span>
+        
+        <div id="welcomeSection" class="welcome-section">
+            <div class="badge-container">
+                <span class="badge">✨ AI-Powered Academic Advisor</span>
+            </div>
+
+            <header class="hero-section">
+                <h1 class="logo-text">CourseConnect</h1>
+                <p class="subtitle">Plan your future. Get smart course recommendations instantly.</p>
+            </header>
         </div>
 
-        <header class="hero-section">
-            <h1 class="logo-text">CourseConnect</h1>
-            <p class="subtitle">Plan your future. Get smart course recommendations instantly.</p>
-        </header>
+        <div id="chatContainer" class="chat-container">
+            </div>
 
         <section class="input-card">
-            <div class="card-header">
-                <div class="icon-sparkle">✨</div>
-                <h2>Ask me anything about planning your semester.</h2>
-            </div>
-            
             <div class="input-wrapper">
-                <textarea id="userInput" placeholder="Looking to learn something new? Tell me what's on your mind"></textarea>
+                <textarea id="userInput" placeholder="Ask a follow-up or start a new topic..."></textarea>
                 <button id="askBtn" class="ask-btn">
-                    <span class="send-icon">➤</span> Ask
+                    <span class="send-icon">➤</span>
                 </button>
             </div>
         </section>
 
-        <section class="suggestions">
+        <section id="suggestionsSection" class="suggestions">
             <p class="suggestions-label">Try asking:</p>
             
             <div class="suggestion-list">

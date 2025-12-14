@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #c026d3; /* Vibrant Purple/Magenta */
-    --primary-light: #f5d0fe; /* Light Purple for badge */
+    --primary-color: #c026d3;
+    --primary-light: #f5d0fe;
     --bg-color: #ffffff;
     --text-dark: #1f2937;
     --text-grey: #6b7280;
-    --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+    --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
     --border-color: #e5e7eb;
 }
 
@@ -17,7 +17,6 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #fdfdfd;
-    /* Creating the subtle grid pattern seen in the mock */
     background-image: 
         linear-gradient(#f0f0f0 1px, transparent 1px),
         linear-gradient(90deg, #f0f0f0 1px, transparent 1px);
@@ -30,92 +29,174 @@ body {
 
 .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px; /* Slightly wider for chat */
     padding: 2rem;
-    text-align: center;
     display: flex;
     flex-direction: column;
+    height: 100vh; /* Full viewport height for sticky input effect */
+}
+
+/* --- Toggleable Sections --- */
+.hidden {
+    display: none !important;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-top: auto; 
+    margin-bottom: 2rem;
+}
+
+/* --- Clear Button --- */
+.clear-btn {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: white;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: var(--text-grey);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    z-index: 100;
+    transition: all 0.2s;
+}
+
+.clear-btn:hover {
+    background-color: #fee2e2;
+    color: #dc2626;
+    border-color: #fecaca;
+}
+
+/* --- Chat Container --- */
+.chat-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    scroll-behavior: smooth;
+}
+
+/* Chat Bubbles */
+.message-wrapper {
+    display: flex;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.message-wrapper.user {
+    justify-content: flex-end;
+}
+
+.message-wrapper.ai {
+    justify-content: flex-start;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
 }
 
-/* Badge Style */
-.badge-container {
-    margin-bottom: 1rem;
+.avatar.ai {
+    background: var(--primary-color);
+    color: white;
 }
 
+.avatar.user {
+    background: #e5e7eb;
+    display: none; /* Often users don't need avatars in chat UIs */
+}
+
+.bubble {
+    padding: 1rem 1.25rem;
+    border-radius: 1rem;
+    line-height: 1.6;
+    max-width: 80%;
+    font-size: 1rem;
+    white-space: pre-wrap; /* Preserves formatting */
+}
+
+.bubble.user {
+    background-color: #f3f4f6;
+    color: var(--text-dark);
+    border-radius: 1rem 1rem 0 1rem;
+}
+
+.bubble.ai {
+    background-color: #fff;
+    /* border: 1px solid var(--border-color); */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 1rem 1rem 1rem 0;
+}
+
+.loading-dots {
+    color: var(--text-grey);
+    font-style: italic;
+}
+
+/* --- Existing Styles Preserved/Tweaked --- */
+
+.badge-container { margin-bottom: 1rem; }
 .badge {
-    background-color: #fce7f3; /* Very light pink/purple */
+    background-color: #fce7f3;
     color: #9d174d;
     padding: 0.5rem 1rem;
     border-radius: 9999px;
     font-size: 0.875rem;
     font-weight: 600;
-    display: inline-block;
 }
 
-/* Typography */
 .logo-text {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 800;
-    /* Gradient text effect */
     background: linear-gradient(to right, #d946ef, #a855f7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
-    letter-spacing: -0.025em;
 }
 
 .subtitle {
     font-size: 1.125rem;
     color: var(--text-grey);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
-/* Main Input Card */
+/* Input Card - Positioned at bottom now */
 .input-card {
     background: white;
     width: 100%;
     border-radius: 1rem;
-    padding: 1.5rem;
-    box-shadow: var(--card-shadow);
+    padding: 1rem;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.05); /* Shadow pointing up */
     border: 1px solid var(--border-color);
-    text-align: left;
-    margin-bottom: 2rem;
-}
-
-.card-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
     margin-bottom: 1rem;
-}
-
-.icon-sparkle {
-    background: var(--primary-color);
-    color: white;
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-}
-
-.card-header h2 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-dark);
+    position: sticky;
+    bottom: 20px;
+    z-index: 50;
 }
 
 .input-wrapper {
     position: relative;
     border: 1px solid var(--border-color);
     border-radius: 0.75rem;
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     background: #fff;
-    transition: border-color 0.2s;
+    display: flex;
+    align-items: center;
 }
 
 .input-wrapper:focus-within {
@@ -130,88 +211,61 @@ textarea {
     outline: none;
     font-family: inherit;
     font-size: 1rem;
-    height: 80px;
+    height: 24px; /* Starts small */
+    max-height: 150px;
     color: var(--text-dark);
+    padding-right: 50px;
 }
 
-textarea::placeholder {
-    color: #9ca3af;
-}
+/* Auto-expanding logic is usually JS, but we'll keep it simple CSS for now */
+textarea:focus { height: 60px; } 
 
-/* Ask Button */
 .ask-btn {
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
     background: linear-gradient(to right, #d946ef, #a855f7);
     color: white;
     border: none;
-    padding: 0.5rem 1.25rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
     transition: transform 0.1s;
 }
 
-.ask-btn:hover {
-    opacity: 0.95;
-    transform: translateY(-1px);
-}
+.ask-btn:hover { opacity: 0.95; transform: scale(1.05); }
 
-.send-icon {
-    font-size: 0.8rem;
-}
-
-/* Suggestions Area */
+/* Suggestions */
 .suggestions {
     width: 100%;
     text-align: center;
+    margin-bottom: auto; /* Push down if possible */
 }
-
-.suggestions-label {
-    color: var(--text-grey);
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-}
-
-.suggestion-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    width: 100%;
-}
-
+.suggestions-label { color: var(--text-grey); font-size: 0.9rem; margin-bottom: 1rem; }
+.suggestion-list { display: flex; flex-direction: column; gap: 0.75rem; width: 100%; }
 .suggestion-chip {
     background: white;
     border: 1px solid var(--border-color);
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     border-radius: 0.75rem;
     color: var(--text-grey);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     cursor: pointer;
-    text-align: left;
+    text-align: center;
     transition: all 0.2s;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
-
 .suggestion-chip:hover {
     border-color: #d946ef;
     color: var(--primary-color);
     background-color: #fdf4ff;
 }
 
-/* Mobile Responsiveness */
+/* Mobile */
 @media (max-width: 600px) {
-    .container {
-        padding: 1rem;
-    }
-    .logo-text {
-        font-size: 2.5rem;
-    }
-    .suggestion-chip {
-        font-size: 0.85rem;
-    }
+    .container { padding: 1rem; }
+    .logo-text { font-size: 2rem; }
 }

@@ -3,3 +3,5 @@ utils/sparql/__pycache__/
 agents/__pycache__/
 *.env
 .env
+.DS_Store
+__pycache__

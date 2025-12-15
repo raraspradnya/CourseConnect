@@ -15,6 +15,8 @@ from agents.scheduler_agent import SchedulerAgent
 from agents.recommender_agent import RecommenderAgent
 from agents.prerequisite_agent import PrerequisiteAgent
 from agents.requirement_agent import RequirementAgent
+from agents.extractor_agent import ExtractorAgent
+from agents.response_agent import ResponseAgent
 
 # --- EXISTING AGENT LOGIC ---
 
@@ -60,6 +62,8 @@ class CourseRecommenderSystem:
         self.recommendation_agent_wrapper = RecommenderAgent(self.query_builder)
         self.prerequisite_agent_wrapper = PrerequisiteAgent(self.query_builder)
         self.requirement_agent_wrapper = RequirementAgent(self.query_builder)
+        self.extractor_agent_wrapper = ExtractorAgent()
+        self.response_agent_wrapper = ResponseAgent()
 
     def create_workflow(self, intent: str, user_query: str, context_data: Dict = None) -> Crew:
         # [Same logic as your previous code]
@@ -67,15 +71,24 @@ class CourseRecommenderSystem:
         tasks = []
         
         if intent == "prerequisite_query":
-            target_course = context_data.get("course_id", "INFO 206B") 
-            prereq_agent = self.prerequisite_agent_wrapper.create_agent()
-            agents.append(prereq_agent)
-            task = Task(
-                description=f"Analyze the prerequisite chain for course {target_course}.",
-                agent=prereq_agent,
-                expected_output="A detailed list of direct and indirect prerequisites."
-            )
-            tasks.append(task)
+
+            # Extract course ID from user query as target course
+            extractor_agent = self.extractor_agent_wrapper.create_agent()
+            extractor_task = self.extractor_agent_wrapper.create_task(user_query, extractor_agent, [], None)
+            agents.append(extractor_agent)
+            tasks.append(extractor_task)
+
+            # Query to KG using SPARQL
+            prerequisite_agent = self.prerequisite_agent_wrapper.create_agent()
+            prerequisite_task = self.prerequisite_agent_wrapper.create_task(user_query, prerequisite_agent, [extractor_task])
+            agents.append(prerequisite_agent)
+            tasks.append(prerequisite_task)
+
+            # Synthesize Response
+            # response_agent = self.response_agent_wrapper.create_agent()
+            # response_task = self.response_agent_wrapper.create_task(user_query, response_agent, [extractor_task], [self.prerequisite_agent_wrapper.sparql_callback])
+            # agents.append(response_agent)
+            # tasks.append(response_task)
 
         elif intent == "schedule_building":
             elig_agent = self.eligibility_agent_wrapper.create_agent()
@@ -123,6 +136,7 @@ class CourseRecommenderSystem:
         result = crew.kickoff()
         return str(result)
 
+
 # --- FLASK SERVER SETUP ---
 
 app = Flask(__name__)
@@ -155,6 +169,14 @@ if __name__ == "__main__":
     load_dotenv()
     # Initialize the system once when server starts
     recommender_system = CourseRecommenderSystem("knowledge-graph/S-KG/INFO-SKG.ttl")
-    
+
+    # user_context = {
+    #     "student_id": "123",
+    #     "completed_courses": ["INFO 206A", "INFO 206B", "CS 61A"],
+    #     "interests": ["Machine Learning", "Python", "Design"],
+    #     "course_id": "INFO 258" 
+    # }
+
+    # print(recommender_system.process_query("prerequisite for INFO 251", user_context))
     print("Server starting on http://localhost:5000")
     app.run(debug=True, port=5000)

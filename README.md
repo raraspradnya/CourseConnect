@@ -63,6 +63,6 @@ CourseConnect is initially designed for the **UC Berkeley I-School community**, 
 This project is under active development as an **implementation-focused academic project**, created to fulfill the requirements of **INFO 290: Knowledge Representation for Intelligent Applications**. Current work includes expanding validation cases, improving SPARQL query generation, and refining personalization logic.
 
 Team Members:
-Kurumi Kaneko
-Raras Pramudita
-Tyler Twohig
+1. Kurumi Kaneko
+2. Raras Pramudita
+3. Tyler Twohig

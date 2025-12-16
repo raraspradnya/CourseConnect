@@ -24,7 +24,7 @@ class ExtractorAgent():
         )
         return self.agent
     
-    def create_task(self, user_query, agent, context, callback=None):
+    def create_task(self, user_query, agent):
         """Initiate agent to extract course code based on user query"""
 
         course_id_task = Task(
@@ -46,8 +46,6 @@ class ExtractorAgent():
             """,
             agent=agent,
             expected_output="Course codes and query type in the specified format",
-            context=context,
-            callback=callback
         )
 
         return course_id_task

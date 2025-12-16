@@ -9,61 +9,41 @@ from flask_cors import CORS
 
 # Import custom tools and agents
 from utils.sparql.sparql_tool import initialize_knowledge_graph
+from utils.sparql.sparql_prereq_tool import sparql_prerequisite_tool
 from utils.sparql.sparql_query_builder import CourseQueryBuilder
-from agents.eligibility_agent import EligibilityAgent
+
+from agents.extractor_agent import ExtractorAgent
+from agents.response_synthesizer_agent import ResponseSynthesizerAgent
+
 from agents.scheduler_agent import SchedulerAgent
 from agents.recommender_agent import RecommenderAgent
-from agents.prerequisite_agent import PrerequisiteAgent
-from agents.requirement_agent import RequirementAgent
-from agents.extractor_agent import ExtractorAgent
-from agents.response_agent import ResponseAgent
 
-# --- EXISTING AGENT LOGIC ---
 
-class OrchestratorAgent:
-    """
-    Manager agent that analyzes user intent and routes tasks 
-    to specialist agents dynamically.
-    """
-    def __init__(self):
-        self.agent = Agent(
-            role="Academic Advising Orchestrator",
-            goal="Analyze student requests, determine intent, and delegate tasks to the correct specialist agents.",
-            backstory="""You are the head academic advisor. You do not look up data yourself; 
-            instead, you listen to the student, decide which specialist (Scheduler, Recommender, etc.) 
-            is needed, and coordinate their work to provide a complete answer.""",
-            allow_delegation=True,
-            verbose=True,
-            llm="gpt-4o"
-        )
-
-    def classify_intent(self, user_query: str) -> str:
-        query_lower = user_query.lower()
-        if "prereq" in query_lower or "chain" in query_lower:
-            return "prerequisite_query"
-        elif "schedule" in query_lower or "conflict" in query_lower:
-            return "schedule_building"
-        elif "recommend" in query_lower or "interest" in query_lower or "topic" in query_lower:
-            return "course_discovery"
-        elif "eligible" in query_lower or "can i take" in query_lower:
-            return "check_eligibility"
-        elif "requirement" in query_lower or "major" in query_lower:
-            return "program_requirement"
-        else:
-            return "general_query"
+def classify_intent(user_query: str) -> str:
+    query_lower = user_query.lower()
+    if "prereq" in query_lower or "chain" in query_lower:
+        return "prerequisite_query"
+    elif "schedule" in query_lower or "conflict" in query_lower:
+        return "schedule_building"
+    elif "recommend" in query_lower or "interest" in query_lower or "topic" in query_lower:
+        return "course_discovery"
+    elif "eligible" in query_lower or "can i take" in query_lower:
+        return "check_eligibility"
+    elif "requirement" in query_lower or "major" in query_lower:
+        return "program_requirement"
+    else:
+        return "general_query"
+    
 
 class CourseRecommenderSystem:
     def __init__(self, ttl_file_path: str):
         initialize_knowledge_graph(ttl_file_path)
+        self.extractor_agent_wrapper = ExtractorAgent()
+        self.response_synthesizer_agent_wrapper = ResponseSynthesizerAgent()
+
         self.query_builder = CourseQueryBuilder()
-        self.orchestrator = OrchestratorAgent()
-        self.eligibility_agent_wrapper = EligibilityAgent(self.query_builder)
         self.conflict_agent_wrapper = SchedulerAgent(self.query_builder)
         self.recommendation_agent_wrapper = RecommenderAgent(self.query_builder)
-        self.prerequisite_agent_wrapper = PrerequisiteAgent(self.query_builder)
-        self.requirement_agent_wrapper = RequirementAgent(self.query_builder)
-        self.extractor_agent_wrapper = ExtractorAgent()
-        self.response_agent_wrapper = ResponseAgent()
 
     def create_workflow(self, intent: str, user_query: str, context_data: Dict = None) -> Crew:
         # [Same logic as your previous code]
@@ -74,21 +54,15 @@ class CourseRecommenderSystem:
 
             # Extract course ID from user query as target course
             extractor_agent = self.extractor_agent_wrapper.create_agent()
-            extractor_task = self.extractor_agent_wrapper.create_task(user_query, extractor_agent, [], None)
+            extractor_task = self.extractor_agent_wrapper.create_task(user_query, extractor_agent)
             agents.append(extractor_agent)
             tasks.append(extractor_task)
 
             # Query to KG using SPARQL
-            prerequisite_agent = self.prerequisite_agent_wrapper.create_agent()
-            prerequisite_task = self.prerequisite_agent_wrapper.create_task(user_query, prerequisite_agent, [extractor_task])
-            agents.append(prerequisite_agent)
-            tasks.append(prerequisite_task)
-
-            # Synthesize Response
-            # response_agent = self.response_agent_wrapper.create_agent()
-            # response_task = self.response_agent_wrapper.create_task(user_query, response_agent, [extractor_task], [self.prerequisite_agent_wrapper.sparql_callback])
-            # agents.append(response_agent)
-            # tasks.append(response_task)
+            response_synthesizer_agent = self.response_synthesizer_agent_wrapper.create_agent()
+            response_synthesizer_task = self.response_synthesizer_agent_wrapper.create_task(user_query, response_synthesizer_agent, [extractor_task], sparql_prerequisite_tool)
+            agents.append(response_synthesizer_agent)
+            tasks.append(response_synthesizer_task)
 
         elif intent == "schedule_building":
             elig_agent = self.eligibility_agent_wrapper.create_agent()
@@ -126,7 +100,8 @@ class CourseRecommenderSystem:
         return Crew(agents=agents, tasks=tasks, process=Process.sequential, verbose=True)
 
     def process_query(self, user_query: str, user_context: Dict[str, Any]) -> str:
-        intent = self.orchestrator.classify_intent(user_query)
+        intent = classify_intent(user_query)
+
         print(f"--- Detected Intent: {intent} ---")
         crew = self.create_workflow(intent, user_query, user_context)
         
@@ -169,13 +144,6 @@ if __name__ == "__main__":
     load_dotenv()
     # Initialize the system once when server starts
     recommender_system = CourseRecommenderSystem("knowledge-graph/S-KG/INFO-SKG.ttl")
-
-    # user_context = {
-    #     "student_id": "123",
-    #     "completed_courses": ["INFO 206A", "INFO 206B", "CS 61A"],
-    #     "interests": ["Machine Learning", "Python", "Design"],
-    #     "course_id": "INFO 258" 
-    # }
 
     # print(recommender_system.process_query("prerequisite for INFO 251", user_context))
     print("Server starting on http://localhost:5000")

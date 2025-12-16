@@ -18,15 +18,11 @@ def sparql_prerequisite_tool(task_output: str) -> str:
     sparql_results: Dict = {"course_list": []}
 
     output_text = str(task_output)
-    # print(output_text)
 
     # -------------------------------
     # Parse task output
     # -------------------------------
     course_codes = [output_text]
-    # if "COURSE_CODES:" in output_text:
-    #     codes_line = output_text.split("COURSE_CODES:")[1].split("\n")[0].strip()
-        # course_codes = [code.strip() for code in codes_line.split(",")]
 
     EX = Namespace("http://example.org/")
 

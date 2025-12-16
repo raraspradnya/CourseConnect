@@ -1,8 +1,10 @@
 from crewai import Agent, Task
 from typing import Optional
 
-class ResponseAgent():
-    """Agent for synthesizing response from RDF data and other relevant information"""
+from utils.sparql.sparql_prereq_tool import sparql_prerequisite_tool
+
+class ResponseSynthesizerAgent():
+    """Agent for prerequisite chain discovery"""
     
     def __init__(self):
         self.agent: Optional[Agent] = None
@@ -18,7 +20,7 @@ class ResponseAgent():
         )
         return self.agent
     
-    def create_task(self, user_query, agent, context, tools):
+    def create_task(self, user_query, agent, context, sparql_tool):
         """Create task based on data retrieved via SPARQL"""
 
         synthesize_task = Task(
@@ -33,7 +35,6 @@ class ResponseAgent():
             agent=agent,
             expected_output="Complete synthesized response",
             context=context, 
-            tools=tools
+            tools=[sparql_tool]
         )
-
         return synthesize_task

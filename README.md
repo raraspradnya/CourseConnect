@@ -58,6 +58,55 @@ CourseConnect is initially designed for the **UC Berkeley I-School community**, 
 
 ---
 
+## 💻 Local Setup
+
+### Prerequisites
+
+* Python 3.9+
+* An OpenAI API key
+
+### 1. Clone the repository
+
+```bash
+git clone <repo-url>
+cd CourseConnect
+```
+
+### 2. Install dependencies
+
+```bash
+pip install crewai flask flask-cors rdflib python-dotenv
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file in the project root:
+
+```
+OPENAI_API_KEY="your-openai-api-key-here"
+```
+
+### 4. Start the backend
+
+```bash
+python agent_orchestrator.py
+```
+
+The Flask server will start at `http://localhost:5000`.
+
+### 5. Open the frontend
+
+Open `frontend/index.html` directly in your browser, or serve it with Python:
+
+```bash
+cd frontend
+python -m http.server 8000
+```
+
+Then visit `http://localhost:8000`. Either way, the frontend connects to the backend at `localhost:5000` automatically.
+
+---
+
 ## 📌 Project Status
 
 This project is under active development as an **implementation-focused academic project**, created to fulfill the requirements of **INFO 290: Knowledge Representation for Intelligent Applications**. Current work includes expanding validation cases, improving SPARQL query generation, and refining personalization logic.
